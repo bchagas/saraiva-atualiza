@@ -5,7 +5,7 @@
         <li>
           <%= link_to item, "/#{item.downcase.parameterize}.html" %>
           <ul>
-            <% %w(INFOGRÁFICOS TROCANDO\ IDÉIA NUVEM\ TECH TODA\ MIDIA ENCARE\ ESSA DIÁLOGO\ COM\ A\ ARTE SEM\ LIMITES\ BACKUP).each do |sub_item| %>
+            <% %w(INFOGRÁFICOS TROCANDO\ IDÉIA NUVEM\ TECH TODA\ MIDIA ENCARE\ ESSA DIÁLOGO\ COM\ A\ ARTE SEM\ LIMITES BACKUP).each do |sub_item| %>
               <li><%= link_to sub_item, "/#{sub_item.downcase.parameterize}.html" %></li>
             <% end %>
           </ul>
