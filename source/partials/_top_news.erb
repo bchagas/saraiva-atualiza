@@ -1,0 +1,28 @@
+<section class="top-news">
+  <header>
+    <h3>As matérias mais lidas</h3>
+  </header>
+
+  <ul>
+    <% 2.times do %>
+      <% %w(Ciências\ Humanas Matemática Ciências\ da\ Natureza).shuffle.each do |item| %>
+        <li>
+          <h4>Título para <%= item %></h4>
+          <p>Texto para <%= item %></p>
+          <%= image_tag "http://placehold.it/90x90" %>
+        </li>
+      <% end %>
+    <% end %>
+  </ul>
+
+  <% data.sections.names.each do |item| %>
+    <h3><%= item %></h3>
+    <%= image_tag "http://placehold.it/223x100" %>
+
+    <% data.sections.notices.each do |notice| %>
+      <h4><%= notice.title %></h4>
+      <p><%= notice.short_description %></p>
+    <% end %>
+  <% end %>
+
+</section>
