@@ -1,0 +1,69 @@
+---
+title: Infográficos
+---
+
+<section class="filter-infographics">
+  <header>
+    <h1><%= current_page.data.title %></h1>
+  </header>
+
+  <form>
+    <legend>
+      <span>Filtrar por:</span>
+    </legend>
+
+    <fieldset class="inputs">
+      <ol>
+        <li>
+          <label for="area-conhecimento">Área do conhecimento</label>
+          <select>
+            <option>Selecione uma opção</option>
+            <option>Opção</option>
+            <option>Opção</option>
+            <option>Opção</option>
+            <option>Opção</option>
+            <option>Opção</option>
+          </select>
+        </li>
+
+        <li>
+          <label for="area-conhecimento">Disciplinas</label>
+          <select>
+            <option>Selecione uma opção</option>
+            <option>Opção</option>
+            <option>Opção</option>
+            <option>Opção</option>
+            <option>Opção</option>
+            <option>Opção</option>
+          </select>
+        </li>
+      </ol>
+    </fieldset>
+  </form>
+</section>
+
+<article class="infographics">
+  <section class="petroleo">
+    <ul class="tags">
+      <% 3.times do %>
+        <li>
+          <%= image_tag "http://placehold.it/306x266" %>
+          INFOGRÁFICO • CIÊNCIAS HUMANAS
+          <h2>Petróleo</h2>
+          <p>Veja como é a fabricação dos principais combustíveis utilizados pela frota brasileira.</p>
+        </li>
+
+        <li>
+          <%= image_tag "http://placehold.it/306x266" %>
+          INFOGRÁFICO • CIÊNCIAS DA NATUREZA
+          <h2>Vida iluminada</h2>
+          <p>Veja como é a fabricação dos principais combustíveis utilizados pela frota brasileira.</p>
+        </li>
+      <% end %>
+    </ul>
+  </section>
+
+  <footer>
+    <%= link_to "Mostrar mais infográficos", "" %>
+  </footer>
+</article>
