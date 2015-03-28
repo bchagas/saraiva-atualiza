@@ -71,6 +71,12 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
+helpers do
+  def fa_icon(icon)
+    "<i class='fa fa-#{icon}'></i>"
+  end
+end
+
 activate :deploy do |deploy|
   deploy.method = :git
   deploy.branch = 'master'
