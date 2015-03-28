@@ -1,0 +1,25 @@
+{
+  "names" : [
+    "Linguágens",
+    "Matemática",
+    "Ciências da Natureza",
+    "Ciências Humanas"
+  ],
+  "notices" : [
+    {
+      "title" : "450 anos de Shakespeare",
+      "short_description" : "O dramaturgo inglês escreceu 37 peças, entre comédias, tragédias, tragicomédias e..."
+    },
+
+    {
+      "title" : "Lina Bo Bardi",
+      "short_description" : "A genial arquiteta italiana que projetou o Masp e o Sesc Pompeia, em São Paulo, e o Museu de..."
+    },
+
+    {
+      "title" : "Negritude engajada",
+      "short_description" : "Na estreia do sucesso do filme 12 anos de escravidão, lembramos escritores negros..."
+    }
+  ]
+
+}
