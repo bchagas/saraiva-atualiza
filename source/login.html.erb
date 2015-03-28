@@ -1,0 +1,52 @@
+---
+title: Login
+---
+
+<section class="user-login">
+  <div class="content">
+    <header>
+      <h3><%= current_page.data.title %></h3>
+    </header>
+
+    <div class="login">
+      <ul class="connect">
+        <% %w(facebook twitter saraiva etico).each do |item| %>
+          <li class="<%= item %>"><%= link_to "<b>Conectar</b> com <b> #{item}".html_safe, item %></b></li>
+        <% end %>
+      </ul>
+
+      <p>Ou</p>
+
+      <form>
+        <div class="error">
+          <%= fa_icon_text "close",  "Usuário ou senha inválidos." %></p>
+        </div>
+
+        <fieldset class="inputs">
+          <ol>
+            <li>
+              <label for="email">Digite o E-mail cadastrado</label>
+              <input type="email" id="email" />
+            </li>
+
+            <li>
+              <label for="password">Senha</label>
+              <input type="password" id="password" />
+            </li>
+          </ol>
+        </fieldset>
+
+        <fieldset class="actions">
+          <ol>
+            <li><button type="submit">Entrar</button></li>
+            <li><%= link_to "Esqueceu a senha?", "forget-password" %></li>
+          </ol>
+        </fieldset>
+      </form>
+
+      <div class="footer">
+        <p>Não tem conta? <%= link_to "Cadastre-se", "register" %></p>
+      </div>
+    </div>
+  </div>
+</section>

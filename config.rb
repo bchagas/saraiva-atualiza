@@ -75,6 +75,10 @@ helpers do
   def fa_icon(icon)
     "<i class='fa fa-#{icon}'></i>"
   end
+
+  def fa_icon_text(icon, sentence)
+    "<p><i class='fa fa-#{icon}'></i> #{sentence}</p>"
+  end
 end
 
 activate :deploy do |deploy|
