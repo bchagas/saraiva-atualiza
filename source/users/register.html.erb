@@ -1,0 +1,57 @@
+---
+title: Cadastro
+---
+
+
+<form>
+  <div class="error">
+    <%= fa_icon_text "close",  "Verifique os campos abaixo e tente novamente" %></p>
+  </div>
+
+  <fieldset class="inputs">
+    <ol>
+      <li>
+        <label for="name">Nome</label>
+        <input type="text" id="name" />
+      </li>
+
+      <li>
+        <label for="email">Email</label>
+        <input type="email" id="email" />
+      </li>
+
+      <li>
+        <label for="password">Senha</label>
+        <input type="password" id="password" />
+      </li>
+
+      <li>
+        <label for="confirm-password">Confirmar Senha</label>
+        <input type="password" id="confirm-password" />
+      </li>
+
+      <li>
+        <label for="access-code">Código de Acesso</label>
+        <input type="text" id="access-code" />
+        <p class="hint">
+          Não tem um <b>código de acesso?</b>
+          <br>
+          <%= link_to "Cadastre-se como visitante", "/" %>
+        </p>
+      </li>
+    </ol>
+  </fieldset>
+
+  <fieldset class="actions">
+    <ol>
+      <li><button type="submit">Cadastrar</button></li>
+    </ol>
+  </fieldset>
+</form>
+</section>
+
+<% content_for :users_footer do %>
+  <div class="footer">
+    <p>Já é cadastrado? <%= link_to "Acesse sua conta", "login" %></p>
+  </div>
+<% end %>

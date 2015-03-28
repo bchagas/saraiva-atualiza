@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <%= partial "/partials/head" %>
+  <body class="<%= page_classes %>">
+    <%= partial "/partials/header" %>
+
+    <section class="user-<%= page_classes %>">
+      <div class="content">
+        <header>
+          <h3><%= current_page.data.title %></h3>
+        </header>
+
+        <div class="login">
+          <ul class="connect">
+            <% %w(facebook twitter saraiva etico).each do |item| %>
+              <li class="<%= item %>"><%= link_to "<b>Conectar</b> com <b> #{item}".html_safe, item %></b></li>
+            <% end %>
+          </ul>
+
+          <p>Ou</p>
+
+          <%= yield %>
+        </div>
+
+        <%= yield_content :users_footer %>
+      </div>
+    </section>
+    <%= partial "/partials/footer" %>
+  </body>
+</html>

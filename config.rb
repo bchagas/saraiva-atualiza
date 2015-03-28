@@ -9,6 +9,7 @@
 
 ###
 # Page options, layouts, aliases and proxies
+page "/users/*", :layout => "users"
 ###
 
 # Per-page layout changes:
