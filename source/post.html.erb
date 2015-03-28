@@ -4,13 +4,7 @@ tag: destaque
 ---
 
 <article class="post <%= current_page.data.title.parameterize %>">
-  <header>
-    <ul class="tags">
-      <li class="<%= current_page.data.tag %>"><%= link_to current_page.data.tag, "post" %></li>
-    </ul>
-
-    <h1><%= current_page.data.title %></h1>
-  </header>
+  <%= partial "/post/header" %>
 
   <p>
     <%= image_tag "http://placehold.it/306x245", class: "alignright" %>

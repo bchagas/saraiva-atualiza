@@ -43,25 +43,7 @@ title: Infográficos
 </section>
 
 <article class="infographics">
-  <section class="petroleo">
-    <ul class="tags">
-      <% 3.times do %>
-        <li>
-          <%= image_tag "http://placehold.it/306x266" %>
-          INFOGRÁFICO • CIÊNCIAS HUMANAS
-          <h2>Petróleo</h2>
-          <p>Veja como é a fabricação dos principais combustíveis utilizados pela frota brasileira.</p>
-        </li>
-
-        <li>
-          <%= image_tag "http://placehold.it/306x266" %>
-          INFOGRÁFICO • CIÊNCIAS DA NATUREZA
-          <h2>Vida iluminada</h2>
-          <p>Veja como é a fabricação dos principais combustíveis utilizados pela frota brasileira.</p>
-        </li>
-      <% end %>
-    </ul>
-  </section>
+  <%= partial "partials/inphographics-list" %>
 
   <footer>
     <%= link_to "Mostrar mais infográficos", "" %>

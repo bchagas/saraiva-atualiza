@@ -1,0 +1,26 @@
+---
+title: Infográfico preview
+---
+
+<article class="infographic">
+  <%= partial "/post/header" %>
+
+  <p>
+    O Brasil é o maior país da América Latina, com um território que se estende
+    por, aproximadamente, 47% da América do Sul. Devido a essa vasta extensão ele
+    possui 23.102 km de fronteiras, sendo 7.367 km marítimas e 15.735 km
+    terrestres, marcadas de modo geral por invasões de terras indígenas, crimes
+    ambientais, narcotráfico e pela entrada de imigrantes ilegais.
+  </p>
+
+  <%= image_tag "http://placehold.it/456x246" %>
+  <%= link_to "Baixar PDF" %>
+</article>
+
+<article class="related">
+  <header>
+    <h3>Infográficos relacionados</h3>
+  </header>
+
+  <%= partial "partials/inphographics-list" %>
+</article>
