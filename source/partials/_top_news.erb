@@ -14,15 +14,4 @@
       <% end %>
     <% end %>
   </ul>
-
-  <% data.sections.names.each do |item| %>
-    <h3><%= item %></h3>
-    <%= image_tag "http://placehold.it/223x100" %>
-
-    <% data.sections.notices.each do |notice| %>
-      <h4><%= notice.title %></h4>
-      <p><%= notice.short_description %></p>
-    <% end %>
-  <% end %>
-
 </section>
