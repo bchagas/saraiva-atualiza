@@ -7,39 +7,7 @@ title: Infográficos
     <h1><%= current_page.data.title %></h1>
   </header>
 
-  <form>
-    <legend>
-      <span>Filtrar por:</span>
-    </legend>
-
-    <fieldset class="inputs">
-      <ol>
-        <li>
-          <label for="area-conhecimento">Área do conhecimento</label>
-          <select>
-            <option>Selecione uma opção</option>
-            <option>Opção</option>
-            <option>Opção</option>
-            <option>Opção</option>
-            <option>Opção</option>
-            <option>Opção</option>
-          </select>
-        </li>
-
-        <li>
-          <label for="area-conhecimento">Disciplinas</label>
-          <select>
-            <option>Selecione uma opção</option>
-            <option>Opção</option>
-            <option>Opção</option>
-            <option>Opção</option>
-            <option>Opção</option>
-            <option>Opção</option>
-          </select>
-        </li>
-      </ol>
-    </fieldset>
-  </form>
+  <%= partial "/partials/filter_form" %>
 </section>
 
 <article class="infographics">

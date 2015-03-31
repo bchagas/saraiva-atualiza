@@ -1,0 +1,36 @@
+---
+title: Ver mais tarde
+---
+
+<section class="read-latter">
+  <header>
+    <h1><%= current_page.data.title %></h1>
+  </header>
+
+  <%= partial "/partials/filter_form" %>
+
+  <ul>
+    <% 5.times do %>
+      <li>
+        <span class="tag">INFOGRÁFICO • CIÊNCIAS DA NATUREZA</span>
+        <div class="user-info">
+          <time datetime="2015-03-27T20:47:52+00:00">há 3 horas</time>
+          <a href="#"><%= fa_icon "close" %> Remover</a>
+        </div>
+
+        <header>
+          <h3>Algumas reações inorgânicas e aplicações: chuva ácida</h3>
+        </header>
+
+        <p>
+          A chuva ácida é um fenômeno quer ocorre,
+          com maior intensidade, em grandes centros
+          urbanos devido a crescente industrialização do mundo.
+          Tem uma relação direta com a ação antropogênica no ambiente.
+        </p>
+
+        <%= image_tag "http://placehold.it/220x120" %>
+      </li>
+    <% end %>
+  </ul>
+</section>
