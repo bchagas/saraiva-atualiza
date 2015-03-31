@@ -1,3 +1,11 @@
+/* line 4, /Users/brunochagas/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box; }
+
+/* line 9, /Users/brunochagas/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit; }
+
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2343,3 +2351,147 @@
 /* img caption */
 /* styles for img sizes */
 /* not classes, but surely something you should take care of */
+/* line 1, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_sections.sass */
+.content {
+  max-width: 58.75em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 20, /Users/brunochagas/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.2.1/app/assets/stylesheets/addons/_clearfix.scss */
+  .content::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/* line 2, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_header.sass */
+body > header {
+  margin-top: 2rem; }
+  /* line 5, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_header.sass */
+  body > header h1 {
+    margin: 0;
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 23.40426%; }
+    /* line 89, /Users/brunochagas/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    body > header h1:last-child {
+      margin-right: 0; }
+  /* line 9, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_header.sass */
+  body > header .user-actions {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 23.40426%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    float: right;
+    text-align: right; }
+    /* line 89, /Users/brunochagas/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+    body > header .user-actions:last-child {
+      margin-right: 0; }
+    /* line 16, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_header.sass */
+    body > header .user-actions li {
+      display: inline-block;
+      margin-top: 13px; }
+  /* line 20, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_header.sass */
+  body > header .register {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 3px;
+    padding: 13px 0.625rem 14px;
+    background: none;
+    color: #1075ae; }
+  /* line 23, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_header.sass */
+  body > header .login {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 3px;
+    padding: 13px 0.625rem 14px;
+    background: -webkit-linear-gradient(#1075AE, #0D6495) left repeat;
+    background: linear-gradient(#1075AE, #0D6495) left repeat;
+    color: white;
+    font-size: 1.125rem; }
+
+/* line 1, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_reset.sass */
+fieldset,
+legend {
+  border: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 7, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_reset.sass */
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+/* line 10, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_reset.sass */
+input {
+  outline: none; }
+
+/* line 1, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_search.sass */
+.search {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 48.93617%;
+  position: relative; }
+  /* line 89, /Users/brunochagas/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+  .search:last-child {
+    margin-right: 0; }
+  /* line 5, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_search.sass */
+  .search input[type='text'] {
+    border-radius: 100px;
+    border: 1px solid #DFE3E2;
+    color: #626262;
+    font-size: 1rem;
+    padding: 15px 0.9375rem 15px 2.5rem;
+    width: 472px; }
+  /* line 13, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_search.sass */
+  .search .fa-search,
+  .search button {
+    position: absolute;
+    top: 15px; }
+  /* line 18, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_search.sass */
+  .search .fa-search {
+    color: #DFE3E2;
+    display: block;
+    font-size: 1.125rem;
+    left: 0.9375rem; }
+  /* line 24, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_search.sass */
+  .search button {
+    background: none;
+    border: none;
+    color: #1075ae;
+    font-size: 1rem;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    right: 0.625rem;
+    top: 12px; }
+    /* line 15, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_buttons.sass */
+    .search button:hover {
+      color: #76C6FF; }
+
+/* line 3, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/application.sass */
+body {
+  color: #626262; }
+  /* line 6, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/_typography.sass */
+  body body {
+    font-family: "Source Sans Pro", sans-serif; }
+  /* line 9, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/_typography.sass */
+  body a,
+  body p,
+  body strong,
+  body b,
+  body li,
+  body ul {
+    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    line-height: normal;
+    text-decoration: none; }
