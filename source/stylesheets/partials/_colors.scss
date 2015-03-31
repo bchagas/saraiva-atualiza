@@ -1,0 +1,20 @@
+$_color-base-grey: #626262;
+$_color-base-blue: rgb(16, 117, 174);
+
+$palettes: (
+  grey: (
+    base:  $_color-base-grey,
+    light: #DFE3E2
+  ),
+
+  blue: (
+    base: $_color-base-blue,
+    light: #76C6FF,
+    button_top: #1075AE,
+    button_bottom: #0D6495
+  )
+);
+
+@function palette($palette, $tone: 'base') {
+  @return map-get(map-get($palettes, $palette), $tone);
+}

@@ -1,0 +1,27 @@
+.search
+  +span-columns(6)
+  position: relative
+
+  input[type='text']
+    border-radius: 100px
+    border: 1px solid palette(grey, light)
+    color: palette(grey)
+    font-size: rem(16)
+    padding: 15px rem(15) 15px rem(40)
+    width: 472px
+
+  .fa-search,
+  button
+    position: absolute
+    top: 15px
+
+  .fa-search
+    color: palette(grey, light)
+    display: block
+    font-size: rem(18)
+    left: rem(15)
+
+  button
+    +search-button
+    right: rem(10)
+    top: 12px

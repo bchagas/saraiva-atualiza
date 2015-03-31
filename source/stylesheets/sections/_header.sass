@@ -1,0 +1,24 @@
+body
+  > header
+    margin-top: rem(32)
+
+    h1
+      margin: 0
+      +span-columns(3)
+
+    .user-actions
+      +span-columns(3)
+      +remove-list-style
+      height: 50px
+      float: right
+      text-align: right
+
+      li
+        display: inline-block
+        margin-top: 13px
+
+    .register
+      +default-button
+
+    .login
+      +default-button(full)

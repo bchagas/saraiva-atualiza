@@ -1,0 +1,30 @@
+=font($weight: 700, $family: $source-sans)
+  font:
+    family: $family
+    weight: $weight
+  text-transform: uppercase
+
+=search-button
+  background: none
+  border: none
+  color: palette(blue)
+  font-size: rem(16)
+  +font
+  text-transform: uppercase
+
+  &:hover
+    color: palette(blue, light)
+
+=default-button($type: "null")
+  +font
+  font-size: rem(16)
+  border-radius: 3px
+  padding: 13px rem(10) 14px
+
+  @if $type == "null"
+    background: none
+    color: palette(blue)
+  @else
+    +background(linear-gradient(palette(blue, button_top), palette(blue, button_bottom)) left repeat)
+    color: white
+    font-size: rem(18)
