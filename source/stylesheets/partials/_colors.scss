@@ -8,13 +8,15 @@ $_color-ciencias-humanas: #18A1AA;
 $palettes: (
   white: (
     base: $_color-base-white,
+    background: #FAFAFA,
     10-darken: #EEEEEE,
-    background: #FAFAFA
+    20-darken: #F2F2F2
   ),
 
   grey: (
     base:  $_color-base-grey,
-    light: #DFE3E2
+    light: #DFE3E2,
+    20-darken: #E3E3E3
   ),
 
   blue: (
@@ -24,13 +26,21 @@ $palettes: (
     gradient-bottom: #0D6495
   ),
 
-  navigation: (
+  sections: (
     linguagens: #E16734,
     matematica: #D72346,
     ciencias-da-natureza: #AABF3F,
     ciencias-humanas: $_color-ciencias-humanas,
     atualiza-enem: $_color-atualiza-enem,
-    mais-conteudos: #2AB1FF
+    mais-conteudos: #2AB1FF,
+
+    linguagens-opaque: #E16734,
+    matematica-opaque: #D72346,
+    ciencias-da-natureza-opaque: #AABF3F,
+    ciencias-humanas-opaque: rgba(24, 161, 170, 0.6),
+    atualiza-enem-opaque: $_color-atualiza-enem,
+    mais-conteudos-opaque: #2AB1FF
+
   ),
 
   tags: (

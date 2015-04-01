@@ -1,0 +1,33 @@
+$sections: linguagens matematica ciencias-da-natureza ciencias-humanas atualiza-enem mais-conteudos
+
+.notice
+  background-color: palette(white, 20-darken)
+
+  img
+    padding-bottom: 10px
+
+  figure
+    &:after
+      content: " "
+      display: block
+      bottom: 14px
+      position: absolute
+      +size(100% 8px)
+
+.highlight
+  @each $item in $sections
+    &.#{$item}
+      &:after
+        background-color: palette(sections, $item)
+
+      figcaption
+        background-color: palette(sections, "#{$item}-opaque")
+
+@each $item in $sections
+  .#{$item}
+    img
+      border-bottom: 1px solid palette(sections, $item)
+
+    .tag,
+    h3
+      color: palette(sections, $item)

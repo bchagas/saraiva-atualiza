@@ -1,7 +1,13 @@
 @import tags
+@import banner-colors
 
 [role="banner"]
+  background: palette(white, background)
+  border-bottom: 1px solid palette(gray, light)
   font-family: $source-sans
+  padding:
+    top: 68px
+    bottom: 68px
 
   .info
     +span-columns(4)
