@@ -3,7 +3,7 @@
     <% %w(LINGUAGENS MATEMÁTICA CIÊNCIAS\ DA\ NATUREZA CIÊNCIAS\ HUMANAS ATUALIZA\ ENEM MAIS\ CONTEÚDOS).each do |item| %>
       <% if item === "MAIS CONTEÚDOS" %>
         <li>
-          <%= link_to item, "/#{item.downcase.parameterize}.html" %>
+          <%= link_to "#{item} #{fa_icon("chevron-down")}", "/#{item.downcase.parameterize}.html", class: item.parameterize %>
           <ul>
             <% %w(INFOGRÁFICOS TROCANDO\ IDÉIA NUVEM\ TECH TODA\ MIDIA ENCARE\ ESSA DIÁLOGO\ COM\ A\ ARTE SEM\ LIMITES BACKUP).each do |sub_item| %>
               <li><%= link_to sub_item, "/#{sub_item.downcase.parameterize}.html" %></li>
@@ -11,7 +11,7 @@
           </ul>
         </li>
       <% else %>
-        <li><%= link_to item.mb_chars.to_s.upcase, "/#{item.downcase.parameterize}.html" %></li>
+        <li><%= link_to item.mb_chars.to_s.upcase, "/#{item.downcase.parameterize}.html", class: item.parameterize %></li>
       <% end %>
     <% end %>
   </ul>
