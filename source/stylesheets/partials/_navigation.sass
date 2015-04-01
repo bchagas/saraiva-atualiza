@@ -1,0 +1,51 @@
+$sections: linguagens matematica ciencias-da-natureza ciencias-humanas atualiza-enem mais-conteudos
+
+=navigation
+  text-align: left
+  padding: 0
+  height: 22px
+  margin:
+    top: 0
+    bottom: 0
+  overflow: hidden
+
+  > li
+    border-left: 1px solid palette(grey, light)
+
+    &:first-child
+      border-left: none
+
+    > ul
+      display: none
+
+  li
+    display: inline-block
+    float: left
+    margin-right: rem(12)
+    padding-left: rem(12)
+    position: relative
+
+    &:first-child
+      padding-left: 0
+
+    &:last-child
+      margin-right: 0
+
+  a
+    font:
+      family: $source-sans
+      size: rem(18)
+      weight: 700
+    text:
+      align: left
+      transform: uppercase
+
+  .fa
+    font-size: rem(14)
+    position: absolute
+    top: 4px
+    right: -22px
+
+  @each $item in $sections
+    .#{$item}
+      color: palette(navigation, $item)

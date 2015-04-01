@@ -1,0 +1,31 @@
+@import tags
+
+[role="banner"]
+  font-family: $source-sans
+
+  .info
+    +span-columns(4)
+
+  figure
+    border-bottom: 1px solid palette(tags, destaque)
+    +span-columns(8)
+    position: relative
+    padding-bottom: 10px
+
+    &:after
+      background-color: palette(tags, destaque)
+      content: " "
+      display: block
+      bottom: 14px
+      position: absolute
+      +size(100% 8px)
+
+  h2
+    color: palette(tags, destaque)
+    font:
+      size: rem(36)
+      weight: 400
+
+  p
+    font:
+      size: rem(18)

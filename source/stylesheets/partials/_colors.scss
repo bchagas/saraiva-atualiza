@@ -1,7 +1,17 @@
 $_color-base-grey: #626262;
 $_color-base-blue: rgb(16, 117, 174);
+$_color-base-white: rgb(249, 249, 249);
+
+$_color-atualiza-enem: #1075AE;
+$_color-ciencias-humanas: #18A1AA;
 
 $palettes: (
+  white: (
+    base: $_color-base-white,
+    10-darken: #EEEEEE,
+    background: #FAFAFA
+  ),
+
   grey: (
     base:  $_color-base-grey,
     light: #DFE3E2
@@ -10,8 +20,22 @@ $palettes: (
   blue: (
     base: $_color-base-blue,
     light: #76C6FF,
-    button_top: #1075AE,
-    button_bottom: #0D6495
+    gradient-top: #1075AE,
+    gradient-bottom: #0D6495
+  ),
+
+  navigation: (
+    linguagens: #E16734,
+    matematica: #D72346,
+    ciencias-da-natureza: #AABF3F,
+    ciencias-humanas: $_color-ciencias-humanas,
+    atualiza-enem: $_color-atualiza-enem,
+    mais-conteudos: #2AB1FF
+  ),
+
+  tags: (
+    destaque: $_color-atualiza-enem,
+    ciencias-humanas: $_color-ciencias-humanas
   )
 );
 

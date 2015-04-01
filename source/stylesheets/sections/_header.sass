@@ -1,6 +1,8 @@
 body
   > header
-    margin-top: rem(32)
+    background-color: palette(white)
+    margin-top: 0
+    padding-top: rem(32)
 
     h1
       margin: 0
@@ -22,3 +24,17 @@ body
 
     .login
       +default-button(full)
+
+nav
+  background: white
+  border:
+    top: 1px solid palette(grey, light)
+    bottom: 1px solid palette(white)
+  margin-top: 30px
+  padding:
+    top: 15px
+    bottom: 15px
+
+  > ul
+    +outer-container
+    +navigation

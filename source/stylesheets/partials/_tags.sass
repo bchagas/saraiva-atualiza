@@ -1,0 +1,32 @@
+$tags: destaque ciencias-humanas
+
+.tags
+  text-align: left
+  list-style: none
+  margin: 0
+  padding: 0
+  overflow: hidden
+
+  li
+    display: block
+    float: left
+    text-align: left
+    font:
+      family: $source-sans
+      size: rem(13)
+      weight: 600
+    margin-left: 10px
+    text-transform: uppercase
+
+    &:first-child
+      margin-left: 0
+
+  a
+    border-radius: 3px
+    color: palette(white)
+    display: block
+    padding: 5px
+
+  @each $tag in $tags
+    .#{$tag}
+      background-color: palette(tags, $tag)
