@@ -1,6 +1,6 @@
 <section class="notice double">
   <div class="content">
-    <figure class="linguagens">
+    <figure class="linguagens full">
       <img src="http://placehold.it/389x259" />
       <figcaption>
         <a href="" class="tag">Ciências humanas</a>
@@ -13,18 +13,18 @@
       </figcation>
     </figure>
 
-    <figure class="highlight atualiza-enem">
-      <%= image_tag "home/banner/fake-highlight.jpg" %>
+    <div class="figure highlight atualiza-enem">
+      <%= image_tag "home/banner/fake-enem.jpg" %>
 
-      <figcaption class="black">
-        <a href="" class="tag">Ciências humanas</a>
-        <h3>Imigração e Servidão</h3>
+      <div class="caption black">
+        <h3>Atualiza Enem</h3>
         <p>
-          Depois de passar décadas enviando mão de obra para o exterior.
-          Brasil volta a ser polo de atração de imigrantes,
-          principalmente bolivianos e haitianos.
+          Confira a resolução das questões
+          do caderno da <b>edição #23</b>.
         </p>
-      </figcation>
-    </figure>
+
+        <%= link_to "Baixar caderno", "", class: "button--download" %>
+      </div>
+    </div>
   </div>
 </section>

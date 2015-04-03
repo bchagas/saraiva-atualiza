@@ -6,7 +6,8 @@ $sections: linguagens matematica ciencias-da-natureza ciencias-humanas atualiza-
   img
     padding-bottom: 10px
 
-  figure
+  figure,
+  .figure
     &:after
       content: " "
       display: block
@@ -14,14 +15,41 @@ $sections: linguagens matematica ciencias-da-natureza ciencias-humanas atualiza-
       position: absolute
       +size(100% 8px)
 
+  .full:before
+    content: " "
+    display: block
+    position: absolute
+    +size(100% 259px)
+    top: 0
+    left: 0
+
+@each $item in $sections
+  .#{$item}.full
+    &:before
+      background-color: palette(sections, "#{$item}-opaque")
+
+
+
 .highlight
   @each $item in $sections
     &.#{$item}
       &:after
         background-color: palette(sections, $item)
 
-      figcaption
+      h3
+        color: white
+
+      figcaption,
+      .caption
         background-color: palette(sections, "#{$item}-opaque")
+
+      .black
+        background-color: transparent
+        +background(linear-gradient(transparent, black))
+
+      .button
+        &--download
+          background-color: palette(sections, $item)
 
 @each $item in $sections
   .#{$item}

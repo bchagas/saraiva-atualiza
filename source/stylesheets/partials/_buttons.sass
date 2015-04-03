@@ -1,26 +1,28 @@
-=font($weight: 700, $family: $source-sans)
+%font
   font:
-    family: $family
-    weight: $weight
+    family: $source-sans
+    weight: 700
   text-transform: uppercase
+
+%defaults
+  @extend %font
+  font-size: rem(16)
+  border-radius: 3px
+  padding: 13px rem(10) 14px
 
 =search-button
   background: none
   border: none
   color: palette(blue)
   font-size: rem(16)
-  +font
+  @extend %font
   text-transform: uppercase
 
   &:hover
     color: palette(blue, light)
 
 =default-button($type: "null")
-  +font
-  font-size: rem(16)
-  border-radius: 3px
-  padding: 13px rem(10) 14px
-
+  @extend %defaults
   @if $type == "null"
     background: none
     color: palette(blue)
@@ -28,3 +30,10 @@
     +background(linear-gradient(palette(blue, gradient-top), palette(blue, gradient-bottom)) left repeat)
     color: white
     font-size: rem(18)
+
+=button-download
+  +default-button(download)
+  font-weight: 400
+  padding:
+    top: 10px
+    bottom: 10px
