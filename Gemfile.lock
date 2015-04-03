@@ -150,6 +150,7 @@ GEM
     uglifier (2.7.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    underscore-rails (1.8.2)
 
 PLATFORMS
   ruby
@@ -161,3 +162,4 @@ DEPENDENCIES
   middleman-deploy (~> 1.0)
   middleman-livereload (~> 3.1.0)
   neat
+  underscore-rails

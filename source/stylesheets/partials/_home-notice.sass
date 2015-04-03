@@ -8,11 +8,18 @@
     border-bottom: 1px solid palette(grey, 20-darken)
 
   &.double
-    figure
+    figure,
+    .figure
       +span-columns(5)
 
     .highlight
       +span-columns(7)
+
+  &.triple
+    figure,
+    .figure
+      +span-columns(4)
+
 
   .tag
     text-transform: uppercase
@@ -21,15 +28,10 @@
       weight: 900
 
   h3
-    font:
-      size: rem(32)
-      weight: 400
-    line-height: rem(1)
-
+    font-size: rem(32)
+    margin: 0
   p
-    font:
-      size: rem(16)
-      weight: 400
+    font-size: rem(16)
     line-height: rem(20)
 
 
@@ -55,7 +57,7 @@
     .black
       +background(linear-gradient(transparent, black))
       height: 94.7%
-      padding-top: 46.5%
+      padding-top: 52.5%
 
       h3,
       p
@@ -64,9 +66,8 @@
         float: left
 
       h3
-        font:
-          size: rem(42)
-          weight: 400
+        font-size: rem(42)
+        line-height: rem(1)
         text-transform: uppercase
         margin-bottom: 20px
 
@@ -79,9 +80,26 @@
       &--download
         +button-download
 
-  &.two-columns
-    figure
-      +span-columns(5)
+.infograficos
+  &.full
+    &:before
+      height: 434px
 
-    .highlight
-      +span-columns(7)
+    figcaption,
+    .caption
+      position: absolute
+      text-align: center
+      top: 40%
+
+  h3,
+  p
+    color: white
+    margin: 0 10px
+
+  h3
+    font-size: rem(36)
+    text-transform: uppercase
+
+  p
+    font-size: rem(18)
+    margin-top: 10px

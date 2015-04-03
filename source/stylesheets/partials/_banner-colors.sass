@@ -1,8 +1,6 @@
-$sections: linguagens matematica ciencias-da-natureza ciencias-humanas atualiza-enem mais-conteudos
+$sections: linguagens matematica ciencias-da-natureza ciencias-humanas atualiza-enem mais-conteudos infograficos
 
 .notice
-  background-color: palette(white, 20-darken)
-
   img
     padding-bottom: 10px
 
@@ -24,9 +22,12 @@ $sections: linguagens matematica ciencias-da-natureza ciencias-humanas atualiza-
     left: 0
 
 @each $item in $sections
-  .#{$item}.full
-    &:before
-      background-color: palette(sections, "#{$item}-opaque")
+  .#{$item}.full:before
+    background-color: palette(sections, "#{$item}-opaque")
+
+  @if $item == "infograficos"
+    .full:before
+      background-color: palette(sections, $item)
 
 
 

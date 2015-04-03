@@ -8,6 +8,7 @@ $_color-atualiza-enem: #1075AE;
 $_color-ciencias-humanas: #18A1AA;
 $_color-ciencias-da-natureza: #AABF3F;
 $_color-mais-conteudos: #2AB1FF;
+$_color-mais-conteudos-text: #DBA135;
 $_alpha-level: 0.6;
 
 $palettes: (
@@ -38,6 +39,7 @@ $palettes: (
     ciencias-humanas: $_color-ciencias-humanas,
     atualiza-enem: $_color-atualiza-enem,
     mais-conteudos: $_color-mais-conteudos,
+    infograficos: $_color-atualiza-enem,
 
     // Colors with opacity
     linguagens-opaque: rgba(225, 103, 52, $_alpha-level),
@@ -45,7 +47,8 @@ $palettes: (
     ciencias-da-natureza-opaque: rgba($_color-ciencias-da-natureza, $_alpha-level),
     ciencias-humanas-opaque: rgba($_color-ciencias-humanas, $_alpha-level),
     atualiza-enem-opaque: rgba($_color-atualiza-enem, $_alpha-level),
-    mais-conteudos-opaque: rgba($_color-mais-conteudos, $_alpha-level)
+    mais-conteudos-opaque: rgba($_color-mais-conteudos, $_alpha-level),
+    infograficos-opaque: rgba($_color-atualiza-enem, $_alpha-level)
 
   ),
 
