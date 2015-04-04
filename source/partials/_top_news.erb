@@ -6,11 +6,17 @@
 
     <ul>
       <% 2.times do %>
-        <% %w(Ciências\ Humanas Matemática Ciências\ da\ Natureza).shuffle.each do |item| %>
-          <li>
-            <h4>Título para <%= item %></h4>
-            <p>Texto para <%= item %></p>
+        <% %w(Ciências\ Humanas Matemática Ciências\ da\ Natureza).shuffle.each_with_index do |item, index| %>
+          <li class="<%= "#{item.parameterize} #{'last' if index >= 2}" %>">
             <%= image_tag "http://placehold.it/90x90" %>
+            <%= link_to item, "", class: "tag" %>
+            <h4>Games que viciam</h4>
+
+            <p>
+              Os excluídos querem diversão
+              e arte, mas também acesso
+              aos bens supérfluos...
+            </p>
           </li>
         <% end %>
       <% end %>

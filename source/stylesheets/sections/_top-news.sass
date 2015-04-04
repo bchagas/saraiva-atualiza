@@ -13,3 +13,47 @@
   h3
     font-size: rem(32)
     margin: 18px 0
+
+  ul
+    +remove-list-style
+
+  li
+    +span-columns(4)
+    padding: 32px 0 16px
+
+    &.last
+      margin: 0
+
+    > a,
+    > h4,
+    > p,
+    > img
+      display: block
+
+    > a,
+    > h4,
+    > p
+      float: left
+      width: rem(192)
+
+    > img
+      border: none
+      float: right
+
+    > p
+      margin: 0
+      font-size: rem(14)
+
+    > h4
+      font:
+        size: rem(21)
+        weight: bold
+      margin: 0
+
+    > a
+      text-transform: uppercase
+      font-size: rem(12)
+
+  @each $item in $sections
+    .#{$item}
+      border-bottom: 1px solid palette(sections, $item)
