@@ -1,0 +1,63 @@
+.subscribe-to-news
+  font-family: $source-sans
+
+  > .content
+    background-color: palette(grey, 30-darken)
+    border-radius: 6px
+    border-top: 6px solid palette(sections, atualiza-enem)
+    padding: rem(30)
+    margin-top: 40px
+    max-width: rem(910)
+
+  h3,
+  p
+    margin: 0
+
+  h3
+    color: $_color-base-black
+    font:
+      size: rem(26)
+      weight: 700
+
+  p
+    font-size: rem(14)
+
+  header
+    max-width: rem(320)
+    float: left
+
+  form
+    display: block
+    float: right
+    font-family: $source-sans
+    width: rem(459)
+
+  label
+    display: block
+    max-width: 100%
+    margin-bottom: 8px
+
+  .inputs
+    display: block
+    float: left
+    width: 330px
+
+  .actions
+    display: block
+    float: right
+    margin-top: 28px
+    width: 112px
+
+  input
+    &[type='text']
+    &[type='email']
+      border: none
+      border-radius: 3px
+      font-size: rem(16)
+      padding: 10px rem(15)
+      width: 100%
+
+  button
+    +default-button(full)
+    padding: 8px rem(28)
+

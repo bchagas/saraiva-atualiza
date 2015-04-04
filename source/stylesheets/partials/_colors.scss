@@ -1,6 +1,7 @@
 $_color-base-grey: #626262;
 $_color-base-blue: rgb(16, 117, 174);
 $_color-base-white: rgb(249, 249, 249);
+$_color-base-black: #1A1919;
 
 $_color-linguagens: #E16734;
 $_color-matematica: #D72346;
@@ -9,6 +10,7 @@ $_color-ciencias-humanas: #18A1AA;
 $_color-ciencias-da-natureza: #AABF3F;
 $_color-mais-conteudos: #2AB1FF;
 $_color-mais-conteudos-text: #DBA135;
+$_color-newsletter-background: #E1E6E4;
 $_alpha-level: 0.6;
 
 $palettes: (
@@ -22,7 +24,8 @@ $palettes: (
   grey: (
     base:  $_color-base-grey,
     light: #DFE3E2,
-    20-darken: #E3E3E3
+    20-darken: #E3E3E3,
+    30-darken: #E1E6E4
   ),
 
   blue: (
