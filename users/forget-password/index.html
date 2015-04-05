@@ -71,12 +71,14 @@
 </header>
 
 
-    <section class="user-users users_forget-password users_forget-password_index">
-      <div class="content">
-        <header>
+    <section class="users users_forget-password users_forget-password_index">
+      <header>
+        <div class="content">
           <h3>Recuperar senha</h3>
-        </header>
+        </div>
+      </header>
 
+      <div class="content">
         <div class="login">
           <ul class="connect">
               <li class="facebook"><a href="facebook"><b>Conectar</b> com <b> facebook</a></b></li>
@@ -85,22 +87,23 @@
               <li class="etico"><a href="etico"><b>Conectar</b> com <b> etico</a></b></li>
           </ul>
 
-          <p>Ou</p>
+          <p class="or"><span>Ou</span></p>
 
-          <form>
+          <form class="error">
+  <legend>
+    <span>Recuperar senha</span>
+  </legend>
+
   <div class="error">
-    <p><i class='fa fa-close'></i> Usuário ou senha inválidos.</p></p>
+    <p class=''><i class='fa fa-close'></i> Usuário ou senha inválidos.</p>
   </div>
 
   <fieldset class="inputs">
-    <legend>
-      <span>Recuperar senha</span>
-    </legend>
-
     <ol>
       <li>
         <label for="email">Digite o E-mail cadastrado</label>
         <input type="email" id="email" />
+        <p class='inline-error'><i class='fa fa-exclamation-triangle'></i> Tente novamente ou <a href="">crie uma nova conta</a></p>
       </li>
   </fieldset>
 

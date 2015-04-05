@@ -71,12 +71,14 @@
 </header>
 
 
-    <section class="user-users users_login users_login_index">
-      <div class="content">
-        <header>
+    <section class="users users_login users_login_index">
+      <header>
+        <div class="content">
           <h3>Login</h3>
-        </header>
+        </div>
+      </header>
 
+      <div class="content">
         <div class="login">
           <ul class="connect">
               <li class="facebook"><a href="facebook"><b>Conectar</b> com <b> facebook</a></b></li>
@@ -85,11 +87,11 @@
               <li class="etico"><a href="etico"><b>Conectar</b> com <b> etico</a></b></li>
           </ul>
 
-          <p>Ou</p>
+          <p class="or"><span>Ou</span></p>
 
-          <form>
+          <form class="error">
   <div class="error">
-    <p><i class='fa fa-close'></i> Usuário ou senha inválidos.</p></p>
+    <p class=''><i class='fa fa-close'></i> Usuário ou senha inválidos.</p>
   </div>
 
   <fieldset class="inputs">
@@ -97,11 +99,13 @@
       <li>
         <label for="email">Digite o E-mail cadastrado</label>
         <input type="email" id="email" />
+        <p class='inline-error'><i class='fa fa-exclamation-triangle'></i> Email não cadastrado</p>
       </li>
 
       <li>
         <label for="password">Senha</label>
         <input type="password" id="password" />
+        <p class='inline-error'><i class='fa fa-exclamation-triangle'></i> Password inválido</p>
       </li>
     </ol>
   </fieldset>
@@ -113,7 +117,6 @@
     </ol>
   </fieldset>
 </form>
-</section>
 
 
         </div>
