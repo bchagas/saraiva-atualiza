@@ -4,12 +4,14 @@
   <body class="<%= page_classes %>">
     <%= partial "/partials/header" %>
 
-    <section class="user-<%= page_classes %>">
-      <div class="content">
-        <header>
+    <section class="<%= page_classes %>">
+      <header>
+        <div class="content">
           <h3><%= current_page.data.title %></h3>
-        </header>
+        </div>
+      </header>
 
+      <div class="content">
         <div class="login">
           <ul class="connect">
             <% %w(facebook twitter saraiva etico).each do |item| %>
