@@ -1,0 +1,64 @@
+.links
+  background-color: palette(footer, social-networks)
+  padding: 25px 0
+
+  ul
+    +remove-list-style
+
+  p,
+  ul
+    display: block
+    float: left
+
+  p
+    color: white
+    font-weight: bold
+
+  @each $network in facebook, twitter, google-plus
+    .#{$network}
+      background-color: palette(social-networks, $network)
+
+  .social-networks
+    text-align: left
+
+    li
+      display: inline-block
+      border-radius: 100px
+      margin-left: 10px
+      +size(52px 52px)
+
+    a
+      display: block
+      color: white
+      font-size: rem(18)
+      padding: 13px 17px
+      text-align: center
+
+  .utils
+    float: right
+    margin-top: 14px
+    text-align: left
+
+    li
+      display: inline-block
+      margin-left: 10px
+
+    a
+      color: white
+      text-decoration: underline
+
+.copyright
+  background-color: palette(footer, copyright)
+  padding: 25px 0
+
+  a,
+  p
+    display: block
+    margin: 0
+
+  a
+    float: left
+
+  p
+    float: right
+    margin-top: 10px

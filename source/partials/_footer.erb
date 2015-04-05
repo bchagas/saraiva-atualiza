@@ -1,20 +1,27 @@
 <footer>
-  <div class="content">
-    <ul class="social-networks">
-      <% %w(facebook twitter google-plus).each do |item| %>
-        <li class="<%= item %>"><%= link_to fa_icon(item), item %></li>
-      <% end %>
-    </ul>
+  <div class="links">
+    <div class="content">
+      <p>Siga nos:</p>
 
-    <ul class="utils">
-      <% %w(Termos\ de\ uso Política\ de\ Privacidade Contato).each do |item| %>
-        <li><%= link_to item, "#{item.parameterize}.html" %></li>
-      <% end %>
-    </ul>
+      <ul class="social-networks">
+        <% %w(facebook twitter google-plus).each do |item| %>
+          <li class="<%= item %>"><%= link_to fa_icon(item), item %></li>
+        <% end %>
+      </ul>
+
+      <ul class="utils">
+        <% %w(Termos\ de\ uso Política\ de\ Privacidade Contato).each do |item| %>
+          <li><%= link_to item, "#{item.parameterize}.html" %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
 
     <div class="copyright">
-      <%= link_to image_tag("logos/footer.png"), "/" %>
-      <p>&copy; 2014 Saraiva. Todos os direitos reservados.</p>
+      <div class="content">
+        <%= link_to image_tag("logos/footer.png"), "/" %>
+        <p>&copy; 2014 Saraiva. Todos os direitos reservados.</p>
+      </div>
     </div>
   </div>
 </footer>
