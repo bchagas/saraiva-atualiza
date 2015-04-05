@@ -2,9 +2,9 @@
 title: Login
 ---
 
-<form>
+<form class="error">
   <div class="error">
-    <%= fa_icon_text "close",  "Usuário ou senha inválidos." %></p>
+    <%= fa_icon_text "close",  "Usuário ou senha inválidos." %>
   </div>
 
   <fieldset class="inputs">
@@ -12,11 +12,13 @@ title: Login
       <li>
         <label for="email">Digite o E-mail cadastrado</label>
         <input type="email" id="email" />
+        <%= fa_icon_text "exclamation-triangle", "Email não cadastrado", "inline-error" %>
       </li>
 
       <li>
         <label for="password">Senha</label>
         <input type="password" id="password" />
+        <%= fa_icon_text "exclamation-triangle", "Password inválido", "inline-error" %>
       </li>
     </ol>
   </fieldset>
@@ -28,7 +30,6 @@ title: Login
     </ol>
   </fieldset>
 </form>
-</section>
 
 <% content_for :users_footer do %>
   <div class="footer">

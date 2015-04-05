@@ -17,7 +17,9 @@ $palettes: (
   white: (
     base: $_color-base-white,
     background: #FAFAFA,
+    05-darken: #FDFDFD,
     10-darken: #EEEEEE,
+    15-darken: #A8A8A8,
     20-darken: #F2F2F2
   ),
 
@@ -26,6 +28,11 @@ $palettes: (
     light: #DFE3E2,
     20-darken: #E3E3E3,
     30-darken: #E1E6E4
+  ),
+
+  black: (
+    90-darken: #1B1A1A,
+    85-darken: #333131
   ),
 
   blue: (
@@ -69,6 +76,13 @@ $palettes: (
     facebook: #516EC2,
     twitter: #00ACEE,
     google-plus: #DD4B38
+  ),
+
+  messages: (
+    error-background: #D44444,
+    error-border: #BF3D3D,
+    success-background: #72AD61,
+    success-border: #669C57
   )
 );
 

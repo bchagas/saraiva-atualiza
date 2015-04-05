@@ -77,8 +77,8 @@ helpers do
     "<i class='fa fa-#{icon}'></i>"
   end
 
-  def fa_icon_text(icon, sentence)
-    "<p><i class='fa fa-#{icon}'></i> #{sentence}</p>"
+  def fa_icon_text(icon, sentence, *klass)
+    "<p class='#{klass[0]}'><i class='fa fa-#{icon}'></i> #{sentence}</p>"
   end
 end
 

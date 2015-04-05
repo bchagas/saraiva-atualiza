@@ -1,16 +1,104 @@
+$networks: facebook, twitter, saraiva, etico
+
 section.users
   > .content
     background-color: white
     border: 1px solid palette(gray, light)
     border-radius: 6px
 
+    > .footer
+      background-color: palette(white, 05-darken)
+      border-top: 1px solid palette(gray, light)
+      color: palette(white, 15-darken)
+      font:
+        size: rem(18)
+        weight: bold
+      text-transform: uppercase
+      padding:
+        left: 24px
+        right: 24px
+
+      a
+        color: palette(sections, atualiza-enem)
+
   .login
-    +span-columns(8 of 12)
+    +span-columns(9 of 12)
     float: none
     margin: 71px auto
+    overflow: hidden
 
     ul
       +remove-list-style
 
     &:last-child
       margin-right: auto
+
+  .connect,
+  .or,
+  form
+    display: block
+    float: left
+
+  .connect,
+  .or
+    height: 220px
+
+  .connect
+    width: 284px
+
+  .or
+    margin: 0 52px
+    position: relative
+    text-transform: uppercase
+    width: 20px
+
+    > span
+      background: white
+      color: palette(white, 15-darken)
+      display: block
+      font:
+        size: rem(14)
+        weight: bold
+      margin-top: 94px
+      padding-top: 6px
+      position: relative
+      +size(100% 28px)
+      z-index: 1
+
+    &:after
+      content: " "
+      background-color: palette(gray, light)
+      display: block
+      height: 100%
+      position: absolute
+      width: 1px
+      top: 0
+      left: 9px
+
+  form
+    width: 308px
+
+  .connect
+    li
+      background: url("/images/sprites/login-buttons.png") no-repeat top left
+      margin-top: 14px
+
+      &:first-child
+        margin-top: 0
+
+
+    @for $i from 1 through length($networks)
+      $network: nth($networks, $i)
+
+      .#{$network}
+        background-position: 0 58 + (-58 * $i) + px
+
+    a
+      display: block
+      color: white
+      font-size: rem(16)
+      text-transform: uppercase
+      padding: 12px 0 12px 68px
+
+    .saraiva a
+      color: $_color-base-grey

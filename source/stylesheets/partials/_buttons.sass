@@ -7,7 +7,7 @@
   font-size: rem(16)
   border-radius: 3px
   border: none
-  padding: 13px rem(10) 14px
+  padding: rem(10)
 
 =search-button
   background: none
@@ -20,15 +20,21 @@
   &:hover
     color: palette(blue, light)
 
-=default-button($type: "null")
+%white-text-button
+  color: white
+  font-size: rem(18)
+
+=default-button($type: null)
   @extend %defaults
-  @if $type == "null"
+  @if $type == null
     background: none
     color: palette(blue)
+  @else if $type == black
+    +background(linear-gradient(palette(black, 85-darken), palette(black, 90-darken)) left repeat)
+    @extend %white-text-button
   @else
     +background(linear-gradient(palette(blue, gradient-top), palette(blue, gradient-bottom)) left repeat)
-    color: white
-    font-size: rem(18)
+    @extend %white-text-button
 
 =button-download
   +default-button(download)

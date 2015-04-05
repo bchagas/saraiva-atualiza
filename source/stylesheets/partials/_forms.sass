@@ -1,0 +1,96 @@
+=message($type)
+  background: palette(messages, #{$type}-background)
+  border: 2px solid palette(messages, #{$type}-border)
+  border-radius: 4px
+  color: white
+  font-weight: bold
+  margin: 0
+  padding: 12px rem(16)
+
+section.users
+  input
+    &[type='email'],
+    &[type='text'],
+    &[type='password'],
+    &[type='tel']
+      border: 1px solid palette(gray, light)
+
+  button
+    +default-button(black)
+
+section.users form
+  legend
+    span
+      display: block
+      color: palette(white, 15-darken)
+      font-weight: bold
+      margin-bottom: 15px
+  input
+    &[type='email'],
+    &[type='text'],
+    &[type='password']
+      border-radius: 4px
+      font-size: rem(16)
+      padding: 12px
+      width: 100%
+
+  .actions
+    margin-top: 15px
+
+    li
+      display: inline-block
+      float: right
+
+      &:first-child
+        float: left
+
+    a
+      display: block
+      +default-button
+
+  &.error
+    input
+      &[type='email'],
+      &[type='text'],
+      &[type='password']
+        border: 1px solid palette(messages, error-border)
+
+  .error,
+  .success
+    margin-bottom: 18px
+
+    span
+      display: block
+      font-weight: normal
+      padding-top: 5px
+
+  .error
+    p
+      +message(error)
+
+  .success
+    +message(success)
+
+  p
+    margin: 0
+
+  .inline-error
+    color: palette(messages, error-background)
+    font:
+      size: rem(14)
+      weight: bold
+    margin-top: 5px
+
+    a
+      color: palette(sections, atualiza-enem)
+
+  li
+    margin-bottom: 10px
+
+  label
+    display: block
+    font:
+      size: rem(18)
+      weight: bold
+    margin-bottom: 10px
+    text-transform: uppercase
