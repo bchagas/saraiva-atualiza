@@ -1,0 +1,53 @@
+.top-by-category .content
+  > div
+    +span-columns(3)
+    margin-top: 40px
+
+.top-by-category
+  h3
+    color: white
+    font:
+      size: rem(15)
+      weight: bold
+    text:
+      align: center
+      transform: uppercase
+    padding: 16px 0
+
+  li
+    padding-bottom: 23px
+
+  img
+    border: none
+    border-radius: 3px
+
+  @each $item in $sections
+    .#{$item}
+      h3
+        background-color: palette(sections, $item)
+
+      li
+        border-bottom: 1px solid palette(sections, $item)
+
+      .last
+        border-bottom: 1px solid palette(gray, light)
+
+  ul
+    +remove-list-style
+
+  h4,
+  p
+    margin: 0
+
+  h4
+    font:
+      size: rem(21)
+      weight: bold
+    margin: 20px 0 5px
+
+  .read-more
+    +default-button
+    display: block
+    font-size: rem(18)
+    text-align: center
+    width: 100%

@@ -1,9 +1,25 @@
-<% data.sections.names.each do |item| %>
-  <h3><%= item %></h3>
-  <%= image_tag "http://placehold.it/223x100" %>
+<section class="top-by-category">
+  <div class="content">
+    <% data.sections.names.each_with_index do |item, index| %>
+      <div class="<%= item.parameterize %>">
+        <h3><%= item %></h3>
+        <%= image_tag "http://placehold.it/223x100" %>
 
-  <% data.sections.notices.each do |notice| %>
-    <h4><%= notice.title %></h4>
-    <p><%= notice.short_description %></p>
-  <% end %>
-<% end %>
+        <ul>
+          <% length = data.sections.notices.length %>
+          <% data.sections.notices.each_with_index do |notice, index| %>
+            <% index += 1 %>
+            <li class="<%= "last" if index === length %>">
+              <a href="">
+                <h4><%= notice.title %></h4>
+                <p><%= notice.short_description %></p>
+              </a>
+            </li>
+          <% end %>
+        </ul>
+
+        <%= link_to "Mais materias", "", class: "read-more" %>
+      </div>
+    <% end %>
+  </div>
+</section>
