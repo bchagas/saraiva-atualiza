@@ -1,27 +1,36 @@
 ---
 title: Aplicativos - entre a promessa e as ameaças
+category: Ciências Humanas
 tag: destaque
 ---
 
-<article class="post <%= current_page.data.title.parameterize %>">
-  <%= partial "/post/header" %>
-  <p>
-    <%= image_tag "http://placehold.it/306x245", class: "alignright" %>
-    Criando um mercado gigantesco e interconectado, os apps também podem representar
-    uma ameaça à privacidade, aos empregos e até à capacidade de cognição do indivíduo.
-  </p>
+<section class="<%= "#{page_classes}" %>">
+  <header>
+    <div class="content">
+      <h3 class="<%= current_page.data.category.parameterize %>"><%= current_page.data.category %></h3>
+    </div>
+  </header>
 
-  <p>
-    Em 2013, o site de tecnologia App Annie previu que o mercado potencial para
-    aplicativos seria de US$ 1 trilhão até 2016. Em 9 de se- tembro de 2014,
-    a loja da Apple es- tadunidense tinha 1,3 milhão de apps e a da Google oferecia 1,374 milhão.
-    Na realidade, o faturamento combinado des- ses produtos será de US$ 143 bilhões em 2016,
-    tendo sido de “meros” US$ 68 bilhões em 2013. Ainda é muito,
-    considerando-se que quase 90% desses pro- gramas são fornecidos gratuitamente aos clientes.
-  </p>
-</article>
+  <article class="post <%= current_page.data.title.parameterize %>">
+    <%= partial "/post/header" %>
+    <p>
+      <%= image_tag "http://placehold.it/306x245", class: "alignright" %>
+      Criando um mercado gigantesco e interconectado, os apps também podem representar
+      uma ameaça à privacidade, aos empregos e até à capacidade de cognição do indivíduo.
+    </p>
 
-<section class="call-to-register">
+    <p>
+      Em 2013, o site de tecnologia App Annie previu que o mercado potencial para
+      aplicativos seria de US$ 1 trilhão até 2016. Em 9 de se- tembro de 2014,
+      a loja da Apple es- tadunidense tinha 1,3 milhão de apps e a da Google oferecia 1,374 milhão.
+      Na realidade, o faturamento combinado des- ses produtos será de US$ 143 bilhões em 2016,
+      tendo sido de “meros” US$ 68 bilhões em 2013. Ainda é muito,
+      considerando-se que quase 90% desses pro- gramas são fornecidos gratuitamente aos clientes.
+    </p>
+  </article>
+</section>
+
+<div class="call-to-register">
   <div class="header">
     Faça o <%= link_to "LOGIN", "users/login" %> ou <%= link_to "CADASTRE-SE", "users/register" %> para conferir esta matéria na íntegra
     e ter acesso a conteúdos exclusivos.
@@ -50,4 +59,4 @@ tag: destaque
       </p>
     </li>
   </ul>
-</section>
+</div>
