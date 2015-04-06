@@ -8,10 +8,12 @@ body
   a
     color: palette(gray)
 
-.content
+.content,
+article.post
   +outer-container
 
-section.users
+section.users,
+section.post
   > header
     background: white
     border-bottom: 1px solid palette(gray, light)
@@ -25,3 +27,9 @@ section.users
       text-transform: uppercase
       padding: 24px 0
       margin: 0
+
+section.post
+  > header
+    @each $section in $sections
+      h3.#{$section}
+        color: palette(sections, $section)

@@ -1,0 +1,86 @@
+body
+  article
+    border-bottom: 1px solid palette(gray, base)
+    padding-bottom: 45px
+
+    > header
+      h1
+        color: palette(sections, atualiza-enem)
+        font-size: rem(42)
+        margin: 14px 0 10px
+
+      .post-meta
+        font:
+          size: rem(18)
+          weight: bold
+        margin: 0
+
+      .post-utils
+        border:
+          top: 1px solid palette(gray, light)
+          bottom: 1px solid palette(gray, light)
+        margin: 22px 0
+        padding: 10px 0
+        overflow: hidden
+
+        .actions
+          +remove-list-style
+          text-align: left
+          float: right
+
+          li
+            display: inline-block
+
+          .zoom-in
+            padding-right: 0
+
+          .zoom-out
+            padding-left: 0
+
+        a
+          +default-button
+
+    p,
+    blockquote,
+    figure
+      font:
+        family: $helvetica
+        size: rem(16)
+        weight: normal
+      line-height: rem(24)
+      text-align: justify
+
+    .subtitle
+      font:
+        size: rem(18)
+        family: $helvetica
+
+    blockquote
+      position: relative
+
+      &.highlight
+        color: $_color-ciencias-humanas
+        font:
+          family: $source-sans
+          size: rem(32)
+          weight: 300
+        line-height: rem(42)
+        padding:
+          left: 60px
+          right: 34px
+
+      > .quote
+        display: block
+        font-size: rem(82)
+        left: 20px
+        top: -15px
+        position: absolute
+
+      footer
+        color: palette(gray, base)
+        font:
+          size: rem(18)
+          weight: bold
+
+        cite
+          font-style: normal
