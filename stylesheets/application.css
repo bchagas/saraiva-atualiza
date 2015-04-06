@@ -2348,34 +2348,145 @@ html {
 .fa-medium:before {
   content: "\f23a"; }
 
-/* img caption */
-/* styles for img sizes */
-/* not classes, but surely something you should take care of */
-/* line 1, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_buttons.sass */
-.notice .highlight .button--download, section.users button, section.users form .actions a, body > header .register, body > header .login, .top-by-category .read-more, .subscribe-to-news button, .search button {
+/* =WordPress Core
+ *-------------------------------------------------------------- */
+/* line 4, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_wordpress.sass */
+.alignnone {
+  margin: 5px 20px 20px 0; }
+
+/* line 7, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_wordpress.sass */
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+/* line 12, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_wordpress.sass */
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+/* line 16, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_wordpress.sass */
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+/* line 21, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_wordpress.sass */
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+/* line 24, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_wordpress.sass */
+a img.alignnone {
+  margin: 5px 20px 20px 0; }
+/* line 26, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_wordpress.sass */
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+/* line 29, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_wordpress.sass */
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 35, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_wordpress.sass */
+blockquote.alignright {
+  text-align: right;
+  width: 32%; }
+/* line 38, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_wordpress.sass */
+blockquote.alignleft {
+  text-align: left;
+  width: 32%; }
+/* line 41, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_wordpress.sass */
+blockquote.aligncenter {
+  text-align: center; }
+/* line 43, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_wordpress.sass */
+blockquote.alignnone {
+  width: 100%;
+  padding-right: 70px;
+  margin: 40px 0; }
+
+/* line 48, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_wordpress.sass */
+.wp-caption {
+  border: 1px solid #f0f0f0;
+  max-width: 59%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 0;
+  text-align: left; }
+  /* line 54, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_wordpress.sass */
+  .wp-caption.alignnone, .wp-caption.alignleft {
+    margin: 5px 20px 0 0; }
+  /* line 56, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_wordpress.sass */
+  .wp-caption.alignright {
+    margin: 5px 0 0 20px; }
+  /* line 58, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_wordpress.sass */
+  .wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto; }
+  /* line 65, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_wordpress.sass */
+  .wp-caption .wp-caption-text {
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    margin: 4px 16px 0;
+    padding: 0 4px 5px;
+    font-style: italic; }
+
+/* Text meant only for screen readers. */
+/* line 74, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_wordpress.sass */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+  /* line 80, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_wordpress.sass */
+  .screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */ }
+
+/* line 1, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_buttons.sass */
+.notice .highlight .button--download, section.users button, section.users form .actions a, body article > header .post-utils a, body > header .register, body > header .login, .top-by-category .read-more, .subscribe-to-news button, .search button {
   font-weight: 700;
   text-transform: uppercase; }
 
-/* line 5, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_buttons.sass */
-.notice .highlight .button--download, section.users button, section.users form .actions a, body > header .register, body > header .login, .top-by-category .read-more, .subscribe-to-news button {
+/* line 5, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_buttons.sass */
+.notice .highlight .button--download, section.users button, section.users form .actions a, body article > header .post-utils a, body > header .register, body > header .login, .top-by-category .read-more, .subscribe-to-news button {
   font-size: 1rem;
   border-radius: 3px;
   border: none;
   padding: 0.625rem; }
 
-/* line 23, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_buttons.sass */
+/* line 23, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_buttons.sass */
 .notice .highlight .button--download, section.users button, body > header .login, .subscribe-to-news button {
   color: white;
   font-size: 1.125rem; }
 
-/* line 3, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_tags.sass */
+/* line 3, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_tags.sass */
 .tags {
   text-align: left;
   list-style: none;
   margin: 0;
   padding: 0;
   overflow: hidden; }
-  /* line 10, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_tags.sass */
+  /* line 10, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_tags.sass */
   .tags li {
     display: block;
     float: left;
@@ -2384,26 +2495,26 @@ html {
     font-weight: 600;
     margin-left: 10px;
     text-transform: uppercase; }
-    /* line 20, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_tags.sass */
+    /* line 20, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_tags.sass */
     .tags li:first-child {
       margin-left: 0; }
-  /* line 23, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_tags.sass */
+  /* line 23, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_tags.sass */
   .tags a {
     border-radius: 3px;
     color: #f9f9f9;
     display: block;
-    padding: 5px; }
-  /* line 30, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_tags.sass */
+    padding: 5px 0.625rem; }
+  /* line 30, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_tags.sass */
   .tags .destaque {
     background-color: #1075AE; }
-  /* line 30, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_tags.sass */
+  /* line 30, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_tags.sass */
   .tags .ciencias-humanas {
     background-color: #18A1AA; }
 
-/* line 2, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 2, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .notice img {
   padding-bottom: 10px; }
-/* line 7, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 7, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .notice figure:after,
 .notice .figure:after {
   content: " ";
@@ -2412,7 +2523,7 @@ html {
   position: absolute;
   height: 8px;
   width: 100%; }
-/* line 14, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 14, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .notice .full:before {
   content: " ";
   display: block;
@@ -2422,200 +2533,200 @@ html {
   top: 0;
   left: 0; }
 
-/* line 23, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 23, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .linguagens.full:before {
   background-color: rgba(225, 103, 52, 0.6); }
 
-/* line 23, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 23, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .matematica.full:before {
   background-color: rgba(215, 35, 70, 0.6); }
 
-/* line 23, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 23, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .ciencias-da-natureza.full:before {
   background-color: rgba(170, 191, 63, 0.6); }
 
-/* line 23, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 23, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .ciencias-humanas.full:before {
   background-color: rgba(24, 161, 170, 0.6); }
 
-/* line 23, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 23, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .atualiza-enem.full:before {
   background-color: rgba(16, 117, 174, 0.6); }
 
-/* line 23, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 23, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .mais-conteudos.full:before {
   background-color: rgba(42, 177, 255, 0.6); }
 
-/* line 35, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 35, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.linguagens:after {
   background-color: #E16734; }
-/* line 38, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 38, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.linguagens h3 {
   color: white; }
-/* line 41, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 41, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.linguagens figcaption,
 .highlight.linguagens .caption {
   background-color: rgba(225, 103, 52, 0.6); }
-/* line 45, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 45, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.linguagens .black {
   background-color: transparent;
   background: -webkit-linear-gradient(transparent, black);
   background: linear-gradient(transparent, black); }
-/* line 50, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 50, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.linguagens .button--download {
   background-color: #E16734; }
-/* line 35, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 35, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.matematica:after {
   background-color: #D72346; }
-/* line 38, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 38, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.matematica h3 {
   color: white; }
-/* line 41, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 41, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.matematica figcaption,
 .highlight.matematica .caption {
   background-color: rgba(215, 35, 70, 0.6); }
-/* line 45, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 45, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.matematica .black {
   background-color: transparent;
   background: -webkit-linear-gradient(transparent, black);
   background: linear-gradient(transparent, black); }
-/* line 50, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 50, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.matematica .button--download {
   background-color: #D72346; }
-/* line 35, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 35, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.ciencias-da-natureza:after {
   background-color: #AABF3F; }
-/* line 38, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 38, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.ciencias-da-natureza h3 {
   color: white; }
-/* line 41, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 41, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.ciencias-da-natureza figcaption,
 .highlight.ciencias-da-natureza .caption {
   background-color: rgba(170, 191, 63, 0.6); }
-/* line 45, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 45, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.ciencias-da-natureza .black {
   background-color: transparent;
   background: -webkit-linear-gradient(transparent, black);
   background: linear-gradient(transparent, black); }
-/* line 50, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 50, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.ciencias-da-natureza .button--download {
   background-color: #AABF3F; }
-/* line 35, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 35, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.ciencias-humanas:after {
   background-color: #18A1AA; }
-/* line 38, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 38, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.ciencias-humanas h3 {
   color: white; }
-/* line 41, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 41, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.ciencias-humanas figcaption,
 .highlight.ciencias-humanas .caption {
   background-color: rgba(24, 161, 170, 0.6); }
-/* line 45, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 45, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.ciencias-humanas .black {
   background-color: transparent;
   background: -webkit-linear-gradient(transparent, black);
   background: linear-gradient(transparent, black); }
-/* line 50, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 50, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.ciencias-humanas .button--download {
   background-color: #18A1AA; }
-/* line 35, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 35, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.atualiza-enem:after {
   background-color: #1075AE; }
-/* line 38, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 38, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.atualiza-enem h3 {
   color: white; }
-/* line 41, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 41, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.atualiza-enem figcaption,
 .highlight.atualiza-enem .caption {
   background-color: rgba(16, 117, 174, 0.6); }
-/* line 45, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 45, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.atualiza-enem .black {
   background-color: transparent;
   background: -webkit-linear-gradient(transparent, black);
   background: linear-gradient(transparent, black); }
-/* line 50, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 50, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.atualiza-enem .button--download {
   background-color: #1075AE; }
-/* line 35, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 35, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.mais-conteudos:after {
   background-color: #2AB1FF; }
-/* line 38, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 38, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.mais-conteudos h3 {
   color: white; }
-/* line 41, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 41, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.mais-conteudos figcaption,
 .highlight.mais-conteudos .caption {
   background-color: rgba(42, 177, 255, 0.6); }
-/* line 45, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 45, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.mais-conteudos .black {
   background-color: transparent;
   background: -webkit-linear-gradient(transparent, black);
   background: linear-gradient(transparent, black); }
-/* line 50, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 50, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .highlight.mais-conteudos .button--download {
   background-color: #2AB1FF; }
 
-/* line 55, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 55, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .linguagens img {
   border-bottom: 1px solid #E16734; }
-/* line 58, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 58, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .linguagens .tag,
 .linguagens h3,
 .linguagens h4 {
   color: #E16734; }
 
-/* line 55, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 55, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .matematica img {
   border-bottom: 1px solid #D72346; }
-/* line 58, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 58, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .matematica .tag,
 .matematica h3,
 .matematica h4 {
   color: #D72346; }
 
-/* line 55, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 55, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .ciencias-da-natureza img {
   border-bottom: 1px solid #AABF3F; }
-/* line 58, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 58, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .ciencias-da-natureza .tag,
 .ciencias-da-natureza h3,
 .ciencias-da-natureza h4 {
   color: #AABF3F; }
 
-/* line 55, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 55, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .ciencias-humanas img {
   border-bottom: 1px solid #18A1AA; }
-/* line 58, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 58, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .ciencias-humanas .tag,
 .ciencias-humanas h3,
 .ciencias-humanas h4 {
   color: #18A1AA; }
 
-/* line 55, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 55, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .atualiza-enem img {
   border-bottom: 1px solid #1075AE; }
-/* line 58, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 58, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .atualiza-enem .tag,
 .atualiza-enem h3,
 .atualiza-enem h4 {
   color: #1075AE; }
 
-/* line 55, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 55, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .mais-conteudos img {
   border-bottom: 1px solid #2AB1FF; }
-/* line 58, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
+/* line 58, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner-colors.sass */
 .mais-conteudos .tag,
 .mais-conteudos h3,
 .mais-conteudos h4 {
   color: #2AB1FF; }
 
-/* line 4, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner.sass */
+/* line 4, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner.sass */
 [role="banner"] {
   background: #FAFAFA;
   border-bottom: 1px solid #DFE3E2;
   padding-top: 68px;
   padding-bottom: 68px; }
-  /* line 11, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner.sass */
+  /* line 11, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner.sass */
   [role="banner"] .info {
     float: left;
     display: block;
@@ -2624,7 +2735,7 @@ html {
     /* line 89, /Users/brunochagas/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
     [role="banner"] .info:last-child {
       margin-right: 0; }
-  /* line 14, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner.sass */
+  /* line 14, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner.sass */
   [role="banner"] figure,
   [role="banner"] .figure {
     border-bottom: 1px solid #1075AE;
@@ -2638,7 +2749,7 @@ html {
     [role="banner"] figure:last-child,
     [role="banner"] .figure:last-child {
       margin-right: 0; }
-    /* line 21, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner.sass */
+    /* line 21, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner.sass */
     [role="banner"] figure:after,
     [role="banner"] .figure:after {
       background-color: #1075AE;
@@ -2648,22 +2759,22 @@ html {
       position: absolute;
       height: 8px;
       width: 100%; }
-  /* line 29, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner.sass */
+  /* line 29, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner.sass */
   [role="banner"] h2 {
     color: #1075AE;
     font-size: 2.25rem; }
-  /* line 33, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_banner.sass */
+  /* line 33, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_banner.sass */
   [role="banner"] p {
     font-size: 1.125rem; }
 
-/* line 1, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
+/* line 1, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
 .notice {
   padding-top: 64px;
   padding-bottom: 34px; }
-  /* line 6, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
+  /* line 6, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
   .notice > .content {
     border-bottom: 1px solid #E3E3E3; }
-  /* line 10, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
+  /* line 10, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
   .notice.double figure,
   .notice.double .figure {
     float: left;
@@ -2674,7 +2785,7 @@ html {
     .notice.double figure:last-child,
     .notice.double .figure:last-child {
       margin-right: 0; }
-  /* line 14, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
+  /* line 14, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
   .notice.double .highlight {
     float: left;
     display: block;
@@ -2683,7 +2794,7 @@ html {
     /* line 89, /Users/brunochagas/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
     .notice.double .highlight:last-child {
       margin-right: 0; }
-  /* line 18, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
+  /* line 18, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
   .notice.triple figure,
   .notice.triple .figure {
     float: left;
@@ -2694,25 +2805,25 @@ html {
     .notice.triple figure:last-child,
     .notice.triple .figure:last-child {
       margin-right: 0; }
-  /* line 23, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
+  /* line 23, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
   .notice .tag {
     text-transform: uppercase;
     font-size: 0.8125rem;
     font-weight: 900; }
-  /* line 29, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
+  /* line 29, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
   .notice h3 {
     font-size: 2rem;
     margin: 0; }
-  /* line 32, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
+  /* line 32, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
   .notice p {
     font-size: 1rem;
     line-height: 1.25rem; }
-  /* line 37, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
+  /* line 37, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
   .notice figure,
   .notice .figure {
     position: relative;
     z-index: 1; }
-  /* line 43, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
+  /* line 43, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
   .notice .highlight figcaption,
   .notice .highlight .caption {
     bottom: 22px;
@@ -2723,67 +2834,67 @@ html {
     width: 100%;
     padding: 1.5rem 1.625rem 0;
     z-index: 2; }
-  /* line 53, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
+  /* line 53, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
   .notice .highlight a {
     color: white; }
-  /* line 56, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
+  /* line 56, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
   .notice .highlight .black {
     background: -webkit-linear-gradient(transparent, black);
     background: linear-gradient(transparent, black);
     height: 94.7%;
     padding-top: 52.5%; }
-    /* line 61, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
+    /* line 61, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
     .notice .highlight .black h3,
     .notice .highlight .black p {
       display: block;
       width: 300px;
       float: left; }
-    /* line 67, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
+    /* line 67, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
     .notice .highlight .black h3 {
       font-size: 2.625rem;
       line-height: 0.0625rem;
       text-transform: uppercase;
       margin-bottom: 20px; }
-    /* line 74, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
+    /* line 74, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
     .notice .highlight .black .button--download {
       float: right;
       margin-top: 10px; }
-  /* line 79, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
+  /* line 79, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
   .notice .highlight .button--download {
     background: -webkit-linear-gradient(#1075AE, #0D6495) left repeat;
     background: linear-gradient(#1075AE, #0D6495) left repeat;
     padding-top: 10px;
     padding-bottom: 10px; }
 
-/* line 84, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
+/* line 84, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
 .infograficos.full:before {
   height: 434px; }
-/* line 87, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
+/* line 87, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
 .infograficos.full figcaption,
 .infograficos.full .caption {
   position: absolute;
   text-align: center;
   top: 40%; }
-/* line 93, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
+/* line 93, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
 .infograficos h3,
 .infograficos p {
   color: white;
   margin: 0 10px; }
-/* line 98, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
+/* line 98, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
 .infograficos h3 {
   font-size: 2.25rem;
   text-transform: uppercase; }
-/* line 102, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
+/* line 102, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_home-notice.sass */
 .infograficos p {
   font-size: 1.125rem;
   margin-top: 10px; }
 
-/* line 4, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_users.sass */
+/* line 4, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_users.sass */
 section.users > .content {
   background-color: white;
   border: 1px solid #DFE3E2;
   border-radius: 6px; }
-  /* line 9, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_users.sass */
+  /* line 9, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_users.sass */
   section.users > .content > .footer {
     background-color: #FDFDFD;
     border-top: 1px solid #DFE3E2;
@@ -2793,10 +2904,10 @@ section.users > .content {
     text-transform: uppercase;
     padding-left: 24px;
     padding-right: 24px; }
-    /* line 21, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_users.sass */
+    /* line 21, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_users.sass */
     section.users > .content > .footer a {
       color: #1075AE; }
-/* line 24, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_users.sass */
+/* line 24, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_users.sass */
 section.users .login {
   float: left;
   display: block;
@@ -2808,34 +2919,34 @@ section.users .login {
   /* line 89, /Users/brunochagas/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
   section.users .login:last-child {
     margin-right: 0; }
-  /* line 30, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_users.sass */
+  /* line 30, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_users.sass */
   section.users .login ul {
     list-style: none;
     padding: 0;
     margin: 0; }
-  /* line 33, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_users.sass */
+  /* line 33, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_users.sass */
   section.users .login:last-child {
     margin-right: auto; }
-/* line 36, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_users.sass */
+/* line 36, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_users.sass */
 section.users .connect,
 section.users .or,
 section.users form {
   display: block;
   float: left; }
-/* line 42, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_users.sass */
+/* line 42, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_users.sass */
 section.users .connect,
 section.users .or {
   height: 220px; }
-/* line 46, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_users.sass */
+/* line 46, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_users.sass */
 section.users .connect {
   width: 284px; }
-/* line 49, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_users.sass */
+/* line 49, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_users.sass */
 section.users .or {
   margin: 0 52px;
   position: relative;
   text-transform: uppercase;
   width: 20px; }
-  /* line 55, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_users.sass */
+  /* line 55, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_users.sass */
   section.users .or > span {
     background: white;
     color: #A8A8A8;
@@ -2848,7 +2959,7 @@ section.users .or {
     height: 28px;
     width: 100%;
     z-index: 1; }
-  /* line 68, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_users.sass */
+  /* line 68, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_users.sass */
   section.users .or:after {
     content: " ";
     background-color: #DFE3E2;
@@ -2858,88 +2969,88 @@ section.users .or {
     width: 1px;
     top: 0;
     left: 9px; }
-/* line 78, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_users.sass */
+/* line 78, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_users.sass */
 section.users form {
   width: 308px; }
-/* line 82, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_users.sass */
+/* line 82, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_users.sass */
 section.users .connect li {
   background: url("/images/sprites/login-buttons.png") no-repeat top left;
   margin-top: 14px; }
-  /* line 86, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_users.sass */
+  /* line 86, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_users.sass */
   section.users .connect li:first-child {
     margin-top: 0; }
-/* line 93, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_users.sass */
+/* line 93, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_users.sass */
 section.users .connect .facebook {
   background-position: 0 0px; }
-/* line 93, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_users.sass */
+/* line 93, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_users.sass */
 section.users .connect .twitter {
   background-position: 0 -58px; }
-/* line 93, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_users.sass */
+/* line 93, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_users.sass */
 section.users .connect .saraiva {
   background-position: 0 -116px; }
-/* line 93, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_users.sass */
+/* line 93, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_users.sass */
 section.users .connect .etico {
   background-position: 0 -174px; }
-/* line 96, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_users.sass */
+/* line 96, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_users.sass */
 section.users .connect a {
   display: block;
   color: white;
   font-size: 1rem;
   text-transform: uppercase;
   padding: 12px 0 12px 68px; }
-/* line 103, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_users.sass */
+/* line 103, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_users.sass */
 section.users .connect .saraiva a {
   color: #626262; }
 
-/* line 12, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
+/* line 12, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
 section.users input[type='email'], section.users input[type='text'], section.users input[type='password'], section.users input[type='tel'] {
   border: 1px solid #DFE3E2; }
-/* line 18, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
+/* line 18, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
 section.users button {
   background: -webkit-linear-gradient(#333131, #1B1A1A) left repeat;
   background: linear-gradient(#333131, #1B1A1A) left repeat; }
 
-/* line 23, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
+/* line 23, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
 section.users form legend span {
   display: block;
   color: #A8A8A8;
   font-weight: bold;
   margin-bottom: 15px; }
-/* line 29, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
+/* line 29, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
 section.users form input[type='email'], section.users form input[type='text'], section.users form input[type='password'] {
   border-radius: 4px;
   font-size: 1rem;
   padding: 12px;
   width: 100%; }
-/* line 37, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
+/* line 37, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
 section.users form .actions {
   margin-top: 15px; }
-  /* line 40, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
+  /* line 40, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
   section.users form .actions li {
     display: inline-block;
     float: right; }
-    /* line 44, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
+    /* line 44, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
     section.users form .actions li:first-child {
       float: left; }
-  /* line 47, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
+  /* line 47, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
   section.users form .actions a {
     display: block;
     background: none;
     color: #1075ae; }
-/* line 53, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
+/* line 53, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
 section.users form.error input[type='email'], section.users form.error input[type='text'], section.users form.error input[type='password'] {
   border: 1px solid #BF3D3D; }
-/* line 58, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
+/* line 58, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
 section.users form .error,
 section.users form .success {
   margin-bottom: 18px; }
-  /* line 62, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
+  /* line 62, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
   section.users form .error span,
   section.users form .success span {
     display: block;
     font-weight: normal;
     padding-top: 5px; }
-/* line 68, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
+/* line 68, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
 section.users form .error p {
   background: #D44444;
   border: 2px solid #BF3D3D;
@@ -2948,7 +3059,7 @@ section.users form .error p {
   font-weight: bold;
   margin: 0;
   padding: 12px 1rem; }
-/* line 71, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
+/* line 71, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
 section.users form .success {
   background: #72AD61;
   border: 2px solid #669C57;
@@ -2957,22 +3068,22 @@ section.users form .success {
   font-weight: bold;
   margin: 0;
   padding: 12px 1rem; }
-/* line 74, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
+/* line 74, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
 section.users form p {
   margin: 0; }
-/* line 77, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
+/* line 77, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
 section.users form .inline-error {
   color: #D44444;
   font-size: 0.875rem;
   font-weight: bold;
   margin-top: 5px; }
-  /* line 84, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
+  /* line 84, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
   section.users form .inline-error a {
     color: #1075AE; }
-/* line 87, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
+/* line 87, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
 section.users form li {
   margin-bottom: 10px; }
-/* line 90, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
+/* line 90, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_forms.sass */
 section.users form label {
   display: block;
   font-size: 1.125rem;
@@ -2980,12 +3091,107 @@ section.users form label {
   margin-bottom: 10px;
   text-transform: uppercase; }
 
-/* line 2, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_header.sass */
+/* line 2, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_post.sass */
+body article {
+  border-bottom: 1px solid #626262;
+  padding-bottom: 45px; }
+  /* line 7, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_post.sass */
+  body article > header h1 {
+    color: #1075AE;
+    font-size: 2.625rem;
+    margin: 14px 0 10px; }
+  /* line 12, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_post.sass */
+  body article > header .post-meta {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin: 0; }
+  /* line 18, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_post.sass */
+  body article > header .post-utils {
+    border-top: 1px solid #DFE3E2;
+    border-bottom: 1px solid #DFE3E2;
+    margin: 22px 0;
+    padding: 10px 0;
+    overflow: hidden; }
+    /* line 26, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_post.sass */
+    body article > header .post-utils .actions {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+      float: right; }
+      /* line 31, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_post.sass */
+      body article > header .post-utils .actions li {
+        display: inline-block; }
+      /* line 34, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_post.sass */
+      body article > header .post-utils .actions .zoom-in {
+        padding-right: 0; }
+      /* line 37, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_post.sass */
+      body article > header .post-utils .actions .zoom-out {
+        padding-left: 0; }
+    /* line 40, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_post.sass */
+    body article > header .post-utils a {
+      background: none;
+      color: #1075ae; }
+  /* line 43, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_post.sass */
+  body article p,
+  body article blockquote,
+  body article figure {
+    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: justify; }
+  /* line 53, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_post.sass */
+  body article .subtitle {
+    font-size: 1.125rem;
+    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  /* line 58, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_post.sass */
+  body article blockquote {
+    position: relative; }
+    /* line 61, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_post.sass */
+    body article blockquote.highlight {
+      color: #18A1AA;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 2rem;
+      font-weight: 300;
+      line-height: 2.625rem;
+      padding-left: 60px;
+      padding-right: 34px; }
+    /* line 72, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_post.sass */
+    body article blockquote > .quote {
+      display: block;
+      font-size: 5.125rem;
+      left: 20px;
+      top: -15px;
+      position: absolute; }
+    /* line 79, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_post.sass */
+    body article blockquote footer {
+      color: #626262;
+      font-size: 1.125rem;
+      font-weight: bold; }
+      /* line 85, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_post.sass */
+      body article blockquote footer cite {
+        font-style: normal; }
+/* line 89, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_post.sass */
+body section.post-incomplete article {
+  border: none; }
+
+/* line 92, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_post.sass */
+.call-to-register {
+  float: left;
+  display: block;
+  margin-right: 2.68041%;
+  width: 82.8866%; }
+  /* line 89, /Users/brunochagas/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+  .call-to-register:last-child {
+    margin-right: 0; }
+
+/* line 2, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_header.sass */
 body > header {
   background-color: #f9f9f9;
   margin-top: 0;
   padding-top: 2rem; }
-  /* line 7, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_header.sass */
+  /* line 7, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_header.sass */
   body > header h1 {
     margin: 0;
     float: left;
@@ -2995,7 +3201,7 @@ body > header {
     /* line 89, /Users/brunochagas/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
     body > header h1:last-child {
       margin-right: 0; }
-  /* line 11, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_header.sass */
+  /* line 11, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_header.sass */
   body > header .user-actions {
     float: left;
     display: block;
@@ -3010,22 +3216,22 @@ body > header {
     /* line 89, /Users/brunochagas/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
     body > header .user-actions:last-child {
       margin-right: 0; }
-    /* line 18, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_header.sass */
+    /* line 18, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_header.sass */
     body > header .user-actions li {
       display: inline-block;
       margin-top: 13px; }
-  /* line 22, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_header.sass */
+  /* line 22, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_header.sass */
   body > header .register {
     background: none;
     color: #1075ae; }
-  /* line 25, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_header.sass */
+  /* line 25, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_header.sass */
   body > header .login {
     background: -webkit-linear-gradient(#1075AE, #0D6495) left repeat;
     background: linear-gradient(#1075AE, #0D6495) left repeat;
     padding-top: 13px;
     padding-bottom: 14px; }
 
-/* line 31, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_header.sass */
+/* line 31, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_header.sass */
 nav {
   background: white;
   border-top: 1px solid #DFE3E2;
@@ -3033,7 +3239,7 @@ nav {
   margin-top: 30px;
   padding-top: 15px;
   padding-bottom: 15px; }
-  /* line 41, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_header.sass */
+  /* line 41, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_header.sass */
   nav > ul {
     max-width: 60.625em;
     margin-left: auto;
@@ -3049,84 +3255,84 @@ nav {
       clear: both;
       content: "";
       display: table; }
-    /* line 12, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
+    /* line 12, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
     nav > ul > li {
       border-left: 1px solid #DFE3E2; }
-      /* line 15, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
+      /* line 15, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
       nav > ul > li:first-child {
         border-left: none; }
-      /* line 18, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
+      /* line 18, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
       nav > ul > li > ul {
         display: none; }
-    /* line 21, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
+    /* line 21, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
     nav > ul li {
       display: inline-block;
       float: left;
       margin-right: 0.75rem;
       padding-left: 0.75rem;
       position: relative; }
-      /* line 28, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
+      /* line 28, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
       nav > ul li:first-child {
         padding-left: 0; }
-      /* line 31, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
+      /* line 31, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
       nav > ul li:last-child {
         margin-right: 0; }
-    /* line 34, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
+    /* line 34, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
     nav > ul a {
       font-size: 1.125rem;
       font-weight: 700;
       text-align: left;
       text-transform: uppercase; }
-    /* line 42, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
+    /* line 42, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
     nav > ul .fa {
       font-size: 0.875rem;
       position: absolute;
       top: 4px;
       right: -22px; }
-    /* line 49, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
+    /* line 49, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
     nav > ul .linguagens {
       color: #E16734; }
-    /* line 49, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
+    /* line 49, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
     nav > ul .matematica {
       color: #D72346; }
-    /* line 49, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
+    /* line 49, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
     nav > ul .ciencias-da-natureza {
       color: #AABF3F; }
-    /* line 49, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
+    /* line 49, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
     nav > ul .ciencias-humanas {
       color: #18A1AA; }
-    /* line 49, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
+    /* line 49, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
     nav > ul .atualiza-enem {
       color: #1075AE; }
-    /* line 49, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
+    /* line 49, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_navigation.sass */
     nav > ul .mais-conteudos {
       color: #2AB1FF; }
 
-/* line 1, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_blog-sections.sass */
+/* line 1, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_blog-sections.sass */
 .blog-sections {
   overflow: hidden; }
-  /* line 4, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_blog-sections.sass */
+  /* line 4, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_blog-sections.sass */
   .blog-sections a {
     color: #626262; }
-  /* line 7, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_blog-sections.sass */
+  /* line 7, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_blog-sections.sass */
   .blog-sections h3 {
     color: #DBA135;
     font-size: 2rem;
     margin: 0; }
-  /* line 12, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_blog-sections.sass */
+  /* line 12, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_blog-sections.sass */
   .blog-sections h4 {
     color: #DBA135;
     font-size: 1.5625rem;
     margin-bottom: 10px; }
-  /* line 17, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_blog-sections.sass */
+  /* line 17, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_blog-sections.sass */
   .blog-sections p {
     font-size: 1rem; }
-  /* line 21, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_blog-sections.sass */
+  /* line 21, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_blog-sections.sass */
   .blog-sections ul {
     list-style: none;
     padding: 0;
     margin: 0; }
-  /* line 24, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_blog-sections.sass */
+  /* line 24, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_blog-sections.sass */
   .blog-sections li {
     border-bottom: 1px solid #DBA135;
     display: block;
@@ -3135,11 +3341,11 @@ nav {
     padding-bottom: 34px;
     height: auto;
     width: 177px; }
-    /* line 32, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_blog-sections.sass */
+    /* line 32, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_blog-sections.sass */
     .blog-sections li:first-child {
       margin-left: 0; }
 
-/* line 2, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
+/* line 2, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
 .top-news header {
   border-style: solid;
   border-top-width: 1px;
@@ -3149,16 +3355,16 @@ nav {
   border-right: none;
   color: #1075AE;
   margin-top: 30px; }
-/* line 13, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
+/* line 13, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
 .top-news h3 {
   font-size: 2rem;
   margin: 18px 0; }
-/* line 17, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
+/* line 17, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
 .top-news ul {
   list-style: none;
   padding: 0;
   margin: 0; }
-/* line 20, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
+/* line 20, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
 .top-news li {
   float: left;
   display: block;
@@ -3168,58 +3374,58 @@ nav {
   /* line 89, /Users/brunochagas/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
   .top-news li:last-child {
     margin-right: 0; }
-  /* line 24, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
+  /* line 24, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
   .top-news li.last {
     margin: 0; }
-  /* line 27, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
+  /* line 27, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
   .top-news li > a,
   .top-news li > h4,
   .top-news li > p,
   .top-news li > img {
     display: block; }
-  /* line 33, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
+  /* line 33, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
   .top-news li > a,
   .top-news li > h4,
   .top-news li > p {
     float: left;
     width: 12rem; }
-  /* line 39, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
+  /* line 39, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
   .top-news li > img {
     border: none;
     float: right; }
-  /* line 43, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
+  /* line 43, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
   .top-news li > p {
     margin: 0;
     font-size: 0.875rem; }
-  /* line 47, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
+  /* line 47, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
   .top-news li > h4 {
     font-size: 1.3125rem;
     font-weight: bold;
     margin: 0; }
-  /* line 53, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
+  /* line 53, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
   .top-news li > a {
     text-transform: uppercase;
     font-size: 0.75rem; }
-/* line 58, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
+/* line 58, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
 .top-news .linguagens {
   border-bottom: 1px solid #E16734; }
-/* line 58, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
+/* line 58, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
 .top-news .matematica {
   border-bottom: 1px solid #D72346; }
-/* line 58, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
+/* line 58, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
 .top-news .ciencias-da-natureza {
   border-bottom: 1px solid #AABF3F; }
-/* line 58, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
+/* line 58, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
 .top-news .ciencias-humanas {
   border-bottom: 1px solid #18A1AA; }
-/* line 58, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
+/* line 58, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
 .top-news .atualiza-enem {
   border-bottom: 1px solid #1075AE; }
-/* line 58, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
+/* line 58, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-news.sass */
 .top-news .mais-conteudos {
   border-bottom: 1px solid #2AB1FF; }
 
-/* line 2, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 2, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category .content > div {
   float: left;
   display: block;
@@ -3230,7 +3436,7 @@ nav {
   .top-by-category .content > div:last-child {
     margin-right: 0; }
 
-/* line 7, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 7, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category h3 {
   color: white;
   font-size: 0.9375rem;
@@ -3238,82 +3444,82 @@ nav {
   text-align: center;
   text-transform: uppercase;
   padding: 16px 0; }
-/* line 17, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 17, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category li {
   padding-bottom: 23px; }
-/* line 20, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 20, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category img {
   border: none;
   border-radius: 3px; }
-/* line 26, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 26, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category .linguagens h3 {
   background-color: #E16734; }
-/* line 29, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 29, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category .linguagens li {
   border-bottom: 1px solid #E16734; }
-/* line 32, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 32, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category .linguagens .last {
   border-bottom: 1px solid #DFE3E2; }
-/* line 26, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 26, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category .matematica h3 {
   background-color: #D72346; }
-/* line 29, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 29, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category .matematica li {
   border-bottom: 1px solid #D72346; }
-/* line 32, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 32, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category .matematica .last {
   border-bottom: 1px solid #DFE3E2; }
-/* line 26, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 26, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category .ciencias-da-natureza h3 {
   background-color: #AABF3F; }
-/* line 29, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 29, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category .ciencias-da-natureza li {
   border-bottom: 1px solid #AABF3F; }
-/* line 32, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 32, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category .ciencias-da-natureza .last {
   border-bottom: 1px solid #DFE3E2; }
-/* line 26, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 26, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category .ciencias-humanas h3 {
   background-color: #18A1AA; }
-/* line 29, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 29, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category .ciencias-humanas li {
   border-bottom: 1px solid #18A1AA; }
-/* line 32, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 32, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category .ciencias-humanas .last {
   border-bottom: 1px solid #DFE3E2; }
-/* line 26, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 26, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category .atualiza-enem h3 {
   background-color: #1075AE; }
-/* line 29, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 29, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category .atualiza-enem li {
   border-bottom: 1px solid #1075AE; }
-/* line 32, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 32, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category .atualiza-enem .last {
   border-bottom: 1px solid #DFE3E2; }
-/* line 26, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 26, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category .mais-conteudos h3 {
   background-color: #2AB1FF; }
-/* line 29, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 29, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category .mais-conteudos li {
   border-bottom: 1px solid #2AB1FF; }
-/* line 32, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 32, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category .mais-conteudos .last {
   border-bottom: 1px solid #DFE3E2; }
-/* line 35, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 35, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category ul {
   list-style: none;
   padding: 0;
   margin: 0; }
-/* line 38, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 38, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category h4,
 .top-by-category p {
   margin: 0; }
-/* line 42, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 42, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category h4 {
   font-size: 1.3125rem;
   font-weight: bold;
   margin: 20px 0 5px; }
-/* line 48, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
+/* line 48, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_top-by-category.sass */
 .top-by-category .read-more {
   background: none;
   color: #1075ae;
@@ -3322,103 +3528,104 @@ nav {
   text-align: center;
   width: 100%; }
 
-/* line 1, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
-footer {
+/* line 1, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
+> footer {
+  clear: both;
   margin-top: 97px; }
 
-/* line 4, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
+/* line 5, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
 .links {
   background-color: #383838;
   padding: 25px 0; }
-  /* line 8, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
+  /* line 9, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
   .links ul {
     list-style: none;
     padding: 0;
     margin: 0; }
-  /* line 11, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
+  /* line 12, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
   .links p,
   .links ul {
     display: block;
     float: left; }
-  /* line 16, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
+  /* line 17, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
   .links p {
     color: white;
     font-weight: bold; }
-  /* line 21, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
+  /* line 22, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
   .links .facebook {
     background-color: #516EC2; }
-  /* line 21, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
+  /* line 22, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
   .links .twitter {
     background-color: #00ACEE; }
-  /* line 21, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
+  /* line 22, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
   .links .google-plus {
     background-color: #DD4B38; }
-  /* line 24, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
+  /* line 25, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
   .links .social-networks {
     text-align: left; }
-    /* line 27, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
+    /* line 28, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
     .links .social-networks li {
       display: inline-block;
       border-radius: 100px;
       margin-left: 10px;
       height: 52px;
       width: 52px; }
-    /* line 33, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
+    /* line 34, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
     .links .social-networks a {
       display: block;
       color: white;
       font-size: 1.125rem;
       padding: 13px 17px;
       text-align: center; }
-  /* line 40, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
+  /* line 41, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
   .links .utils {
     float: right;
     margin-top: 14px;
     text-align: left; }
-    /* line 45, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
+    /* line 46, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
     .links .utils li {
       display: inline-block;
       margin-left: 10px; }
-    /* line 49, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
+    /* line 50, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
     .links .utils a {
       color: white;
       text-decoration: underline; }
 
-/* line 53, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
+/* line 54, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
 .copyright {
   background-color: #292929;
   padding: 25px 0; }
-  /* line 57, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
+  /* line 58, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
   .copyright a,
   .copyright p {
     display: block;
     margin: 0; }
-  /* line 62, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
+  /* line 63, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
   .copyright a {
     float: left; }
-  /* line 65, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
+  /* line 66, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/sections/_footer.sass */
   .copyright p {
     float: right;
     margin-top: 10px; }
 
-/* line 1, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_reset.sass */
+/* line 1, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/forms/_reset.sass */
 fieldset,
 legend {
   border: none;
   margin: 0;
   padding: 0; }
 
-/* line 7, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_reset.sass */
+/* line 7, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/forms/_reset.sass */
 ol {
   list-style: none;
   padding: 0;
   margin: 0; }
 
-/* line 10, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_reset.sass */
+/* line 10, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/forms/_reset.sass */
 input {
   outline: none; }
 
-/* line 1, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_search.sass */
+/* line 1, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/forms/_search.sass */
 .search {
   float: left;
   display: block;
@@ -3428,7 +3635,7 @@ input {
   /* line 89, /Users/brunochagas/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
   .search:last-child {
     margin-right: 0; }
-  /* line 5, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_search.sass */
+  /* line 5, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/forms/_search.sass */
   .search input[type='text'] {
     border-radius: 100px;
     border: 1px solid #DFE3E2;
@@ -3436,18 +3643,18 @@ input {
     font-size: 1rem;
     padding: 15px 0.9375rem 15px 2.5rem;
     width: 472px; }
-  /* line 13, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_search.sass */
+  /* line 13, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/forms/_search.sass */
   .search .fa-search,
   .search button {
     position: absolute;
     top: 15px; }
-  /* line 18, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_search.sass */
+  /* line 18, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/forms/_search.sass */
   .search .fa-search {
     color: #DFE3E2;
     display: block;
     font-size: 1.125rem;
     left: 0.9375rem; }
-  /* line 24, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_search.sass */
+  /* line 24, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/forms/_search.sass */
   .search button {
     background: none;
     border: none;
@@ -3456,14 +3663,14 @@ input {
     text-transform: uppercase;
     right: 0.625rem;
     top: 14px; }
-    /* line 20, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_buttons.sass */
+    /* line 20, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/partials/_buttons.sass */
     .search button:hover {
       color: #76C6FF; }
 
-/* line 1, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
+/* line 1, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
 .subscribe-to-news {
   font-family: "Source Sans Pro", sans-serif; }
-  /* line 4, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
+  /* line 4, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
   .subscribe-to-news > .content {
     background-color: #E1E6E4;
     border-radius: 6px;
@@ -3471,66 +3678,66 @@ input {
     padding: 1.875rem;
     margin-top: 40px;
     max-width: 56.875rem; }
-  /* line 12, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
+  /* line 12, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
   .subscribe-to-news h3,
   .subscribe-to-news p {
     margin: 0; }
-  /* line 16, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
+  /* line 16, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
   .subscribe-to-news h3 {
     color: #1A1919;
     font-size: 1.625rem;
     font-weight: 700; }
-  /* line 22, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
+  /* line 22, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
   .subscribe-to-news p {
     font-size: 0.875rem; }
-  /* line 25, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
+  /* line 25, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
   .subscribe-to-news header {
     max-width: 20rem;
     float: left; }
-  /* line 29, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
+  /* line 29, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
   .subscribe-to-news form {
     display: block;
     float: right;
     font-family: "Source Sans Pro", sans-serif;
     width: 28.6875rem; }
-  /* line 35, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
+  /* line 35, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
   .subscribe-to-news label {
     display: block;
     max-width: 100%;
     margin-bottom: 8px; }
-  /* line 40, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
+  /* line 40, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
   .subscribe-to-news .inputs {
     display: block;
     float: left;
     width: 330px; }
-  /* line 45, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
+  /* line 45, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
   .subscribe-to-news .actions {
     display: block;
     float: right;
     margin-top: 28px;
     width: 112px; }
-  /* line 53, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
-  .subscribe-to-news input[type='email'] {
+  /* line 52, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
+  .subscribe-to-news input[type='text'], .subscribe-to-news input[type='email'] {
     border: none;
     border-radius: 3px;
     font-size: 1rem;
     padding: 10px 0.9375rem;
     width: 100%; }
-  /* line 60, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
+  /* line 60, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/forms/_newsletter.sass */
   .subscribe-to-news button {
     background: -webkit-linear-gradient(#1075AE, #0D6495) left repeat;
     background: linear-gradient(#1075AE, #0D6495) left repeat;
     padding: 8px 1.75rem; }
 
-/* line 3, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/application.sass */
+/* line 3, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/application.sass */
 body {
   background-color: #F2F2F2;
   color: #626262; }
-  /* line 6, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/_typography.sass */
+  /* line 6, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/_typography.sass */
   body body {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 400; }
-  /* line 11, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/_typography.sass */
+  /* line 11, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/_typography.sass */
   body a,
   body p,
   body strong,
@@ -3543,49 +3750,74 @@ body {
     font-family: "Source Sans Pro", sans-serif;
     line-height: normal;
     text-decoration: none; }
-  /* line 25, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/_typography.sass */
+  /* line 25, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/_typography.sass */
   body h1 {
     font-weight: 300; }
-  /* line 25, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/_typography.sass */
+  /* line 25, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/_typography.sass */
   body h2 {
     font-weight: 300; }
-  /* line 25, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/_typography.sass */
+  /* line 25, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/_typography.sass */
   body h3 {
     font-weight: 300; }
-  /* line 25, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/_typography.sass */
+  /* line 25, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/_typography.sass */
   body h4 {
     font-weight: 300; }
-  /* line 25, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/_typography.sass */
+  /* line 25, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/_typography.sass */
   body h5 {
     font-weight: 300; }
-  /* line 25, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/_typography.sass */
+  /* line 25, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/_typography.sass */
   body h6 {
     font-weight: 300; }
-  /* line 8, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/application.sass */
+  /* line 8, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/application.sass */
   body a {
     color: #626262; }
 
-/* line 11, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/application.sass */
-.content {
+/* line 11, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/application.sass */
+.content,
+article.post {
   max-width: 60.625em;
   margin-left: auto;
   margin-right: auto; }
   /* line 20, /Users/brunochagas/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.2.1/app/assets/stylesheets/addons/_clearfix.scss */
-  .content::after {
+  .content::after,
+  article.post::after {
     clear: both;
     content: "";
     display: table; }
 
-/* line 15, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/application.sass */
-section.users > header {
+/* line 18, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/application.sass */
+section.users > header,
+section.post > header,
+section.post-incomplete > header {
   background: white;
   border-bottom: 1px solid #DFE3E2;
   margin-bottom: 32px; }
-  /* line 20, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/application.sass */
-  section.users > header h3 {
+  /* line 23, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/application.sass */
+  section.users > header h3,
+  section.post > header h3,
+  section.post-incomplete > header h3 {
     color: #1075AE;
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     padding: 24px 0;
     margin: 0; }
+
+/* line 36, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/application.sass */
+section.post-incomplete > header h3.linguagens {
+  color: #E16734; }
+/* line 36, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/application.sass */
+section.post-incomplete > header h3.matematica {
+  color: #D72346; }
+/* line 36, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/application.sass */
+section.post-incomplete > header h3.ciencias-da-natureza {
+  color: #AABF3F; }
+/* line 36, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/application.sass */
+section.post-incomplete > header h3.ciencias-humanas {
+  color: #18A1AA; }
+/* line 36, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/application.sass */
+section.post-incomplete > header h3.atualiza-enem {
+  color: #1075AE; }
+/* line 36, /Users/brunochagas/.Trash/saraiva-atualiza/source/stylesheets/application.sass */
+section.post-incomplete > header h3.mais-conteudos {
+  color: #2AB1FF; }
