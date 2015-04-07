@@ -5,11 +5,7 @@ tag: destaque
 ---
 
 <section class="<%= "#{page_classes}" %>">
-  <header>
-    <div class="content">
-      <h3 class="<%= current_page.data.category.parameterize %>"><%= current_page.data.category %></h3>
-    </div>
-  </header>
+  <%= partial "/partials/page_header" %>
 
   <article class="post <%= current_page.data.title.parameterize %>">
     <%= partial "/post/header" %>
