@@ -1,0 +1,23 @@
+---
+title: Infográficos
+---
+
+<section class="<%= page_classes %>">
+  <header>
+    <div class="content">
+      <h3><%= current_page.data.title %></h3>
+    </div>
+  </header>
+
+  <div class="content">
+    <%= partial "/partials/filter_form" %>
+  </div>
+</section>
+
+<article class="infographics">
+  <%= partial "partials/inphographics-list" %>
+
+  <footer>
+    <%= link_to "#{fa_icon 'chevron-down'} Mostrar mais infográficos #{fa_icon 'chevron-down'}", "" %>
+  </footer>
+</article>

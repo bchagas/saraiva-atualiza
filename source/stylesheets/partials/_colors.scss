@@ -32,6 +32,7 @@ $palettes: (
   ),
 
   black: (
+    95-darken: #1A1919,
     90-darken: #1B1A1A,
     85-darken: #333131
   ),
@@ -40,6 +41,7 @@ $palettes: (
     base: $_color-base-blue,
     light: #76C6FF,
     gradient-top: #1075AE,
+    gradient-top-hover: #0D6394,
     gradient-bottom: #0D6495
   ),
 

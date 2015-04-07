@@ -1,14 +1,23 @@
-<% 3.times do %>
-  <section class="petroleo">
+<% 3.times do |i| %>
+  <section class="petroleo <%= "last" if i >= 2 %>">
     <%= image_tag "http://placehold.it/306x266" %>
-    INFOGRÁFICO • CIÊNCIAS HUMANAS
+    <div class="post-meta">
+      <span class="type">Infográfico</span> •
+      <span class="tag ciencias-humanas">Ciências Humanas</span>
+    </div>
     <h2>Petróleo</h2>
     <p>Veja como é a fabricação dos principais combustíveis utilizados pela frota brasileira.</p>
   </section>
 
-  <section class="vida-iluminada">
+<% end %>
+
+<% 3.times do |i| %>
+  <section class="vida-iluminada <%= "last" if i >= 2 %>">
     <%= image_tag "http://placehold.it/306x266" %>
-    INFOGRÁFICO • CIÊNCIAS DA NATUREZA
+    <div class="post-meta">
+      <span class="type">Infográfico</span> •
+      <span class="tag ciencias-humanas">Ciências da Natureza</span>
+    </div>
     <h2>Vida iluminada</h2>
     <p>Veja como é a fabricação dos principais combustíveis utilizados pela frota brasileira.</p>
   </section>

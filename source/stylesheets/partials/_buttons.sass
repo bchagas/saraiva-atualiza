@@ -36,6 +36,14 @@
     +background(linear-gradient(palette(blue, gradient-top), palette(blue, gradient-bottom)) left repeat)
     @extend %white-text-button
 
+  &:hover
+    @if $type == null
+      color: palette(blue, light)
+    @else if $type == black
+      +background(linear-gradient(palette(black, 95-darken), palette(black, 90-darken)) left repeat)
+    @else
+      +background(linear-gradient(palette(blue, gradient-top-hover), palette(blue, gradient-bottom)) left repeat)
+
 =button-download
   +default-button(download)
   padding:
