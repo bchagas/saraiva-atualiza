@@ -90,4 +90,58 @@ body
       border: none
 
 .call-to-register
-  +span-columns(10)
+  +outer-container
+
+  > .content
+    background: url("/images/icons/plus.png") no-repeat 49.7% 65% palette(yellow, light)
+    border: 2px solid palette(yellow, border)
+    border-radius: 4px
+    +span-columns(10)
+    float: none
+    margin: 0 auto
+
+    &:last-child
+      margin-right: auto
+
+  .header
+    background-color: palette(yellow, background)
+    border-bottom: 2px solid palette(yellow, border)
+    font:
+      size: rem(18)
+      weight: 600
+    line-height: rem(28)
+    padding: 32px 0
+    text-align: center
+
+    a
+      color: palette(sections, atualiza-enem)
+      font-size: rem(21)
+
+  ul
+    +remove-list-style
+
+  li
+    border: 2px solid palette(yellow, border)
+    display: block
+    float: left
+    margin: 33px
+    +size(330px 242px)
+    text-align: center
+
+    > a
+      display: block
+
+    img
+      margin-top: 20px
+
+    h3
+      font:
+        size: rem(26)
+        weight: 700
+      margin:
+        bottom: 0
+        top: 20px
+
+    p
+      font-size: rem(16)
+      margin-top: 0

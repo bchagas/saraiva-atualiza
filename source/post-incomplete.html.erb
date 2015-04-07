@@ -30,33 +30,39 @@ tag: destaque
   </article>
 </section>
 
-<div class="call-to-register">
-  <div class="header">
-    Faça o <%= link_to "LOGIN", "users/login" %> ou <%= link_to "CADASTRE-SE", "users/register" %> para conferir esta matéria na íntegra
-    e ter acesso a conteúdos exclusivos.
+<section class="call-to-register">
+  <div class="content">
+    <div class="header">
+      Faça o <%= link_to "LOGIN", "users/login" %> ou <%= link_to "CADASTRE-SE", "users/register" %> para conferir esta matéria na íntegra<br>
+      e ter acesso a conteúdos exclusivos.
+    </div>
+
+    <ul class="register-options">
+      <li>
+        <a href="">
+          <%= image_tag "icons-saraiva/opine.png" %>
+          <h3>OPINE</h3>
+
+          <p>
+            Apresentamos alguns tópicos <br>
+            relacionado a matéria para que <br>
+            a comunidade opine.
+          </p>
+        </a>
+      </li>
+
+      <li>
+        <a href="">
+          <%= image_tag "icons-saraiva/em-foco.png" %>
+          <h3>EM FOCO</h3>
+
+          <p>
+            Questões elaboradas com base <br>
+            no conteúdo na matéria e seguindo <br>
+            o formato do ENEM.
+          </p>
+        </a>
+      </li>
+    </ul>
   </div>
-
-  <ul class="register-options">
-    <li>
-      <%= image_tag "icons-saraiva/opine.png" %>
-      <h3>OPINE</h3>
-
-      <p>
-        Apresentamos alguns tópicos
-        relacionado a matéria para que
-        a comunidade opine.
-      </p>
-    </li>
-
-    <li>
-      <%= image_tag "icons-saraiva/em-foco.png" %>
-      <h3>EM FOCO</h3>
-
-      <p>
-        Questões elaboradas com base
-        no conteúdo na matéria e seguindo
-        o formato do ENEM.
-      </p>
-    </li>
-  </ul>
-</div>
+</section>
