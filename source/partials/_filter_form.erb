@@ -1,32 +1,28 @@
-<form>
-  <legend>
-    <span>Filtrar por:</span>
-  </legend>
-
+<form class="filters">
   <fieldset class="inputs">
+    <legend>
+      <span>Filtro de pesquisa</span>
+    </legend>
+
     <ol>
       <li>
-      <label for="area-conhecimento">Área do conhecimento</label>
-      <select>
-        <option>Selecione uma opção</option>
-        <option>Opção</option>
-        <option>Opção</option>
-        <option>Opção</option>
-        <option>Opção</option>
-        <option>Opção</option>
-      </select>
+        <label>Área do conhecimento</label>
+        <select>
+          <option>Selecione uma opção</option>
+          <% 10.times do %>
+            <option>Opção</option>
+          <% end %>
+        </select>
       </li>
 
       <li>
-      <label for="area-conhecimento">Disciplinas</label>
-      <select>
-        <option>Selecione uma opção</option>
-        <option>Opção</option>
-        <option>Opção</option>
-        <option>Opção</option>
-        <option>Opção</option>
-        <option>Opção</option>
-      </select>
+        <label>Disciplinas</label>
+        <select>
+          <option>Selecione uma opção</option>
+          <% 10.times do %>
+            <option>Opção</option>
+          <% end %>
+        </select>
       </li>
     </ol>
   </fieldset>

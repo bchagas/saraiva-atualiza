@@ -15,7 +15,8 @@ article.post
 section.users,
 section.post,
 section.post-incomplete,
-section.search-error
+section.search-error,
+section.search-result
   > header
     background: palette(white, 03-darken)
     border-bottom: 1px solid palette(gray, light)
@@ -32,7 +33,8 @@ section.search-error
 
 section.post,
 section.post-incomplete,
-section.search-error
+section.search-error,
+section.search-result
   > header
     @each $section in $sections
       &.#{$section}
@@ -42,8 +44,8 @@ section.search-error
         color: palette(sections, $section)
 
 
-section.search,
-section.search-error
+section.search-error,
+section.search-result
   > header
     h3
       text-transform: none
@@ -55,3 +57,52 @@ section.search-error
         &.text
           color: palette(white, 15-darken)
           font-size: rem(24)
+
+form.filters
+  background-color: palette(white, 05-darken)
+  border: 1px solid palette(gray, light)
+  border-radius: 6px
+
+  legend
+    border-radius: 4px 4px 0 0
+    background-color: white
+    width: 100%
+    > span
+      color: palette(white, 15-darken)
+      border-bottom: 1px solid palette(gray, light)
+      display: block
+      font:
+        size: rem(18)
+        weight: 700
+      text-transform: uppercase
+      padding: 17px
+      width: 100%
+
+  ol
+    display: block
+    margin: 0 24px
+    overflow: hidden
+
+  li
+    +span-columns(6 of 12)
+    margin: 24px 0
+
+    &:first-child
+      margin-right: 24px
+
+  label
+    display: block
+    font:
+      size: rem(18)
+      weight: 700
+    text-transform: uppercase
+    margin-bottom: 5px
+
+  select
+    background: white
+    border: 1px solid palette(gray, light)
+    color: $_color-base-grey
+    height: 44px
+    padding: 20px
+    width: 100%
+    -webkit-appearance: menulist-button
