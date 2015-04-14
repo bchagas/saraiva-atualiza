@@ -21,7 +21,7 @@ section.search-result,
 section.infographics
   > header
     background: palette(white, 03-darken)
-    border-bottom: 1px solid palette(gray, light)
+    border-bottom: 1px solid palette(white, 10-darken)
     border-top: 2px solid palette(sections, atualiza-enem)
     margin-bottom: 32px
 
@@ -39,6 +39,8 @@ section.post-incomplete,
 section.search-error,
 section.search-result
   > header
+    background:  palette(white, 02-darken)
+
     @each $section in $sections
       &.#{$section}
         border-top: 2px solid palette(sections, $section)
