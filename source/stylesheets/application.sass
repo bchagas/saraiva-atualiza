@@ -161,3 +161,35 @@ article.infograficos
 
     .fa
       font-size: rem(14)
+.infografico
+  .info,
+  figure
+    +span-columns(6)
+
+  p
+    display: block
+    border-bottom: 1px solid palette(gray, light)
+    color: $_color-base-grey
+    font-size: rem(16)
+    margin: 0 0 16px 0
+    padding-bottom: 20px
+
+  a
+    +default-button(full)
+    display: inline-block
+
+.infograficos.related
+  > header
+    border:
+      top: 1px solid palette(gray, light)
+      bottom: 1px solid palette(gray, light)
+    background: transparent
+    margin-bottom: 32px
+    padding:
+      top: 14px
+      bottom: 14px
+
+    h3
+      color: palette(sections, atualiza-enem)
+      font-size: rem(32)
+      text-transform: none
