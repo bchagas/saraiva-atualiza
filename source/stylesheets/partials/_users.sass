@@ -1,6 +1,13 @@
 $networks: facebook, twitter, saraiva, etico
 
 section.users
+  &.logged > .content
+    margin-top: 40px
+    padding: 20px
+
+    form
+      +span-columns(6)
+
   > .content
     background-color: white
     border: 1px solid palette(gray, light)
