@@ -1,7 +1,8 @@
 .notice
-  padding:
-    top: 64px
-    bottom: 34px
+  > .content
+    padding:
+      top: 64px
+      bottom: 34px
 
   > .content
     border-bottom: 1px solid palette(grey, 20-darken)
@@ -39,10 +40,15 @@
     position: relative
     z-index: 1
 
+    figcaption,
+    .caption
+      margin-top: 14px
+      padding-top: 18px
+
   .highlight
     figcaption,
     .caption
-      bottom: 22px
+      bottom: 4px
       color: white
       display: block
       position: absolute

@@ -1,15 +1,6 @@
 .notice
   img
-    padding-bottom: 10px
-
-  figure,
-  .figure
-    &:after
-      content: " "
-      display: block
-      bottom: 14px
-      position: absolute
-      +size(100% 8px)
+    margin-bottom: -10px
 
   .full:before
     content: " "
@@ -41,6 +32,7 @@
       figcaption,
       .caption
         background-color: palette(sections, "#{$item}-opaque")
+        border: none
 
       .black
         background-color: transparent
@@ -53,7 +45,11 @@
 @each $item in $sections
   .#{$item}
     img
-      border-bottom: 1px solid palette(sections, $item)
+      border-bottom: 10px solid palette(sections, $item)
+
+    figcaption,
+    .caption
+      border-top: 1px solid palette(sections, $item)
 
     .tag,
     h3,
