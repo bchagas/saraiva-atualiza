@@ -10,7 +10,7 @@ body
 
 .content,
 article.post,
-article.infographics
+article.infograficos
   +outer-container
 
 section.users,
@@ -18,7 +18,7 @@ section.post,
 section.post-incomplete,
 section.search-error,
 section.search-result,
-section.infographics
+section.infograficos
   > header
     background: palette(white, 03-darken)
     border-bottom: 1px solid palette(white, 10-darken)
@@ -37,7 +37,8 @@ section.infographics
 section.post,
 section.post-incomplete,
 section.search-error,
-section.search-result
+section.search-result,
+article.infograficos
   > header
     background:  palette(white, 02-darken)
 
@@ -112,15 +113,37 @@ form.filters
     width: 100%
     -webkit-appearance: menulist-button
 
-article.infographics
+article.infograficos
   margin-top: 32px
   border: none
 
+  .type
+    color: palette(sections, atualiza-enem)
+
+  p
+    color: $_color-base-grey
+    font-size: rem(16)
+    margin: 0
+    text-align: left
+
   > section
     +span-columns(4)
+    margin-bottom: 60px
 
     &.last
       margin-right: 0
+
+  .post-meta
+    margin-top: 8px
+    padding-top: 20px
+    text-transform: uppercase
+    font:
+      size: 14px
+      weight: 600
+
+  h2
+    margin: 12px 0
+
 
   footer
     border-top: 1px solid palette(gray, light)
