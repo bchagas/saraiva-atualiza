@@ -1,5 +1,18 @@
 @import saraiva
 
+%show-more
+  border-top: 1px solid palette(gray, light)
+  clear: both
+  padding: 40px 0
+  text-align: center
+
+  > a
+    +default-button(full)
+    text-align: center
+    padding:
+      left: 15px
+      right: 15px
+
 body
   background-color: palette(white, 20-darken)
   +set-typography
@@ -146,18 +159,7 @@ article.infograficos
 
 
   footer
-    border-top: 1px solid palette(gray, light)
-    clear: both
-    margin-top: 67px
-    padding: 40px 0
-    text-align: center
-
-    > a
-      +default-button(full)
-      text-align: center
-      padding:
-        left: 15px
-        right: 15px
+    @extend %show-more
 
     .fa
       font-size: rem(14)
@@ -197,3 +199,40 @@ article.infograficos
       color: palette(sections, atualiza-enem)
       font-size: rem(32)
       text-transform: none
+
+.enem-editions
+  +remove-list-style
+  margin-top: 20px
+  overflow: hidden
+
+  li
+    background: white
+    border: 1px solid palette(gray, light)
+    border-radius: 5px
+    +span-columns(3)
+    text-align: center
+    margin-bottom: 24px
+    padding:
+      top: 20px
+      bottom: 20px
+
+    &.last
+      margin: 0
+
+  .year
+    display: block
+    font-weight: 600
+
+  a
+    +default-button
+    border-top: 1px solid palette(gray, light)
+    display: block
+    font-size: rem(18)
+    margin: 0 20px
+    padding:
+      bottom: 0
+      top: 17px
+
+.atualiza-enem
+  footer
+    @extend %show-more

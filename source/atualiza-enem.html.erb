@@ -1,23 +1,27 @@
 ---
 title: Atualiza Enem
+category: Atualiza Enem
+tag: destaque
 ---
 
-<section class="atualiza-enem">
-  <header>
-    <h1><%= current_page.data.title %></h1>
-  </header>
+<section class="post atualiza-enem">
+  <%= partial "/partials/page_header" %>
 
-  <%= partial "/partials/filter_form" %>
+  <div class="content">
+    <%= partial "/partials/filter_form" %>
 
-  <ul>
-    <% 8.times do %>
-      <li>
-        <%= image_tag "enem/fake-capa-enem.png" %>
-        <p>Atualiza ENEM <span class="year">Ano 10 / #25</span></p>
-        <%= link_to "#{fa_icon("download")} Baixar PDF", "" %>
-      </li>
-    <% end %>
+    <ul class="enem-editions">
+      <% 8.times do |i| %>
+        <li <%= "class='last'" if i % 4 == 3 %>>
+          <%= image_tag "enem/fake-capa-enem.png" %>
+          <p>Atualiza ENEM <span class="year">Ano 10 / #25</span></p>
+          <%= link_to "#{fa_icon("download")} Baixar PDF", "" %>
+        </li>
+      <% end %>
+    </ul>
 
-    <%= link_to "#{fa_icon("chevron-down")} MOSTRAR MAIS CADERNOS #{fa_icon("chevron-down")}", "" %>
-  </ul>
+    <footer>
+      <%= link_to "#{fa_icon("chevron-down")} MOSTRAR MAIS CADERNOS #{fa_icon("chevron-down")}", "" %>
+    </footer>
+  </div>
 </section>
