@@ -1,0 +1,151 @@
+.focused
+  margin-top: 62px
+
+.focused,
+.opine
+  > .content
+    background-color: palette(white, 02-darken)
+    border-radius: 5px
+    padding:
+      bottom: 32px
+      left: 25px
+      right: 25px
+      top: 70px
+    position: relative
+
+  header
+    background-color: palette(sections, atualiza-enem)
+    border-radius: 5px 5px 0 0
+    color: white
+    padding:
+      left: 20px
+      right: 20px
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+
+    h3
+      font:
+        size: rem(16)
+        weight: 600
+      text-transform: uppercase
+
+.focused
+  margin-bottom: 32px
+
+  .content > ol
+    margin-bottom: 30px
+
+    li
+      display: block
+      min-height: 86px
+      max-height: 500px
+      margin-top: 20px
+      overflow: hidden
+      position: relative
+
+      &:first-child
+        margin-top: 0
+
+      > span,
+      > p
+        display: block
+        min-height: 86px
+
+
+      > span
+        background-color: $_color-ciencias-humanas
+        border-radius: 5px 0 0 5px
+        color: white
+        font:
+          size: rem(22)
+          weight: 700
+        height: 100%
+        padding: 35px 20px
+        position: absolute
+        top: 0
+        width: 70px
+
+      > p
+        background-color: white
+        border-radius: 0 5px 5px 0
+        height: 100%
+        left: 90px
+        margin: 0 0 0 90px
+        padding: 20px
+        width: 90.2%
+  i
+    line-height: rem(22)
+
+  .font
+    text-align: right
+    margin: 36px 0 0 0
+
+    a
+      color: palette(sections, atualiza-enem)
+      font-weight: 600
+
+
+.question
+  border-top: 1px solid palette(gray, light)
+  margin-top: 28px
+  padding-top: 30px
+
+  .inputs
+    border-bottom: 1px solid palette(gray, light)
+    padding-bottom: 32px
+
+  .actions
+    margin-top: 16px
+
+  button[type='submit']
+    +default-button(full)
+
+  legend
+    span
+      display: block
+      font-weight: 600
+      margin-bottom: 26px
+
+  li
+    display: block
+    margin-top: 16px
+    overflow: hidden
+
+    &:first-child
+      margin-top: 0
+
+  label
+    span
+      display: block
+      padding:
+        top: 10px
+        bottom: 10px
+
+  .question-counter,
+  .input
+    display: block
+    float: left
+
+  .question-counter
+    background-color: palette(gray, 40-darken)
+    border-radius: 100px 0 0 100px
+    font:
+      size: rem(18)
+      weight: 600
+    text-transform: uppercase
+    padding:
+      left: 14px
+      right: 10px
+
+  .input
+    background-color: white
+    border-radius: 0 100px 100px 0
+    margin-right: 15px
+    padding:
+      left: 10px
+      right: 14px
+
+  input
+    margin-bottom: 5px
