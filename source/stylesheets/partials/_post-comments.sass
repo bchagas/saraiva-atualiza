@@ -1,8 +1,20 @@
+%paragraph-style
+  background-color: white
+  border-radius: 0 5px 5px 0
+  height: 100%
+  left: 90px
+  margin: 0 0 0 90px
+  padding: 20px
+
 .focused
   margin-top: 62px
 
 .focused,
 .opine
+  ol,
+  ul
+    +remove-list-style
+
   > .content
     background-color: palette(white, 02-darken)
     border-radius: 5px
@@ -27,7 +39,7 @@
 
     h3
       font:
-        size: rem(16)
+        size: rem(15)
         weight: 600
       text-transform: uppercase
 
@@ -68,12 +80,7 @@
         width: 70px
 
       > p
-        background-color: white
-        border-radius: 0 5px 5px 0
-        height: 100%
-        left: 90px
-        margin: 0 0 0 90px
-        padding: 20px
+        @extend %paragraph-style
         width: 90.2%
   i
     line-height: rem(22)
@@ -149,3 +156,21 @@
 
   input
     margin-bottom: 5px
+
+.opine
+  header
+    background: url("/images/icons/opine.png") no-repeat 20px center palette(sections, atualiza-enem)
+    padding-left: 60px
+
+  li
+    display: block
+    @extend %paragraph-style
+    border-radius: 4px
+    margin: 20px 0 0 0
+    width: 100%
+
+    &:first-child
+      margin-top: 0
+
+  p
+    margin: 0
