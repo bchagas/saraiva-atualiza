@@ -18,7 +18,7 @@ category: Politica de Privacidade
 
     <ol>
       <% 5.times do %>
-        <li class="open">
+        <li>
           <span>INFORMAÇÕES COLETADAS <%= fa_icon "chevron-down" %></span>
           <ol>
             <% 4.times do %>
@@ -56,3 +56,11 @@ category: Politica de Privacidade
     </ol>
   </div>
 </section>
+
+<% content_for :javascripts do %>
+  <script>
+    $(function() {
+      SaraivaAtualiza.accordion();
+    });
+  </script>
+<% end %>

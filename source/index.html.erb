@@ -11,3 +11,11 @@ title: Saraiva Atualiza
 <%= partial "/partials/newsletter" %>
 <%= partial "/partials/top_news" %>
 <%= partial "/partials/categories" %>
+
+<% content_for :javascripts do %>
+  <script>
+    $(function() {
+      SaraivaAtualiza.setContentHeight(".blog-sections li");
+    });
+  </script>
+<% end %>

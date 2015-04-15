@@ -5,10 +5,6 @@
     <%= partial "/partials/header" %>
     <%= yield %>
     <%= partial "/partials/footer" %>
-    <script>
-      $(function() {
-        SaraivaAtualiza.setContentHeight(".blog-sections li");
-      });
-    </script>
+    <%= yield_content :javascripts %>
   </body>
 </html>
