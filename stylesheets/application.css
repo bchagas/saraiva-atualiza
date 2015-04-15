@@ -3536,8 +3536,23 @@ body article {
   body article .block-content {
     border-bottom: 1px solid #DFE3E2;
     overflow: hidden;
-    padding-bottom: 20px; }
-/* line 118, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_post.sass */
+    padding: 20px 0; }
+    /* line 117, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_post.sass */
+    body article .block-content:last-child {
+      border: none; }
+  /* line 120, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_post.sass */
+  body article .all-media {
+    overflow: hidden; }
+    /* line 123, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_post.sass */
+    body article .all-media li {
+      float: left;
+      display: block;
+      margin-right: 2.68041%;
+      width: 48.65979%; }
+      /* line 89, /Users/brunochagas/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+      body article .all-media li:last-child {
+        margin-right: 0; }
+/* line 127, /Users/brunochagas/Documents/Workspace/Projects/saraiva-atualiza/source/stylesheets/partials/_post.sass */
 body section.post-incomplete article {
   border: none; }
 
