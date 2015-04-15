@@ -1,0 +1,48 @@
+---
+title: Aplicativos - entre a promessa e as ameaças
+category: global
+page_name: Toda Midia
+tag: destaque
+---
+
+<section class="post <%= "#{page_classes}" %>">
+  <%= partial "/partials/page_header" %>
+
+  <article class="post <%= current_page.data.title.parameterize %>">
+    <%= partial "/post/header" %>
+
+    <% 4.times do %>
+      <section class="block-content" style="margin-bottom: 0">
+        <h3 class="global">Sites</h3>
+        <br>
+
+        <ol class="all-media">
+          <li>
+            <%= image_tag "http://placehold.it/223x207", class: "alignleft" %>
+            <h4>Só Matemática</h4>
+            <p>
+              Portal existente há 16 anos, oferece,
+              além de aulas e exercícios de matemática,
+              recursos como comunidade, fóruns e jogos.
+              É apontado como um dos maiores portais de conteúdo da disciplina.
+              Acesse: <a href="">www.somatematica.com.br</a>
+            </p>
+          </li>
+
+          <li>
+            <%= image_tag "http://placehold.it/223x207", class: "alignleft" %>
+            <h4>Só Matemática</h4>
+            <p>
+              Portal existente há 16 anos, oferece,
+              além de aulas e exercícios de matemática,
+              recursos como comunidade, fóruns e jogos.
+              É apontado como um dos maiores portais de conteúdo da disciplina.
+              Acesse: <a href="">www.somatematica.com.br</a>
+            </p>
+          </li>
+        </ol>
+      </section>
+    <% end %>
+  </article>
+</section>
+<%= partial "/partials/top_news" %>

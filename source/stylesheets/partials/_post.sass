@@ -112,7 +112,16 @@ body
     .block-content
       border-bottom: 1px solid palette(gray, light)
       overflow: hidden
-      padding-bottom: 20px
+      padding: 20px 0
+
+      &:last-child
+        border: none
+
+    .all-media
+      overflow: hidden
+
+      li
+        +span-columns(6)
 
   section.post-incomplete
     article
