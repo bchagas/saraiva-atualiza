@@ -51,6 +51,10 @@ body
         a
           +default-button
 
+    @for $i from 1 through 6
+      h#{$i}
+        margin: 0
+
     p,
     blockquote,
     figure
@@ -101,6 +105,14 @@ body
 
         cite
           font-style: normal
+
+    .download
+      +default-button(full)
+
+    .block-content
+      border-bottom: 1px solid palette(gray, light)
+      overflow: hidden
+      padding-bottom: 20px
 
   section.post-incomplete
     article
