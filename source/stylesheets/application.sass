@@ -19,12 +19,16 @@ body
   color: palette(gray)
 
   a
-    color: palette(gray)
+    color: palette(sections, atualiza-enem)
 
 .content,
 article.post,
 article.infograficos
   +outer-container
+
+article.post
+  section
+    margin-bottom: 74px
 
 section.users,
 section.post,
@@ -61,6 +65,11 @@ article.infograficos
 
       h3.#{$section}
         color: palette(sections, $section)
+
+  @each $section in $sections
+    h3.#{$section}
+      color: palette(sections, $section)
+      font-size: rem(32)
 
 
 section.search-error,
