@@ -1,0 +1,52 @@
+.privacy-policy
+  h2
+    color: palette(sections, atualiza-enem)
+    font:
+      size: rem(21)
+      weight: 600
+
+  h3
+    font-size: rem(14)
+
+  ol
+    list-style-type: upper-latin
+    list-style-position: inside
+
+    > li
+      color: white
+      font-weight: bold
+      margin-bottom: 24px
+
+      span
+        +background(linear-gradient(palette(blue, gradient-top), palette(blue, gradient-bottom)) left repeat)
+        border-radius: 4px
+        display: block
+        padding: 16px
+        width: 100%
+
+      .fa
+        display: inline-block
+        float: right
+
+      &.open span
+        border-radius: 4px 4px 0 0
+
+
+      > ol
+        background-color: palette(white, 02-darken)
+        padding: 20px 20px 20px 50px
+        list-style-position: outside
+
+        li
+          color: $_color-base-grey
+          font:
+            size: rem(18)
+            weight: bold
+
+        p
+          font:
+            size: rem(16)
+            weight: normal
+
+    ol
+      list-style-type: decimal

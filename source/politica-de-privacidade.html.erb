@@ -1,40 +1,58 @@
 ---
 title: Politica de privacidade
+category: Politica de Privacidade
 ---
 
-<section class="privacy-policy">
-  <header>
-    <h1><%= current_page.data.title %></h1>
-  </header>
+<section class="post privacy-policy">
+  <%= partial "/partials/page_header" %>
 
-  <h2>Política de Privacidade e Segurança</h2>
-
-  <ol>
-    <li>
-      A Política de Privacidade e Segurança retrata como
+  <div class="content">
+    <h2>Política de Privacidade e Segurança</h2>
+    <h3>
+      1. A Política de Privacidade e Segurança retrata como
       serão armazenados e utilizados os dados dos Clientes,
       visando zelar sempre pela confidencialidade,
       privacidade e proteção, dentro dos mais rigorosos
       padrões de segurança na internet.
+    </h3>
 
-      <ol>
-        <% 5.times do %>
-          <li>
-            <span>INFORMAÇÕES COLETADAS</span>
-            <ol>
-              <% 4.times do %>
-                <li>
+    <ol>
+      <% 5.times do %>
+        <li class="open">
+          <span>INFORMAÇÕES COLETADAS <%= fa_icon "chevron-down" %></span>
+          <ol>
+            <% 4.times do %>
+              <li>
+                <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Aenean euismod bibendum laoreet.
                   Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
                   Proin sodales pulvinar tempor. Cum sociis natoque
                   penatibus et magnis dis parturient montes.
-                </li>
-              <% end %>
-            </ol>
-          </li>
-        <% end %>
-      </ol>
-    </li>
-  </ol>
+
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet.
+                  Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                  Proin sodales pulvinar tempor. Cum sociis natoque
+                  penatibus et magnis dis parturient montes.
+
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet.
+                  Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                  Proin sodales pulvinar tempor. Cum sociis natoque
+                  penatibus et magnis dis parturient montes.
+
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet.
+                  Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                  Proin sodales pulvinar tempor. Cum sociis natoque
+                  penatibus et magnis dis parturient montes.
+                </p>
+              </li>
+            <% end %>
+          </ol>
+        </li>
+      <% end %>
+    </ol>
+  </div>
 </section>
