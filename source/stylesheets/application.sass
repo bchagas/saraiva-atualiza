@@ -236,3 +236,34 @@ article.infograficos
 .atualiza-enem
   footer
     @extend %show-more
+
+.search-result
+  .results
+    background-color: white
+    border: 1px solid palette(gray, light)
+    border-radius: 6px
+
+    li
+      border-top: 1px solid palette(gray, light)
+      cursor: pointer
+      padding: 24px
+
+      &:first-child
+        border: none
+
+      &:hover
+        background-color: palette(white, 04-darken)
+
+        h3, p
+          text-decoration: underline
+
+    h3,
+    p
+      margin: 0
+
+    h3
+      color: palette(green, base)
+      font-size: rem(32)
+      margin: 13px 0 10px
+
+

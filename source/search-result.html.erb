@@ -9,5 +9,22 @@ tag: destaque
 
   <div class="content">
     <%= partial "/partials/filter_form" %>
+
+    <p class="search-time">20 resultados encontrados (0,31 segundos) </p>
+
+    <ol class="results">
+      <% 6.times do %>
+        <li>
+          <a href="">
+            <span class="category">Ciências da Natureza</span>
+            <h3>FIAT Lux!</h3>
+            <p>
+              2015 será o ano internacional da Luz, iniciativa da Organização das Nações Unidas
+              para aumentar as alternativas de consumo da eletricidade com sustentabilidade.
+            </p>
+          </a>
+        </li>
+      <% end %>
+    </ol>
   </div>
 </section>
