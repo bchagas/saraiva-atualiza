@@ -117,6 +117,8 @@ GEM
     puma (2.11.1)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
+    rack-contrib (1.2.0)
+      rack (>= 0.9.1)
     rack-livereload (0.3.15)
       rack
     rack-test (0.6.3)
@@ -164,3 +166,4 @@ DEPENDENCIES
   middleman-livereload (~> 3.1.0)
   neat
   puma
+  rack-contrib
