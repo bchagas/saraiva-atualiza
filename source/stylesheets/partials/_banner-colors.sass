@@ -44,6 +44,16 @@
 
 @each $item in $sections
   .#{$item}
+    &:hover
+      h2,
+      h3,
+      h4
+        > a
+          border-bottom: 1px solid palette(sections, $item#{-opaque})
+
+      p
+        border-bottom: 1px solid #CFCFCF
+
     a
       color: palette(sections, $item)
 
@@ -59,14 +69,5 @@
     h2,
     h3,
     h4
-      color: palette(sections, $item)
-
-    .tag,
-    h2,
-    h3,
-    h4
       > a
         color: palette(sections, $item)
-
-        &:hover
-          border-bottom: 1px solid palette(sections, $item)
