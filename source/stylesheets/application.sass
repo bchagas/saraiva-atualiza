@@ -17,6 +17,16 @@ html
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
+  img
+    +transition(all 5s ease)
+    transform: translate3d(0, 0, 0)
+    -ms-backface-visibility: hidden
+    -o-backface-visibility: hidden
+    backface-visibility: hidden
+    &:hover
+      +transform(scale(1.1))
+
+
 body
   background-color: palette(white, 20-darken)
   +set-typography
