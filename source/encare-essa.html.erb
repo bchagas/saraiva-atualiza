@@ -8,7 +8,7 @@ tag: destaque
 <section class="post <%= "#{page_classes}" %>">
   <%= partial "/partials/page_header" %>
 
-  <article class="post <%= current_page.data.title.parameterize %>">
+  <article class="<%= current_page.data.title.parameterize %>">
     <%= partial "/post/header" %>
     <section class="block-content" style="margin-bottom: 0">
       <figure class="wp-caption alignright">
