@@ -10,10 +10,14 @@
     padding: 15px rem(15) 15px rem(40)
     width: 472px
 
+    &:focus ~ .fa-search
+      color: palette(sections, atualiza-enem)
+
   .fa-search,
   button
     position: absolute
     top: 15px
+    +transition(all .2s ease-in-out)
 
   .fa-search
     color: palette(grey, light)
