@@ -264,13 +264,22 @@ article.infograficos
       bottom: 0
       top: 17px
 
-.atualiza-enem
-  footer
-    @extend %show-more
+.atualiza-enem,
 
 .search-result
   .search-term
     color: palette(sections, atualiza-enem)
+
+  footer
+    margin: 32px 0 64px
+    text-align: center
+
+  .show-more
+    +default-button(full)
+    text-align: center
+    padding:
+      left: 15px
+      right: 15px
 
 .search-result,
 .read-latter
