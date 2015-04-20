@@ -17,6 +17,8 @@ html
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
+section,
+article
   img
     +transition(all 5s ease)
     transform: translate3d(0, 0, 0)
@@ -50,9 +52,10 @@ article.post
 
 section.users,
 section.post,
-section.post-incomplete,
+section.post-incompleto,
 section.search-error,
 section.search-result,
+section.read-latter,
 section.infograficos
   > header
     background: palette(white, 03-darken)
@@ -70,7 +73,7 @@ section.infograficos
       margin: 0
 
 section.post,
-section.post-incomplete,
+section.post-incompleto,
 section.search-error,
 section.search-result,
 section.read-latter,
@@ -95,7 +98,8 @@ article.infograficos
         border-bottom: 1px solid palette(sections, $section)
 
 section.search-error,
-section.search-result
+section.search-result,
+section.read-latter
   > header
     h3
       text-transform: none
@@ -271,8 +275,10 @@ article.infograficos
   footer
     @extend %show-more
 
-.search-result
-  .results
+.search-result,
+.read-latter
+  .results,
+  .notices
     background-color: white
     border: 1px solid palette(gray, light)
     border-radius: 6px
@@ -288,9 +294,6 @@ article.infograficos
       &:hover
         background-color: palette(white, 04-darken)
 
-        h3, p
-          text-decoration: underline
-
     h3,
     p
       margin: 0
@@ -299,3 +302,7 @@ article.infograficos
       color: palette(green, base)
       font-size: rem(32)
       margin: 13px 0 10px
+
+      &:hover
+        border-bottom: 1px solid palette(green, base)
+        width: auto
