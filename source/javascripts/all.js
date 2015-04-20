@@ -32,7 +32,7 @@ SaraivaAtualiza = {
           icon.attr("class", "fa fa-chevron-down");
         }
 
-        content.toggle();
+        content.slideToggle();
       });
     });
   }
