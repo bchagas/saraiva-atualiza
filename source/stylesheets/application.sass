@@ -46,6 +46,7 @@ article.post
 .post
   > header
     background:  palette(white, 05-darken)
+    margin-bottom: 32px
 
   @each $section in $sections
     > header.#{$section}
@@ -69,7 +70,7 @@ article.post
 
     > header
       border-bottom: 1px solid palette(white, 10-darken)
-      margin: 32px 0
+      margin-bottom: 32px
 
       h1
         font-weight: 300
@@ -251,9 +252,13 @@ article.infograficos
 
 .atualiza-enem,
 
-.search-result
+.post.search-result,
+.post.search-error
   .search-term
     color: palette(sections, atualiza-enem)
+
+  > header
+    border-top-color: palette(sections, atualiza-enem)
 
   footer
     margin: 32px 0 64px
