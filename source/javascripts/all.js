@@ -1,6 +1,12 @@
 SaraivaAtualiza = {} || SaraivaAtualiza;
 
 SaraivaAtualiza = {
+  tooltip: function() {
+    $('.tooltip').tooltipster({
+      position: "bottom"
+    });
+  },
+
   setContentHeight: function(items) {
     var elements = $(items),
         sizes = [];

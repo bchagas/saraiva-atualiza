@@ -276,16 +276,40 @@ article.infograficos
     border: 1px solid palette(gray, light)
     border-radius: 6px
 
+    .category
+      color: palette(green, base)
+      font:
+        size: rem(14)
+        weight: 700
+      text-transform: uppercase
+      overflow: hidden
+
+      p,
+      span
+        display: inline-block
+        float: left
+
+      p
+        margin-top: 6px
+        margin-right: 10px
+
+      span
+        margin-right: 10px
+
     li
       border-top: 1px solid palette(gray, light)
       cursor: pointer
       padding: 24px
+      overflow: hidden
 
       &:first-child
         border: none
 
       &:hover
         background-color: palette(white, 04-darken)
+
+        a
+          border-bottom: 1px solid palette(green, base)
 
     h3,
     p
@@ -294,8 +318,8 @@ article.infograficos
     h3
       color: palette(green, base)
       font-size: rem(32)
-      margin: 13px 0 10px
+      margin-bottom: 10px
 
-      &:hover
-        border-bottom: 1px solid palette(green, base)
-        width: auto
+      a
+        &:visited
+          color: palette(green, base)

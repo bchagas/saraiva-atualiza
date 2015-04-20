@@ -5,6 +5,13 @@
     <%= partial "/partials/header" %>
     <%= yield %>
     <%= partial "/partials/footer" %>
+
+    <%= javascript_include_tag "jquery.tooltipster.min.js" %>
+    <script>
+      $(function() {
+        SaraivaAtualiza.tooltip();
+      });
+    </script>
     <%= yield_content :javascripts %>
   </body>
 </html>
