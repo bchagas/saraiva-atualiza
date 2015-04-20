@@ -47,6 +47,10 @@ article.post
   > header
     background:  palette(white, 05-darken)
     margin-bottom: 32px
+    border-top: 2px solid palette(sections, atualiza-enem)
+
+    h3
+      color: palette(sections, atualiza-enem)
 
   @each $section in $sections
     > header.#{$section}
@@ -54,10 +58,6 @@ article.post
 
       h3
         color: palette(sections, $section)
-
-        > a:hover
-          color: palette(sections, $section)
-          border-bottom: 1px solid palette(sections, $section)
 
   h3
     font:
@@ -76,8 +76,7 @@ article.post
         font-weight: 300
 
 section.search-error,
-section.search-result,
-section.read-latter
+section.search-result
   > header
     h3
       text-transform: none
