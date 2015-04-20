@@ -1,36 +1,28 @@
 ---
-title: Ver mais tarde
+title: Aplicativos - entre a promessa e as ameaças
+category: Ciências Humanas
+tag: destaque
 ---
 
 <section class="read-latter">
-  <header>
-    <h1><%= current_page.data.title %></h1>
-  </header>
+  <%= partial "/partials/search_header" %>
 
-  <%= partial "/partials/filter_form" %>
+  <div class="content">
+    <%= partial "/partials/filter_form" %>
 
-  <ul>
-    <% 5.times do %>
-      <li>
-        <span class="tag">INFOGRÁFICO • CIÊNCIAS DA NATUREZA</span>
-        <div class="user-info">
-          <time datetime="2015-03-27T20:47:52+00:00">há 3 horas</time>
-          <a href="#"><%= fa_icon "close" %> Remover</a>
-        </div>
+    <p class="search-time">20 resultados encontrados (0,31 segundos) </p>
 
-        <header>
-          <h3>Algumas reações inorgânicas e aplicações: chuva ácida</h3>
-        </header>
-
-        <p>
-          A chuva ácida é um fenômeno quer ocorre,
-          com maior intensidade, em grandes centros
-          urbanos devido a crescente industrialização do mundo.
-          Tem uma relação direta com a ação antropogênica no ambiente.
-        </p>
-
-        <%= image_tag "http://placehold.it/220x120" %>
-      </li>
-    <% end %>
-  </ul>
+    <ol class="results">
+      <% 6.times do %>
+        <li>
+          <span class="category">Ciências da Natureza</span>
+          <h3><a href="">FIAT Lux!</a></h3>
+          <p>
+            2015 será o ano internacional da Luz, iniciativa da Organização das Nações Unidas
+            para aumentar as alternativas de consumo da eletricidade com sustentabilidade.
+          </p>
+        </li>
+      <% end %>
+    </ol>
+  </div>
 </section>
