@@ -1,24 +1,27 @@
 ---
 title: Aplicativos - entre a promessa e as ameaças
-category: Read Latter
-page_name: Ver Mais Tarde
+category: Ciências Humanas
+page_name: Ver mais Tarde
 tag: destaque
 ---
 
-<section class="post read-latter">
+<section class="post <%= "#{page_classes}" %>">
   <%= partial "/partials/page_header" %>
 
   <div class="content">
     <%= partial "/partials/filter_form" %>
 
-    <p class="search-time">20 resultados encontrados (0,31 segundos) </p>
-
     <ol class="results">
       <% 6.times do %>
         <li>
-          <span class="category">Ciências da Natureza</span>
+          <div class="category">
+            <p>Ciências da Natureza</p>
+            <span><img src="/images/icons/atomo.png" class="tooltip" title="Biologia" /></span>
+            <span><img src="/images/icons/telescope.png" class="tooltip" title="Telescópio" /></span>
+          </div>
           <h3><a href="">FIAT Lux!</a></h3>
           <p>
+            <img src="http://placehold.it/220x120" class="alignright" />
             2015 será o ano internacional da Luz, iniciativa da Organização das Nações Unidas
             para aumentar as alternativas de consumo da eletricidade com sustentabilidade.
           </p>
@@ -26,4 +29,11 @@ tag: destaque
       <% end %>
     </ol>
   </div>
+
+  <footer>
+    <div class="content">
+      <%= link_to "#{fa_icon 'chevron-down'} Mostrar mais infográficos #{fa_icon 'chevron-down'}", "", class: "show-more" %>
+    </div>
+  </footer>
+
 </section>
