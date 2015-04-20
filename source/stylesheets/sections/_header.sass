@@ -17,7 +17,32 @@ body
 
       li
         display: inline-block
-        margin-top: 13px
+        margin-top: 3px
+        padding-bottom: 34px
+        position: relative
+
+        a
+          display: block
+
+        .fa
+          font-size: rem(14)
+          padding-right: 5px
+
+        &:hover
+          > ul
+            display: block
+
+        > ul
+          +dropdown
+          left: -48px
+          top: 54px
+          width: 220%
+
+          a
+            text-transform: uppercase
+            font:
+              size: rem(16)
+              weight: 700
 
     .register
       +default-button

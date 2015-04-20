@@ -1,4 +1,13 @@
 <ul class="user-actions">
   <li><%= link_to "Cadastrar", "/users/register", class: "register" %></li>
-  <li><%= link_to "Login", "/users/login", class: "login" %></li>
+  <li>
+    <a href="/users/login" class="login">
+      Login <%= fa_icon("caret-down") %>
+    </a>
+    <ul>
+      <li><%= link_to "#{fa_icon("bookmark")} Ver mais tarde".html_safe, "" %></li>
+      <li><%= link_to "#{fa_icon("user")} Meu perfil".html_safe, "" %></li>
+      <li><%= link_to "#{fa_icon("sign-out")} Sair".html_safe, "" %></li>
+    </ul>
+  </li>
 </ul>
