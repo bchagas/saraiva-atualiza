@@ -11,8 +11,8 @@
 
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script><script src="/javascripts/underscore-21872073.js" type="text/javascript"></script>
-  <link href="/stylesheets/normalize-6197e73d.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/application-7519455e.css" rel="stylesheet" type="text/css" />
-  <script src="/javascripts/all-4a95a63c.js" type="text/javascript"></script>
+  <link href="/stylesheets/normalize-6197e73d.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/application-0cb87e18.css" rel="stylesheet" type="text/css" />
+  <script src="/javascripts/all-60eac666.js" type="text/javascript"></script>
 </head>
 
   <body class="index">
@@ -40,7 +40,16 @@
 
     <ul class="user-actions">
   <li><a class="register" href="/users/register">Cadastrar</a></li>
-  <li><a class="login" href="/users/login">Login</a></li>
+  <li>
+    <a href="/users/login" class="login">
+      Login <i class='fa fa-caret-down'></i>
+    </a>
+    <ul>
+      <li><a href=""><i class='fa fa-bookmark'></i> Ver mais tarde</a></li>
+      <li><a href=""><i class='fa fa-user'></i> Meu perfil</a></li>
+      <li><a href=""><i class='fa fa-sign-out'></i> Sair</a></li>
+    </ul>
+  </li>
 </ul>
 
   </div>
@@ -79,9 +88,11 @@
       </ul>
 
       <h2>
-        Apps para o bem <br>
-        ou para o mal?
-        Hiperconsumismo
+        <a href="">
+          Apps para o bem <br>
+          ou para o mal?
+          Hiperconsumismo
+        </a>
       </h2>
 
       <p>
@@ -105,7 +116,7 @@
 
       <figcaption>
         <a href="" class="tag">Ciências humanas</a>
-        <h3>Imigração e Servidão</h3>
+        <h3><a href="">Imigração e Servidão</a></h3>
         <p>
           Depois de passar décadas enviando mão de obra para o exterior.
           Brasil volta a ser polo de atração de imigrantes,
@@ -118,7 +129,7 @@
       <img src="http://placehold.it/389x259" />
       <figcaption>
         <a href="" class="tag">Ciências humanas</a>
-        <h3>Imigração e Servidão</h3>
+        <h3><a href="">Imigração e Servidão</a></h3>
         <p>
           Depois de passar décadas enviando mão de obra para o exterior.
           Brasil volta a ser polo de atração de imigrantes,
@@ -135,7 +146,7 @@
       <img src="http://placehold.it/389x259" />
       <figcaption>
         <a href="" class="tag">Ciências humanas</a>
-        <h3>Imigração e Servidão</h3>
+        <h3><a href="">Imigração e Servidão</a></h3>
         <p>
           Depois de passar décadas enviando mão de obra para o exterior.
           Brasil volta a ser polo de atração de imigrantes,
@@ -166,7 +177,7 @@
       <img src="images/home/ciencias-da-natureza-fake-1-1f7405d2.jpg" />
       <figcaption>
         <a href="" class="tag">Ciências Humanas</a>
-        <h3>Fim do túnel, Diretas Já e Tancredo Neves, vida e morte</h3>
+        <h3><a href="">Fim do túnel, Diretas Já e Tancredo Neves, vida e morte</a></h3>
         <p>
           Fim do túnel, Diretas Já e Tancredo Neves, vida e morte
         </p>
@@ -177,7 +188,7 @@
       <img src="images/home/fake-2-15b7bf6d.jpg" />
       <figcaption>
         <a href="" class="tag">Ciências humanas</a>
-        <h3>Imigração e Servidão</h3>
+        <h3><a href="">Imigração e Servidão</a></h3>
         <p>
           Depois de passar décadas enviando mão de obra para o exterior.
           Brasil volta a ser polo de atração de imigrantes,
@@ -206,7 +217,7 @@
       <img src="images/home/matematica-fake-1fa87d4b.jpg" />
       <figcaption>
         <a href="" class="tag">Matemática</a>
-        <h3>Imigração e Servidão</h3>
+        <h3><a href="">Imigração e Servidão</a></h3>
         <p>
           Depois de passar décadas enviando mão de obra para o exterior.
           Brasil volta a ser polo de atração de imigrantes,
@@ -220,7 +231,7 @@
 
       <figcaption>
         <a href="" class="tag">Ciências da natureza</a>
-        <h3>Imigração e Servidão</h3>
+        <h3><a href="">Imigração e Servidão</a></h3>
         <p>
           Depois de passar décadas enviando mão de obra para o exterior.
           Brasil volta a ser polo de atração de imigrantes,
@@ -244,43 +255,34 @@
 
     <ul>
       <li>
-        <a href="">
           <img src="/images/icons-big/trocando-ideias-af988312.png">
-          <h4>Trocando Ideias</h4>
+          <h4><a href="">Trocando Ideias</a></h4>
           <p>Lorem ipsum dolor sit amect consectum dolores lipsum dolor lit amet lorem ipsum</p>
         </a>
       </li>
 
       <li>
-        <a href="">
-          <img src="/images/icons-big/sem-limites-50cea8d7.png">
-          <h4>Sem Limites</h4>
-          <p>Lorem ipsum dolor sit amect consectum dolores lipsum dolor lit amet lorem ipsum</p>
-        </a>
+        <img src="/images/icons-big/sem-limites-50cea8d7.png">
+        <h4><a href="">Sem Limites</a></h4>
+        <p>Lorem ipsum dolor sit amect consectum dolores lipsum dolor lit amet lorem ipsum</p>
       </li>
 
       <li>
-        <a href="">
-          <img src="/images/icons-big/backup-b28475e4.png">
-          <h4>Backup</h4>
-          <p>Lorem ipsum dolor sit amect consectum dolores lipsum dolor lit amet lorem ipsum</p>
-        </a>
+        <img src="/images/icons-big/backup-b28475e4.png">
+        <h4><a href="">Backup</a></h4>
+        <p>Lorem ipsum dolor sit amect consectum dolores lipsum dolor lit amet lorem ipsum</p>
       </li>
 
       <li>
-        <a href="">
-          <img src="/images/icons-big/encare-essa-d87acd91.png">
-          <h4>Encare Essa</h4>
-          <p>Lorem ipsum dolor sit amect consectum dolores lipsum dolor lit amet lorem ipsum</p>
-        </a>
+        <img src="/images/icons-big/encare-essa-d87acd91.png">
+        <h4><a href="">Encare Essa</a></h4>
+        <p>Lorem ipsum dolor sit amect consectum dolores lipsum dolor lit amet lorem ipsum</p>
       </li>
 
       <li>
-        <a href="">
-          <img src="/images/icons-big/dialogo-com-a-arte-47d6311c.png">
-          <h4>Dialogo com a arte</h4>
-          <p>Lorem ipsum dolor sit amect consectum dolores lipsum dolor lit amet lorem ipsum</p>
-        </a>
+        <img src="/images/icons-big/dialogo-com-a-arte-47d6311c.png">
+        <h4><a href="">Dialogo com a arte</a></h4>
+        <p>Lorem ipsum dolor sit amect consectum dolores lipsum dolor lit amet lorem ipsum</p>
       </li>
     </ul>
   </div>
@@ -324,9 +326,9 @@
     </header>
 
     <ul>
-          <li class="ciencias-humanas ">
+          <li class="ciencias-da-natureza ">
             <img src="http://placehold.it/90x90" />
-            <a class="tag" href="">Ciências Humanas</a>
+            <a class="tag" href="">Ciências da Natureza</a>
             <h4><a href="">Games que viciam</a></h4>
 
             <p>
@@ -335,9 +337,9 @@
               aos bens supérfluos...
             </p>
           </li>
-          <li class="ciencias-da-natureza ">
+          <li class="ciencias-humanas ">
             <img src="http://placehold.it/90x90" />
-            <a class="tag" href="">Ciências da Natureza</a>
+            <a class="tag" href="">Ciências Humanas</a>
             <h4><a href="">Games que viciam</a></h4>
 
             <p>
@@ -357,9 +359,9 @@
               aos bens supérfluos...
             </p>
           </li>
-          <li class="matematica ">
+          <li class="ciencias-da-natureza ">
             <img src="http://placehold.it/90x90" />
-            <a class="tag" href="">Matemática</a>
+            <a class="tag" href="">Ciências da Natureza</a>
             <h4><a href="">Games que viciam</a></h4>
 
             <p>
@@ -368,9 +370,9 @@
               aos bens supérfluos...
             </p>
           </li>
-          <li class="ciencias-da-natureza ">
+          <li class="matematica ">
             <img src="http://placehold.it/90x90" />
-            <a class="tag" href="">Ciências da Natureza</a>
+            <a class="tag" href="">Matemática</a>
             <h4><a href="">Games que viciam</a></h4>
 
             <p>
@@ -537,6 +539,13 @@
   </div>
 </footer>
 
+
+    <script src="/javascripts/jquery.tooltipster.min-d573b346.js" type="text/javascript"></script>
+    <script>
+      $(function() {
+        SaraivaAtualiza.tooltip();
+      });
+    </script>
       <script>
     $(function() {
       SaraivaAtualiza.setContentHeight(".blog-sections li");
