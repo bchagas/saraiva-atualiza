@@ -14,7 +14,6 @@
 
     .highlight
       +span-columns(7)
-      padding-bottom: 14px
 
       @each $section in $sections
         .#{$section}
@@ -57,7 +56,7 @@
   .highlight
     figcaption,
     .caption
-      bottom: 8px
+      bottom: -1px
       color: white
       display: block
       position: absolute
@@ -68,11 +67,15 @@
     a
       color: white
 
-    .black
+    .atualiza-enem
       +background(linear-gradient(transparent, black))
-      height: 50%
-      margin-top: 50%
+      height: 59%
       padding-top: 91px
+
+      &:hover
+        p,
+        h3
+          border: none
 
       h3,
       p
@@ -99,15 +102,25 @@
   &.full
     &:before
       height: 434px
+      background-color: palette(sections, atualiza-enem-opaque)
+      z-index: 1
 
     figcaption,
     .caption
       position: absolute
       text-align: center
-      top: 40%
+      top: 29%
+      z-index: 2
+
+  a
+    display: inline
+    &:hover
+      h3
+        border-bottom: 1px solid white
 
   h3,
   p
+    display: inline
     color: white
     margin: 0 10px
 
@@ -119,3 +132,4 @@
     display: inline
     font-size: rem(18)
     margin-top: 10px
+    margin-left: 0
