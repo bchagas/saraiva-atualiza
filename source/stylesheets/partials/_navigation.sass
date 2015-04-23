@@ -11,13 +11,22 @@
 
     &:hover
       > ul
-        display: block
+        visibility: visible
+        opacity: 1
+
+      .fa
+        +transition(all .25s ease)
+        +transform(rotate(180deg))
+
+      a.mais-conteudos
+        color: $_color-mais-conteudos
 
     &:first-child
       border-left: none
 
     > ul
       +dropdown
+      +transition(all .25s ease)
 
   li
     display: inline-block
@@ -41,6 +50,7 @@
       transform: uppercase
     padding: 16px rem(12)
     position: relative
+    +transition(all .25s ease)
 
   .fa
     font-size: rem(14)
