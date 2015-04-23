@@ -20,11 +20,6 @@ html
 .link
   +link-blue
 
-.tags
-  @each $section in $sections
-    .#{$section}
-      color: palette(sections, $section)
-
 @each $section in $sections
   .#{$section}
     .tag
@@ -127,6 +122,11 @@ section.search-result
           font-size: rem(24)
 
 section.read-latter
+  .tags
+    @each $section in $sections
+      .#{$section}
+        color: palette(sections, $section)
+
   .tools
     overflow: hidden
 
@@ -135,7 +135,9 @@ section.read-latter
       float: right
 
     .tags
-      display: inline
+      display: inline-block
+      overflow: hidden
+      padding-top: 14px
 
       li, a
         border: none
