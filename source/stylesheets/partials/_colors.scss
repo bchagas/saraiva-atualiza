@@ -65,15 +65,16 @@ $palettes: (
     ciencias-humanas: $_color-ciencias-humanas,
     atualiza-enem: $_color-atualiza-enem,
     mais-conteudos: $_color-mais-conteudos,
+    nuvem-tech: $_color-mais-conteudos,
 
     // Colors with opacity
-    linguagens-opaque: rgba(225, 103, 52, $_alpha-level),
+    linguagens-opaque: rgba($_color-linguagens, $_alpha-level),
     matematica-opaque: rgba($_color-matematica, $_alpha-level),
     ciencias-da-natureza-opaque: rgba($_color-ciencias-da-natureza, $_alpha-level),
     ciencias-humanas-opaque: rgba($_color-ciencias-humanas, $_alpha-level),
     atualiza-enem-opaque: rgba($_color-atualiza-enem, $_alpha-level),
     mais-conteudos-opaque: rgba($_color-mais-conteudos, $_alpha-level),
-
+    nuvem-tech-opaque: rgba($_color-mais-conteudos, $_alpha-level)
   ),
 
   tags: (

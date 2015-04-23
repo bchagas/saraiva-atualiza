@@ -1,18 +1,18 @@
 ---
 title: Aplicativos - entre a promessa e as ameaças
-category: global
+category: nuvem-tech
 page_name: Nuvem Tech
 tag: destaque
 ---
 
-<section class="post <%= "#{page_classes}" %>">
+<section class="post">
   <%= partial "/partials/page_header" %>
 
-  <article class="post <%= current_page.data.title.parameterize %>">
+  <article>
     <%= partial "/post/header" %>
 
     <% 3.times do %>
-      <section>
+      <section class="<%= page_classes("nuvem-tech") %>">
         <figure class="wp-caption alignright">
           <%= image_tag "http://placehold.it/306x245" %>
         </figure>
@@ -30,7 +30,7 @@ tag: destaque
         <p><b>Fonte:</b> <a href="">www.inovacaotecnologica.com.br</a></p>
       </section>
 
-      <section>
+      <section class="<%= page_classes("nuvem-tech") %>">
         <figure class="wp-caption alignleft">
           <%= image_tag "http://placehold.it/306x245" %>
         </figure>

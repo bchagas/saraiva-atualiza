@@ -77,6 +77,16 @@ article.post
       margin: 16px 0
       text-transform: uppercase
 
+  section.nuvem-tech
+    margin-bottom: 60px
+    overflow: hidden
+
+    &:last-child
+      margin-bottom: 0
+
+    p
+      display: inline
+
   @each $section in $sections
     > .#{$section}
       border-top: 2px solid palette(sections, $section)
@@ -350,3 +360,4 @@ article.infograficos
       a
         &:visited
           color: palette(green, base)
+
