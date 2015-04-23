@@ -8,8 +8,8 @@ $_color-matematica: #D72346;
 $_color-atualiza-enem: #1075AE;
 $_color-ciencias-humanas: #18A1AA;
 $_color-ciencias-da-natureza: #AABF3F;
-$_color-mais-conteudos: #2AB1FF;
-$_color-mais-conteudos-text: #DBA135;
+$_color-hover: #2AB1FF;
+$_color-mais-conteudos: #DBA135;
 $_color-newsletter-background: #E1E6E4;
 $_alpha-level: 0.8;
 
@@ -64,8 +64,7 @@ $palettes: (
     ciencias-da-natureza: $_color-ciencias-da-natureza,
     ciencias-humanas: $_color-ciencias-humanas,
     atualiza-enem: $_color-atualiza-enem,
-    mais-conteudos: $_color-atualiza-enem,
-    global: $_color-mais-conteudos-text,
+    mais-conteudos: $_color-mais-conteudos,
 
     // Colors with opacity
     linguagens-opaque: rgba(225, 103, 52, $_alpha-level),

@@ -17,7 +17,7 @@
       padding-bottom: 14px
 
       @each $section in $sections
-        &.#{$section}
+        .#{$section}
           border-bottom: 1px solid palette(sections, $section)
           .black
             border-bottom: 8px solid palette(sections, $section)
@@ -36,12 +36,10 @@
 
   h3
     font-size: rem(32)
-    margin: 0
 
   p
     font-size: rem(16)
     line-height: rem(20)
-    margin-top: 10px
 
 
   figure,

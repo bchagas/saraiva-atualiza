@@ -17,6 +17,22 @@ html
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
+@each $section in $sections
+  .#{$section}
+    .tag
+      color: palette(sections, $section)
+    &:hover
+      p
+        border-bottom: 1px solid #CFCFCF
+      @for $i from 1 through 6
+        h#{$i} > a
+          border-bottom: 1px solid palette(sections, "#{$section}-opaque")
+    @for $i from 1 through 6
+      h#{$i}
+        margin: 4px 0 14px
+        > a
+          color: palette(sections, $section)
+
 section,
 article
   img

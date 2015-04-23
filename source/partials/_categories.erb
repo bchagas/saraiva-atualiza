@@ -1,19 +1,17 @@
 <section class="top-by-category">
   <div class="content">
     <% data.sections.names.each_with_index do |item, index| %>
-      <div class="<%= item.parameterize %>">
-        <h3><%= item %></h3>
+      <div>
+        <h3 class="<%= item.parameterize %>"><%= item %></h3>
         <%= image_tag "http://placehold.it/223x100" %>
 
         <ul>
           <% length = data.sections.notices.length %>
           <% data.sections.notices.each_with_index do |notice, index| %>
             <% index += 1 %>
-            <li class="<%= "last" if index === length %>">
-              <a href="">
-                <h4><%= notice.title %></h4>
-                <p><%= notice.short_description %></p>
-              </a>
+            <li class="<%= item.parameterize %> <%= "last" if index === length %>">
+              <h4><a href=""><%= notice.title %></a></h4>
+              <p><%= notice.short_description %></p>
             </li>
           <% end %>
         </ul>
