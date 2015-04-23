@@ -4,10 +4,10 @@ category: Ciências Humanas
 tag: destaque
 ---
 
-<section class="<%= "#{page_classes}" %>">
+<section class="<%= page_classes("post") %>">
   <%= partial "/partials/page_header" %>
 
-  <article class="post <%= current_page.data.title.parameterize %>">
+  <article class="<%= current_page.data.title.parameterize %>">
     <%= partial "/post/header" %>
     <p>
       <%= image_tag "http://placehold.it/306x245", class: "alignright" %>
