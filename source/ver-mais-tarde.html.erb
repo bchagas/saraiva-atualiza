@@ -1,27 +1,50 @@
 ---
 title: Aplicativos - entre a promessa e as ameaças
-category: Ver mais tarde
-page_name: Ver mais Tarde
+category: Ver Mais Tarde
 tag: destaque
 ---
 
-<section class="post <%= "#{page_classes}" %>">
+<section class="post <%= page_classes("read-latter") %>">
   <%= partial "/partials/page_header" %>
 
   <div class="content">
     <%= partial "/partials/filter_form" %>
 
     <ol class="results">
-      <% 6.times do %>
+      <% 2.times do %>
         <li>
-          <div class="category">
-            <p>Ciências da Natureza</p>
-            <span><img src="/images/icons/atomo.png" class="tooltip" title="Biologia" /></span>
-            <span><img src="/images/icons/telescope.png" class="tooltip" title="Telescópio" /></span>
+          <div class="tools">
+            <p class="ciencias-da-natureza"><span class="tag atualiza-enem">infográficos &nbsp; &bull;</span> Ciências da Natureza</p>
+            <div class="info">
+              <time>há 3 horas</time>
+              <button><%= fa_icon("close") %> Remover</button>
+            </div>
           </div>
-          <h3><a href="">FIAT Lux!</a></h3>
+
+          <img src="http://placehold.it/220x120" class="alignright" />
+
+          <h3><a href="">Algumas reações inorgânicas e aplicações: chuva ácida</a></h3>
           <p>
-            <img src="http://placehold.it/220x120" class="alignright" />
+            2015 será o ano internacional da Luz, iniciativa da Organização das Nações Unidas
+            para aumentar as alternativas de consumo da eletricidade com sustentabilidade.
+          </p>
+        </li>
+      <% end %>
+
+      <% 2.times do %>
+        <li>
+          <div class="tools">
+            <p class="ciencias-da-natureza"><span class="tag atualiza-enem">infográficos &nbsp; &bull;</span> Ciências da Natureza</p>
+            <div class="info">
+              <time>há 3 horas</time>
+              <button><%= fa_icon("close") %> Remover</button>
+            </div>
+          </div>
+
+          <img src="http://placehold.it/120x120" class="alignright" />
+
+          <h3><a href="">Algumas reações inorgânicas e aplicações: chuva ácida</a></h3>
+          <p>
             2015 será o ano internacional da Luz, iniciativa da Organização das Nações Unidas
             para aumentar as alternativas de consumo da eletricidade com sustentabilidade.
           </p>
@@ -37,3 +60,4 @@ tag: destaque
   </footer>
 
 </section>
+

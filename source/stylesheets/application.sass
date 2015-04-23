@@ -108,7 +108,8 @@ article.post
         font-weight: 300
 
 section.search-error,
-section.search-result
+section.search-result,
+section.read-latter
   > header
     h3
       text-transform: none
@@ -120,6 +121,32 @@ section.search-result
         &.text
           color: palette(white, 15-darken)
           font-size: rem(24)
+
+section.read-latter
+  .tools
+    overflow: hidden
+
+    .info
+      display: inline-block
+      float: right
+
+    time
+      color: #9B9B9B
+      display: inline-block
+      font:
+        family: $helvetica
+        size: rem(14)
+        weight: bold
+      padding-top: 12px
+
+    button
+      cursor: pointer
+      +default-button
+      font-size: rem(18)
+      float: right
+
+  .filters
+    margin-bottom: 40px
 
 form.filters
   background-color: palette(white, 05-darken)
@@ -317,7 +344,11 @@ article.infograficos
     border-radius: 6px
 
     .category
-      color: palette(green, base)
+      @each $section in $sections
+        .#{$section}
+          color: palette(sections, $section)
+
+    .category
       font:
         size: rem(14)
         weight: 700
