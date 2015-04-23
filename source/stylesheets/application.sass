@@ -20,6 +20,11 @@ html
 .link
   +link-blue
 
+.tags
+  @each $section in $sections
+    .#{$section}
+      color: palette(sections, $section)
+
 @each $section in $sections
   .#{$section}
     .tag
@@ -108,8 +113,7 @@ article.post
         font-weight: 300
 
 section.search-error,
-section.search-result,
-section.read-latter
+section.search-result
   > header
     h3
       text-transform: none
@@ -129,6 +133,14 @@ section.read-latter
     .info
       display: inline-block
       float: right
+
+    .tags
+      display: inline
+
+      li, a
+        border: none
+        padding: 0
+        margin: 0
 
     time
       color: #9B9B9B
