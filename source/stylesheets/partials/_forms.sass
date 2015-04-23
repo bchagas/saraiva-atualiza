@@ -7,6 +7,13 @@
   margin: 0
   padding: 12px rem(16)
 
+form
+  a
+    +link-blue
+
+  .inputs li .hint
+    margin-top: 10px
+
 section.users
   input
     &[type='email'],
@@ -19,6 +26,9 @@ section.users
     +default-button(black)
 
 section.users form
+  p
+    @extend %paragraph-block
+
   legend
     span
       display: block
@@ -44,7 +54,7 @@ section.users form
       &:first-child
         float: left
 
-    a
+    a,
       display: block
       +default-button
 

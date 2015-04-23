@@ -3,7 +3,7 @@
 %show-more
   border-top: 1px solid palette(gray, light)
   clear: both
-  padding: 40px 0
+  padding-top: 40px
   text-align: center
 
   > a
@@ -21,6 +21,8 @@ html
   .#{$section}
     .tag
       color: palette(sections, $section)
+      > a
+        color: palette(sections, $section)
     &:hover
       p
         border-bottom: 1px solid #CFCFCF
@@ -63,23 +65,24 @@ article.post
   > header
     background:  palette(white, 05-darken)
     margin-bottom: 32px
-    border-top: 2px solid palette(sections, atualiza-enem)
+    border:
+      top: 2px solid palette(sections, atualiza-enem)
+      bottom: 1px solid palette(gray, light)
 
     h3
       color: palette(sections, atualiza-enem)
+      font:
+        size: rem(32)
+        weight: 700
+      margin: 16px 0
+      text-transform: uppercase
 
   @each $section in $sections
-    > header.#{$section}
+    > .#{$section}
       border-top: 2px solid palette(sections, $section)
 
       h3
         color: palette(sections, $section)
-
-  h3
-    font:
-      size: rem(32)
-      weight: 700
-    text-transform: uppercase
 
   article
     +outer-container
@@ -157,6 +160,7 @@ form.filters
 
 article.infograficos
   margin-top: 32px
+  padding-bottom: 0
   border: none
 
   .type
@@ -181,7 +185,7 @@ article.infograficos
     text-transform: uppercase
     font:
       size: 14px
-      weight: 600
+      weight: 700
 
   h2
     margin: 12px 0
@@ -193,6 +197,8 @@ article.infograficos
     .fa
       font-size: rem(14)
 .infografico
+  border: none
+
   .info,
   figure
     +span-columns(6)
@@ -213,7 +219,10 @@ article.infograficos
   .call-to-action
     margin-top: 42px
 
-.infograficos.related
+.post .related
+  clear: both
+  margin-top: 0
+
   > header
     border:
       top: 1px solid palette(gray, light)

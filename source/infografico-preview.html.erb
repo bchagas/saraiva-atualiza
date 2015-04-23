@@ -1,43 +1,44 @@
 ---
-title: Infográficos
+title: Infográfico Preview
+tag: Ciências Humanas
 ---
 
-<section class="infograficos">
+<section class="post <%= page_classes("infografico") %>">
   <header>
     <div class="content">
       <h3><%= current_page.data.title %></h3>
     </div>
   </header>
 
-  <div class="infografico">
-    <div class="content">
-      <div class="info">
-        <p>
-          O Brasil é o maior país da América Latina, com um território que se estende por, aproximadamente, 47% da América do Sul. Devido a essa vasta extensão ele possui 23.102 km de fronteiras, sendo 7.367 km marítimas e 15.735 km terrestres, marcadas de modo geral por invasões de terras indígenas, crimes ambientais, narcotráfico e pela entrada de imigrantes ilegais.
-        </p>
-        <a href=""><%= fa_icon "download" %> Baixar PDF</a>
-      </div>
-      <figure>
-        <%= image_tag "http://placehold.it/456x246" %>
-      </figure>
+  <article class="content infografico">
+    <%= partial "/post/header" %>
+    <div class="info">
+      <p>
+        O Brasil é o maior país da América Latina, com um território que se estende por, aproximadamente, 47% da América do Sul. Devido a essa vasta extensão ele possui 23.102 km de fronteiras, sendo 7.367 km marítimas e 15.735 km terrestres, marcadas de modo geral por invasões de terras indígenas, crimes ambientais, narcotráfico e pela entrada de imigrantes ilegais.
+      </p>
+      <a href=""><%= fa_icon "download" %> Baixar PDF</a>
     </div>
-  </div>
+
+    <figure>
+      <%= image_tag "http://placehold.it/456x246" %>
+    </figure>
+  </article>
+
+  <article class="content related infograficos">
+      <header>
+        <h3>Infográficos relacionados</h3>
+      </header>
+
+      <% 3.times do |i| %>
+        <section class="petroleo matematica <%= "last" if i >= 2 %>">
+          <%= image_tag "http://placehold.it/306x266" %>
+          <div class="post-meta">
+            <span class="type">Infográfico</span> •
+            <span class="tag ciencias-humanas"><a href="">Matematica<a/></span>
+          </div>
+          <h2><a href="">Petróleo</a></h2>
+          <p>Veja como é a fabricação dos principais combustíveis utilizados pela frota brasileira.</p>
+        </section>
+      <% end %>
+    </article>
 </section>
-
-<article class="related <%= current_page.data.title.parameterize %>">
-  <header>
-    <h3>Infográficos relacionados</h3>
-  </header>
-
-  <% 3.times do |i| %>
-    <section class="petroleo matematica <%= "last" if i >= 2 %>">
-      <%= image_tag "http://placehold.it/306x266" %>
-      <div class="post-meta">
-        <span class="type">Infográfico</span> •
-        <span class="tag ciencias-humanas"><a href="">Matematica<a/></span>
-      </div>
-      <h2><a href="">Petróleo</a></h2>
-      <p>Veja como é a fabricação dos principais combustíveis utilizados pela frota brasileira.</p>
-    </section>
-  <% end %>
-</article>

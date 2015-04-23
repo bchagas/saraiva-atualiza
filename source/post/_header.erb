@@ -1,6 +1,6 @@
 <header>
   <ul class="tags">
-    <li><%= link_to current_page.data.tag, "post", class: current_page.data.tag %></li>
+    <li><%= link_to current_page.data.tag, "post", class: current_page.data.tag.parameterize if current_page.data.tag %></li>
   </ul>
 
   <h1><%= current_page.data.title %></h1>

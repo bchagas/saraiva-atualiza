@@ -1,10 +1,10 @@
 <!doctype html>
 <html>
   <%= partial "/partials/head" %>
-  <body class="<%= page_classes %>">
+  <body>
     <%= partial "/partials/header" %>
 
-    <section class="<%= page_classes %>">
+    <section class="post <%= page_classes("users") %>">
       <header>
         <div class="content">
           <h3><%= current_page.data.title %></h3>
