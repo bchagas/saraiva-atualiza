@@ -4,9 +4,46 @@ category: Ciências Humanas
 tag: destaque
 ---
 
-<section class="post <%= "#{page_classes}" %>">
+<section class="<%= page_classes("post") %>">
   <%= partial "/partials/page_header" %>
-  <%= partial "/partials/banner_three_columns_simple" %>
 
+  <div class="content notice triple" style="padding-top: 0;">
+     <figure class="ciencias-humanas">
+      <img src="/images/home/ciencias-da-natureza-fake-1.jpg" />
+      <figcaption>
+        <a href="" class="tag">Ciências Humanas</a>
+        <h3><a href="">Fim do túnel, Diretas Já e Tancredo Neves, vida e morte</a></h3>
+        <p>
+          Fim do túnel, Diretas Já e Tancredo Neves, vida e morte
+        </p>
+      </figcation>
+    </figure>
+
+    <figure class="linguagens">
+      <img src="/images/home/fake-2.jpg" />
+      <figcaption>
+        <a href="" class="tag">Ciências humanas</a>
+        <h3><a href="">Imigração e Servidão</a></h3>
+        <p>
+          Depois de passar décadas enviando mão de obra para o exterior.
+          Brasil volta a ser polo de atração de imigrantes,
+          principalmente bolivianos e haitianos.
+        </p>
+      </figcation>
+    </figure>
+
+    <figure class="matematica">
+      <img src="/images/home/fake-2.jpg" />
+      <figcaption>
+        <a href="" class="tag">Ciências humanas</a>
+        <h3><a href="">Imigração e Servidão</a></h3>
+        <p>
+          Depois de passar décadas enviando mão de obra para o exterior.
+          Brasil volta a ser polo de atração de imigrantes,
+          principalmente bolivianos e haitianos.
+        </p>
+      </figcation>
+    </figure>
+  </div>
 </section>
 <%= partial "/partials/top_news" %>
