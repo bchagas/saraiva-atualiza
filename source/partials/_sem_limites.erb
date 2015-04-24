@@ -1,12 +1,12 @@
 <section class="top-news">
   <div class="content">
     <header>
-      <h3>Mais sem limites</h3>
+      <h3>Mais <%= klass %></h3>
     </header>
 
     <ul>
       <% 3.times do |i| %>
-        <li class="<%= "sem-limites #{'last' if i >= 2}" %>">
+        <li class="<%= "#{klass.parameterize} #{'last' if i >= 2}" %>">
           <span class="tag">Sem limite</span>
           <%= image_tag "http://placehold.it/90x90" %>
           <%= link_to "", "", class: "tag" %>
