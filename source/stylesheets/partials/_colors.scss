@@ -65,6 +65,7 @@ $palettes: (
     ciencias-humanas: $_color-ciencias-humanas,
     atualiza-enem: $_color-atualiza-enem,
     mais-conteudos: $_color-mais-conteudos,
+    sem-limites: $_color-mais-conteudos,
     nuvem-tech: $_color-mais-conteudos,
 
     // Colors with opacity
@@ -74,6 +75,7 @@ $palettes: (
     ciencias-humanas-opaque: rgba($_color-ciencias-humanas, $_alpha-level),
     atualiza-enem-opaque: rgba($_color-atualiza-enem, $_alpha-level),
     mais-conteudos-opaque: rgba($_color-mais-conteudos, $_alpha-level),
+    sem-limites-opaque: rgba($_color-mais-conteudos, $_alpha-level),
     nuvem-tech-opaque: rgba($_color-mais-conteudos, $_alpha-level)
   ),
 
