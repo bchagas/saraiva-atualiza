@@ -34,10 +34,16 @@
         background-color: palette(sections, "#{$item}-opaque")
         border: none
 
+      @if $item == atualiza-enem
+        figcaption,
+        .caption
+          background: none
+
       .black
-        background-color: transparent\9
+        background-color: none
         +background(linear-gradient(transparent, black))
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4FFFFFF0, endColorstr=#40000000)
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#000000', GradientType=1)
+        progid: alpha(opacity = 90)
         zoom: 1
 
       .button
