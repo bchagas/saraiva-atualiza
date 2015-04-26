@@ -1,21 +1,22 @@
 ---
 title: Aplicativos - entre a promessa e as ameaças
-category: global
+category: Encare essa
 page_name: Encare essa
 tag: destaque
 ---
 
-<section class="post <%= "#{page_classes}" %>">
+<section class="post">
   <%= partial "/partials/page_header" %>
 
-  <article class="<%= current_page.data.title.parameterize %>">
+  <article>
     <%= partial "/post/header" %>
-    <section class="block-content" style="margin-bottom: 0">
+
+    <section class="encare-essa">
       <figure class="wp-caption alignright">
         <%= image_tag "http://placehold.it/456x246" %>
       </figure>
 
-      <h3 class="global">Bateria The Flash</h3>
+      <h3><a href="">Bateria The Flash</a></h3>
       <p>
         Em 2013, o site de tecnologia App Annie previu que o mercado potencial para
         aplicativos seria de US$ 1 trilhão até 2016. Em 9 de se- tembro de 2014,
@@ -24,12 +25,12 @@ tag: destaque
       <a href="" class="download"><%= fa_icon("download") %> Baixar PDF</a>
     </section>
 
-    <section style="padding-top: 40px">
+    <section class="encare-essa">
       <figure class="wp-caption alignleft">
         <%= image_tag "http://placehold.it/456x246" %>
       </figure>
 
-      <h3 class="global">Bateria The Flash</h3>
+      <h3><a href="">Bateria The Flash</a></h3>
       <p>
         Em 2013, o site de tecnologia App Annie previu que o mercado potencial para
         aplicativos seria de US$ 1 trilhão até 2016. Em 9 de se- tembro de 2014,
@@ -39,4 +40,5 @@ tag: destaque
     </section>
   </article>
 </section>
-<%= partial "/partials/top_news" %>
+
+<%= partial "/partials/sem_limites", locals: { klass: "Encare essa" } %>
