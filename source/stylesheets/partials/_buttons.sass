@@ -32,10 +32,10 @@
   @else if $type == black
     +background(linear-gradient(palette(black, 85-darken), palette(black, 90-darken)) left repeat)
     @extend %white-text-button
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=palette(black, 85-darken), endColorstr=palette(black, 90-darken) ,GradientType=0 )
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=palette(black, 85-darken), endColorstr=palette(black, 90-darken))
   @else
     +background(linear-gradient(palette(blue, gradient-top), palette(blue, gradient-bottom)) left repeat)
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=palette(black, gradient-top), endColorstr=palette(black, 90-darken) ,GradientType=0 )
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=palette(black, gradient-top), endColorstr=palette(black, 90-darken))
     @extend %white-text-button
 
   &:hover
@@ -43,10 +43,10 @@
       color: palette(blue, light)
     @else if $type == black
       +background(linear-gradient(palette(black, 95-darken), palette(black, 90-darken)) left repeat)
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=palette(black, gradient-top), endColorstr=palette(black, 90-darken) ,GradientType=0 )
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=palette(black, gradient-top), endColorstr=palette(black, 90-darken))
     @else
       +background(linear-gradient(palette(blue, gradient-top-hover), palette(blue, gradient-bottom)) left repeat)
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=palette(blue, gradient-top-hover), endColorstr=palette(blue, gradient-bottom), GradientType=0 )
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=palette(blue, gradient-top-hover), endColorstr=palette(blue, gradient-bottom))
 
 =button-download
   +default-button(download)
