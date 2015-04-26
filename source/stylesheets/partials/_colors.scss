@@ -67,6 +67,7 @@ $palettes: (
     mais-conteudos: $_color-mais-conteudos,
     sem-limites: $_color-mais-conteudos,
     nuvem-tech: $_color-mais-conteudos,
+    toda-midia: $_color-mais-conteudos,
 
     // Colors with opacity
     linguagens-opaque: rgba($_color-linguagens, $_alpha-level),
@@ -76,7 +77,8 @@ $palettes: (
     atualiza-enem-opaque: rgba($_color-atualiza-enem, $_alpha-level),
     mais-conteudos-opaque: rgba($_color-mais-conteudos, $_alpha-level),
     sem-limites-opaque: rgba($_color-mais-conteudos, $_alpha-level),
-    nuvem-tech-opaque: rgba($_color-mais-conteudos, $_alpha-level)
+    nuvem-tech-opaque: rgba($_color-mais-conteudos, $_alpha-level),
+    toda-midia-opaque: rgba($_color-mais-conteudos, $_alpha-level)
   ),
 
   tags: (

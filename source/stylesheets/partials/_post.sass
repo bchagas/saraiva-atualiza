@@ -124,11 +124,33 @@ body
       &:last-child
         border: none
 
-    .all-media
-      overflow: hidden
+    .toda-midia
+      &:hover
+        p
+          border: none
+
+      ul
+        overflow: hidden
 
       li
         +span-columns(6)
+
+      figure,
+      .info
+        +span-columns(3 of 6)
+
+      h3
+        color: $_color-mais-conteudos
+        font-size: rem(32)
+
+      h4
+        font:
+          family: $helvetica
+          size: rem(21)
+          weight: bold
+
+      a
+        +link-blue
 
   section.post-incompleto
     article
