@@ -6,16 +6,16 @@ tag: destaque
 
 <section class="post <%= page_classes("search-error") %>">
   <%= partial "/partials/search_header" %>
-</section>
 
-<section class="call-to-action">
-  <div class="content">
-    <div class="header">
-      <b>Ops!</b> Não encontramos nenhum resultado para: <br>
-      <span class="search-term">“Ciências da natureza”</span>
+  <section class="call-to-action">
+    <div class="content">
+      <div class="header">
+        <b>Ops!</b> Não encontramos nenhum resultado para: <br>
+        <span class="search-term">“Ciências da natureza”</span>
+      </div>
+
+      <p><b>Sugerimos que faça uma nova busca</b></p>
+      <%= partial "/partials/search" %>
     </div>
-
-    <p><b>Sugerimos que faça uma nova busca</b></p>
-    <%= partial "/partials/search" %>
-  </div>
+  </section>
 </section>
