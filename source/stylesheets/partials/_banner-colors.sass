@@ -1,3 +1,15 @@
+.notice
+  img
+    margin-bottom: -10px
+
+  .full:before
+    content: " "
+    display: block
+    position: absolute
+    +size(100% 259px)
+    top: 0
+    left: 0
+
 @each $item in $sections
   .#{$item}.full:before
     background-color: palette(sections, "#{$item}-opaque")
