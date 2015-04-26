@@ -62,6 +62,10 @@
     .#{$item}
       color: palette(sections, $item)
 
+    @if $item == mais-conteudos
+      .#{$item}
+        color: palette(sections, atualiza-enem)
+
       &:hover
         &:before
           content: " "
