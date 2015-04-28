@@ -23,6 +23,53 @@
   %block-margin-bottom
     margin-bottom: 30px
 
+  .post
+    footer
+      text-align: left !important
+
+    article
+      @extend %block-padding
+      > header
+        h1
+          font-size: rem(32)
+
+        .post-utils .actions
+          float: none
+
+        .zoom-in-out,
+        .send-email,
+        .read-latter
+          background-color: #E3E3E3
+          padding:
+            left: 3.5%
+            right: 3.5%
+          border-radius: 6px
+
+        .zoom-in-out,
+        .read-latter
+          padding:
+            top: 10px
+            bottom: 10px
+
+        .read-latter
+          margin-left: 4px
+
+      .author,
+      .location,
+      .print,
+      .print > a
+        +hide-on-mobile
+
+      .send-email
+        font-size: rem(21)
+        margin-left: 3px
+        padding:
+          top: 5px
+          bottom: 8px
+        a > span
+          display: none
+
+
   .page
     > header
       border-bottom: 1px solid palette(gray, light)
@@ -182,3 +229,19 @@
 
         li:first-child
           margin-left: 0
+
+  body article
+    blockquote
+      &.highlight
+        padding:
+          left: 0
+          right: 0
+        font-size: rem(26)
+      > .quote
+        +hide-on-mobile
+
+  blockquote.alignleft
+    width: 50%
+
+  .focused .content > ol li > p
+    width: auto
