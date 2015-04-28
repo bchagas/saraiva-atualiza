@@ -11,7 +11,7 @@
             <% index += 1 %>
             <li class="<%= item.parameterize %> <%= "last" if index === length %>">
               <h4><a href=""><%= notice.title %></a></h4>
-              <p><%= notice.short_description %></p>
+              <p><a href=""><%= notice.short_description %></a></p>
             </li>
           <% end %>
         </ul>
