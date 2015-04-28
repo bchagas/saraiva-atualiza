@@ -24,11 +24,15 @@
     margin-bottom: 30px
 
   .post
-    footer
-      text-align: left !important
+    > header h3
+      @extend %block-padding
+
+    article,
+    > .content
+    > div
+      @extend %block-padding
 
     article
-      @extend %block-padding
       > header
         h1
           font-size: rem(32)
@@ -71,6 +75,9 @@
 
 
   .page
+    > footer
+      margin-top: 30px
+
     > header
       border-bottom: 1px solid palette(gray, light)
       padding:
@@ -230,18 +237,53 @@
         li:first-child
           margin-left: 0
 
-  body article
-    blockquote
-      &.highlight
-        padding:
-          left: 0
-          right: 0
-        font-size: rem(26)
-      > .quote
-        +hide-on-mobile
+  body
+    article
+      blockquote
+        &.highlight
+          padding:
+            left: 0
+            right: 0
+          font-size: rem(26)
+        > .quote
+          +hide-on-mobile
+
+    .post blockquote footer
+      text-align: left
 
   blockquote.alignleft
     width: 50%
 
   .focused .content > ol li > p
     width: auto
+
+  .page
+    form.filters li
+      width: 100% !important
+
+      &:first-child
+        margin-bottom: 0
+
+    article.infograficos > section
+      width: 100%
+
+      img
+        width: 100%
+
+    .infografico
+      img
+        width: 100%
+
+      .info,
+      figure
+        width: 100%
+
+    .post
+      .related
+        > header h3
+          font-size: rem(26)
+          margin-left: 0
+
+    .call-to-action
+      > .content
+        width: 100%
