@@ -1,0 +1,184 @@
++media($small)
+  %full-size
+    +span-columns(4)
+    margin:
+      left: 0
+      right: 0
+    float: none
+
+  %block-list-item
+    +span-columns(4)
+    margin:
+      left: 0
+      right: 0
+      bottom: 20px
+    padding-bottom: 20px
+    height: auto !important
+
+  %block-padding
+    padding:
+      left: 3%
+      right: 3%
+
+  %block-margin-bottom
+    margin-bottom: 30px
+
+  .page
+    > header
+      border-bottom: 1px solid palette(gray, light)
+      padding:
+        top: 12px
+        bottom: 12px
+
+      .search,
+      .user-actions,
+      nav
+        +hide-on-mobile
+
+      h1
+        margin: 0 auto
+        float: none
+        +size(193px auto)
+
+  .mobile-buttons
+    position: absolute
+    top: 0
+    width: 100%
+
+    button
+      background: none
+      border: none
+      color: palette(sections, atualiza-enem)
+      font-size: rem(21)
+
+    .show-navigation,
+    .show-search
+      display: block
+      position: absolute
+
+    .show-navigation
+      top: 22px
+      left: 18px
+
+    .show-search
+      top: 20px
+      right: 18px
+
+  [role='banner']
+    padding: 0
+    @extend %block-margin-bottom
+
+    h2
+      font-size: rem(32)
+
+    figure,
+    .figure,
+    .info
+      @extend %full-size
+
+    .info
+      margin-top: 20px
+      @extend %block-padding
+
+  .notice
+    @extend %block-margin-bottom
+
+    .highlight
+      &.atualiza-enem
+        margin-top: 30px
+
+      .atualiza-enem
+        height: 100%
+        padding-top: 124px
+
+        h3
+          width: 100%
+
+        .button--download
+          float: left
+          margin-top: 10px
+
+    &.triple
+      figure,
+      .figure
+        margin-bottom: 30px
+
+    > .content
+      padding-top: 0
+
+    .caption,
+    figcaption
+      @extend %block-padding
+
+    &.double,
+    &.triple
+      .highlight,
+      .figure,
+      figure
+        @extend %full-size
+
+      img
+        width: 100%
+
+  .blog-sections
+    @extend %block-margin-bottom
+    @extend %block-padding
+
+    li
+      @extend %block-list-item
+
+      img
+        float: left
+        margin-right: 5px
+
+      h4
+        margin-top: 0
+
+  .subscribe-to-news
+    @extend %block-margin-bottom
+
+    > .content
+      margin:
+        top: 0
+        left: 3%
+        right: 3%
+
+    form
+      float: none
+
+    .inputs
+      margin-top: 10px
+      width: 40%
+
+    .actions
+      float: left
+      margin:
+        top: 38px
+        left: 10px
+
+  .top-news
+    @extend %block-margin-bottom
+    margin-bottom: 20px
+    @extend %block-padding
+
+    li
+      @extend %block-list-item
+
+  .top-by-category
+    +hide-on-mobile
+
+  body
+    .copyright
+      @extend %block-padding
+      a,
+      p
+        float: none
+        text-align: left
+
+    .links
+      @extend %block-padding
+      .utils
+        float: left
+
+        li:first-child
+          margin-left: 0
