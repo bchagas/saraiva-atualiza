@@ -2,31 +2,38 @@
 <html>
   <%= partial "/partials/head" %>
   <body>
-    <%= partial "/partials/header" %>
+    <div class="mobile-buttons">
+      <button class="show-navigation"><%= fa_icon("bars") %></button>
+      <button class="show-search"><%= fa_icon("search") %></button>
+    </div>
 
-    <section class="post <%= page_classes("users") %>">
-      <header>
+    <div class="page">
+      <%= partial "/partials/header" %>
+
+      <section class="post <%= page_classes("users") %>">
+        <header>
+          <div class="content">
+            <h3><%= current_page.data.title %></h3>
+          </div>
+        </header>
+
         <div class="content">
-          <h3><%= current_page.data.title %></h3>
+          <div class="login">
+            <ul class="connect">
+              <% %w(facebook twitter saraiva etico).each do |item| %>
+                <li class="<%= item %>"><%= link_to "<b>Conectar</b> com <b> #{item}".html_safe, item %></b></li>
+              <% end %>
+            </ul>
+
+            <p class="or"><span>Ou</span></p>
+
+            <%= yield %>
+          </div>
+
+          <%= yield_content :users_footer %>
         </div>
-      </header>
-
-      <div class="content">
-        <div class="login">
-          <ul class="connect">
-            <% %w(facebook twitter saraiva etico).each do |item| %>
-              <li class="<%= item %>"><%= link_to "<b>Conectar</b> com <b> #{item}".html_safe, item %></b></li>
-            <% end %>
-          </ul>
-
-          <p class="or"><span>Ou</span></p>
-
-          <%= yield %>
-        </div>
-
-        <%= yield_content :users_footer %>
-      </div>
-    </section>
-    <%= partial "/partials/footer" %>
+      </section>
+      <%= partial "/partials/footer" %>
+    </div>
   </body>
 </html>
