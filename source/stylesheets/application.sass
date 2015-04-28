@@ -7,6 +7,7 @@
   text-align: center
 
   > a
+    display: inline-block
     +default-button(full)
     text-align: center
     padding:
@@ -125,6 +126,10 @@ article.post
       clear: both
       margin-top: 55px
 
+    &:hover
+      p
+        border: none
+
     p
       display: inline
 
@@ -239,7 +244,6 @@ form.filters
     border: 1px solid palette(gray, light)
     color: $_color-base-grey
     height: 44px
-    padding: 20px
     width: 100%
     -webkit-appearance: menulist-button
 
@@ -369,8 +373,9 @@ article.infograficos
   > header
     border-top-color: palette(sections, atualiza-enem)
 
+.post
   footer
-    margin: 32px 0 64px
+    margin: 32px 0 0
     text-align: center
 
   .show-more
@@ -442,4 +447,3 @@ article.infograficos
 
   .search-time
     display: block
-
