@@ -31,8 +31,8 @@
     > header h3
       @extend %block-padding
 
-    article,
-    > .content
+    > article,
+    > .content,
     > div
       @extend %block-padding
 
@@ -49,15 +49,18 @@
         .read-latter
           background-color: #E3E3E3
           padding:
-            left: 3.5%
-            right: 3.5%
+            left: 3%
+            right: 3%
           border-radius: 6px
+
+        .send-email
+          margin-left: 0
 
         .zoom-in-out,
         .read-latter
           padding:
             top: 10px
-            bottom: 10px
+            bottom: 11px
 
         .read-latter
           margin-left: 4px
@@ -206,6 +209,7 @@
       img
         float: left
         margin-right: 5px
+        width: 30%
 
       h4
         margin-top: 0
@@ -276,8 +280,26 @@
   blockquote.alignleft
     width: 50%
 
-  .focused .content > ol li > p
-    width: auto
+  .focused,
+  .opine
+    margin:
+      left: 3%
+      right: 3%
+
+  .focused .content > ol li
+    > p
+      width: 100%
+      margin-left: 0
+      margin-top: 52px
+
+    > span
+      width: 100%
+      height: auto
+      min-height: 20px
+      border-radius: 5px 5px 0 0
+      padding:
+        top: 12px
+        bottom: 12px
 
   .page
     form.filters li
