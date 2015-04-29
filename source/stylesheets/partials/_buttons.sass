@@ -1,9 +1,9 @@
-%font
+=font
   font-weight: 700
   text-transform: uppercase
 
-%defaults
-  @extend %font
+=defaults
+  +font
   font-size: rem(16)
   border-radius: 3px
   border: none
@@ -14,28 +14,28 @@
   border: none
   color: palette(blue)
   font-size: rem(16)
-  @extend %font
+  +font
   text-transform: uppercase
 
   &:hover
     color: palette(blue, light)
 
-%white-text-button
+=white-text-button
   color: white
   font-size: rem(18)
 
 =default-button($type: null)
-  @extend %defaults
+  +defaults
   @if $type == null
     background: none
     color: palette(blue)
   @else if $type == black
     +background(linear-gradient(palette(black, 85-darken), palette(black, 90-darken)) left repeat)
-    @extend %white-text-button
+    +white-text-button
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#333131, endColorstr=#1B1A1A)
   @else
     +background(linear-gradient(palette(blue, gradient-top), palette(blue, gradient-bottom)) left repeat)
-    @extend %white-text-button
+    +white-text-button
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#1075AE, endColorstr=#0D6495)
 
   &:hover
