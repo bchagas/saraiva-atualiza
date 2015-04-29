@@ -24,8 +24,11 @@
   %block-margin-bottom
     margin-bottom: 30px
 
-  img
-    width: 100%
+  html
+    .mobile-buttons
+      display: block
+      font-size: normal
+      +size(auto auto)
 
   .post
     > header h3
@@ -129,6 +132,9 @@
     padding: 0
     @extend %block-margin-bottom
 
+    img
+      width: 100%
+
     h2
       font-size: rem(27)
 
@@ -208,7 +214,9 @@
 
       img
         float: left
-        margin-right: 5px
+        margin:
+          right: 5px
+          top: 5px
         width: 30%
 
       h4
@@ -217,18 +225,22 @@
   .subscribe-to-news
     @extend %block-margin-bottom
 
+    header
+      float: none
+
     > .content
       margin:
         top: 0
         left: 3%
         right: 3%
+      padding: 5px
 
     form
       float: none
 
     .inputs
       margin-top: 10px
-      width: 40%
+      width: 36%
 
     .actions
       float: left
