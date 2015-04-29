@@ -31,6 +31,9 @@
       +size(auto auto)
 
   .post
+    img
+      width: 100%
+
     > header h3
       @extend %block-padding
 
@@ -253,6 +256,9 @@
     margin-bottom: 20px
     @extend %block-padding
 
+    h3
+      font-size: rem(27)
+
     li
       @extend %block-list-item
 
@@ -370,6 +376,26 @@
             left: auto
             right: auto
           +size(25px 25px)
+
+  .call-to-action
+    padding:
+      left: 3%
+      right: 3%
+
+    .header
+      font-size: rem(16)
+
+      a
+        font-size: rem(18)
+
+    ul
+      > li
+        float: none
+        margin: 20px auto 10px
+        width: 90%
+
+        &:first-child
+          margin-bottom: 54px
 
   .highlight
     @each $item in $sections
