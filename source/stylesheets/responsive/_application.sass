@@ -48,16 +48,25 @@
         h1
           font-size: rem(27)
 
-        .post-utils .actions
-          float: none
+        .post-utils
+          .actions
+            float: none
+
+          a
+            padding: 0
+
+          .send-email
+            a
+              font-size: rem(18)
+
 
         .zoom-in-out,
         .send-email,
         .read-latter
           background-color: #E3E3E3
           padding:
-            left: 3%
-            right: 3%
+            left: 4.5%
+            right: 4.5%
           border-radius: 6px
 
         .send-email
@@ -482,3 +491,6 @@
 
         button
           right: 10%
+
+  body article .block-content
+    padding-top: 0
