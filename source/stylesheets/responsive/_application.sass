@@ -352,8 +352,20 @@
         width: 100%
 
     section.users
+      .content
+        margin:
+          left: 3%
+          right: 3%
+
+        > .footer
+          padding: 0
+
+          a
+            display: block
+
       .login
-        width: 100%
+        width: 284px
+        margin: 20px 0
 
       .connect
         width: 284px
@@ -377,6 +389,9 @@
             left: auto
             right: auto
           +size(25px 25px)
+
+      form
+        width: 100%
 
   .call-to-action
     padding:
