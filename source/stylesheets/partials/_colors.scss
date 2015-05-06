@@ -70,6 +70,7 @@ $palettes: (
     toda-midia: $_color-mais-conteudos,
     encare-essa: $_color-mais-conteudos,
     dialogo-arte: $_color-mais-conteudos,
+    backup: $_color-mais-conteudos,
 
     // Colors with opacity
     linguagens-opaque: rgba($_color-linguagens, $_alpha-level),
@@ -82,7 +83,8 @@ $palettes: (
     nuvem-tech-opaque: rgba($_color-mais-conteudos, $_alpha-level),
     toda-midia-opaque: rgba($_color-mais-conteudos, $_alpha-level),
     encare-essa-opaque: rgba($_color-mais-conteudos, $_alpha-level),
-    dialogo-arte-opaque: $_color-mais-conteudos
+    dialogo-arte-opaque: $_color-mais-conteudos,
+    backup-opaque: $_color-mais-conteudos
   ),
 
   tags: (

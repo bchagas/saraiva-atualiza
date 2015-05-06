@@ -626,3 +626,24 @@
         .atualiza-enem,
         .mais-conteudos
           background: none
+
+  body
+    .timeline
+      margin: 0
+
+      li
+        z-index: 2
+
+        &:before,
+        &:after
+          display: none
+
+      h4
+        &:before
+          bottom: -42px
+          left: 50%
+          height: 42px
+          top: auto
+          z-index: 1
+
+

@@ -457,3 +457,66 @@ article.infograficos
 
   .search-time
     display: block
+
+.timeline
+  +remove-list-style
+  margin-left: 50px
+
+  li
+    border-top: 1px solid black
+    background: white
+    margin-bottom: 32px
+    padding: 25px
+    position: relative
+
+    &:before
+      background: url("/images/icons/triangle.png") center right no-repeat
+      border-top: 1px solid black
+      content: " "
+      position: absolute
+      left: -21px
+      top: -1px
+      +size(21px 17px)
+
+    &:after
+      background: url("/images/icons/marker.png") center center no-repeat
+      content: " "
+      position: absolute
+      left: -41px
+      top: -12px
+      +size(22px 22px)
+
+    &.last
+      h4:before
+        display: none
+
+  h5
+    color: #242424
+    font:
+      size: rem(18)
+      weight: bold
+
+  h4
+    border-bottom: 1px solid palette(grey, light)
+    color: $_color-mais-conteudos
+    font:
+      size: rem(24)
+      weight: bold
+    padding-bottom: 15px
+
+    &:before
+      background: black
+      content: " "
+      +size(4px 110%)
+      position: absolute
+      left: -32px
+      top: 10px
+
+    span
+      color: $_color-base-grey
+      font:
+        size: rem(16)
+        weight: normal
+
+  p:hover
+    border: none
