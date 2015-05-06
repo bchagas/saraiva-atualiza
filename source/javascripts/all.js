@@ -63,6 +63,7 @@ SaraivaAtualiza = {
     $(".show-navigation").click(function(){
       if($(".search").is(":visible")){
         $(".search").hide();
+        $(".show-search").removeAttr("style");
       }
 
       if ($(".mobile-navigation").offset().left === 0) {
