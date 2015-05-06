@@ -1,8 +1,6 @@
 ---
 title: Contato
 ---
-
-
 <section class="post <%= page_classes("users") %> contact">
   <header>
     <div class="content">
@@ -106,8 +104,47 @@ title: Contato
   </div>
 </section>
 
+<div class="tabs content">
+  <h3>Localize as nossas unidades</h3>
+
+  <section id="tab-container">
+    <ul class='etabs'>
+      <li class='tab'><a href="#etico-sistema">ÉTICO SISTEMA DE ENSINO</a></li>
+      <li class='tab'><a href="#saraiva-sede">SARAIVA (SEDE)</a></li>
+      <li class='tab'><a href="#centro-distribuicao">CENTRO DE DISTRIBUIÇÃO</a></li>
+      <li class='tab'><a href="#etico-nordeste">ÉTICO NORDESTE</a></li>
+    </ul>
+
+    <div id="etico-sistema">
+      <p><strong>Avenida Castelo Branco nº 600  Nova Ribeirânia, Ribeirão Preto - SP</strong></p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.471541239281!2d-46.65763399999995!3d-23.587416000000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59f1069d11d1%3A0xcb936109af9ce541!2sIbirapuera+Park!5e0!3m2!1sen!2sbr!4v1430954837147" width="930" height="375" frameborder="0" style="border:0"></iframe>
+    </div>
+    <div id="saraiva-sede">
+      <p><strong>Avenida Castelo Branco nº 600  Nova Ribeirânia, Ribeirão Preto - SP</strong></p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1828.1805951630936!2d-46.60829208433617!3d-23.59137595893507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1430954991548" width="930" height="375" frameborder="0" style="border:0"></iframe>
+    </div>
+    <div id="centro-distribuicao">
+      <p><strong>Avenida Castelo Branco nº 600  Nova Ribeirânia, Ribeirão Preto - SP</strong></p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.471541239281!2d-46.65763399999995!3d-23.587416000000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59f1069d11d1%3A0xcb936109af9ce541!2sIbirapuera+Park!5e0!3m2!1sen!2sbr!4v1430954837147" width="930" height="375" frameborder="0" style="border:0"></iframe>
+    </div>
+    <div id="etico-nordeste">
+      <p><strong>Avenida Castelo Branco nº 600  Nova Ribeirânia, Ribeirão Preto - SP</strong></p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.471541239281!2d-46.65763399999995!3d-23.587416000000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59f1069d11d1%3A0xcb936109af9ce541!2sIbirapuera+Park!5e0!3m2!1sen!2sbr!4v1430954837147" width="930" height="375" frameborder="0" style="border:0"></iframe>
+    </div>
+  </section>
+</div>
+
 <% content_for :users_footer do %>
   <div class="footer">
     <p>Já é cadastrado? <%= link_to "Acesse sua conta", "login" %></p>
   </div>
+<% end %>
+
+<% content_for :javascripts do %>
+  <%= javascript_include_tag "jquery.easytabs.js" %>
+  <script>
+    jQuery(window).load(function () {
+      SaraivaAtualiza.tabs();
+    });
+  </script>
 <% end %>

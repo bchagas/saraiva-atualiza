@@ -521,3 +521,48 @@ article.infograficos
 
   p:hover
     border: none
+
+.tabs
+  h3
+    color: palette(sections, atualiza-enem)
+    font-size: rem(32)
+    border:
+      top: 1px solid palette(grey, light)
+      bottom: 1px solid palette(grey, light)
+    padding: 20px 0
+
+  ul
+    +remove-list-style
+    text-align: left
+    overflow: hidden
+
+    li
+      display: block
+      float: left
+
+      &.active > a
+        color: $_color-base-grey
+
+      > a
+        background: white
+        border:
+          top: 1px solid palette(grey, light)
+          left: 1px solid palette(grey, light)
+          right: 1px solid palette(grey, light)
+        border-radius: 5px 5px 0 0
+        color: palette(sections, atualiza-enem)
+        font:
+          size: rem(16)
+          weight: 600
+        display: block
+        padding: 12px 16px
+
+#tab-container > div
+  border: 1px solid palette(grey, light)
+  background: white
+  margin-top: -1px
+  padding: 20px
+  font-size: rem(16)
+
+  iframe
+    margin-top: 20px

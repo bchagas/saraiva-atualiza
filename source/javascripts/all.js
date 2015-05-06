@@ -7,6 +7,10 @@ SaraivaAtualiza = {
     });
   },
 
+  tabs: function() {
+    $('#tab-container').easytabs();
+  },
+
   setContentHeight: function(items) {
     var elements = $(items),
         sizes = [];
