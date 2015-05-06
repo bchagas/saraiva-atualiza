@@ -1,5 +1,4 @@
 <ul class="user-actions">
-  <li><%= link_to "Cadastrar", "/users/register", class: "register" %></li>
   <li>
     <a href="/users/login" class="login">
       Login <%= fa_icon("caret-down") %>
@@ -10,4 +9,5 @@
       <li><%= link_to "#{fa_icon("sign-out")} Sair".html_safe, "" %></li>
     </ul>
   </li>
+  <li><%= link_to "Cadastrar", "/users/register", class: "register" %></li>
 </ul>

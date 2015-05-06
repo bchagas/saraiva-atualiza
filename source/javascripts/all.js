@@ -41,5 +41,53 @@ SaraivaAtualiza = {
         content.slideToggle();
       });
     });
+  },
+
+  mobileNavigation: function(menu) {
+    pageHeight = $("body").height();
+    menu = $(menu);
+    page = $(".page");
+
+    menu.css({ height: pageHeight, left: -menu.width() });
+
+    window.addEventListener('resize', function() {
+      if ($(".mobile-navigation").offset().left === 0) {
+        menu.css({ height: pageHeight });
+        page.css({ left: menu.width() - 22 });
+      } else {
+        menu.css({ height: pageHeight, left: -menu.width() });
+      }
+    }, true);
+
+
+    $(".show-navigation").click(function(){
+      if ($(".mobile-navigation").offset().left === 0) {
+        page.animate({
+          left: 0
+        }, 500, function(){
+          $(this).removeAttr("style");
+        }.bind(this));
+
+        menu.animate({
+          left: -menu.width()
+        });
+
+      } else {
+        $("html, body").css({"overflow-x": "hidden"});
+
+        page.animate({
+          left: menu.width() - 22
+        }, 500, function(){
+          $(this).css({
+            "background-color": "#1075AE",
+            color: "white"
+          });
+        }.bind(this));
+
+        menu.animate({
+          left: -menu.width() + menu.width()
+        });
+      }
+    });
   }
 };

@@ -24,11 +24,14 @@
   %block-margin-bottom
     margin-bottom: 30px
 
+  .page
+    position: relative
+
   html
     .mobile-buttons
       display: block
-      font-size: normal
-      +size(auto auto)
+      overflow: hidden
+      +size(100% 70px)
 
   .post
     img
@@ -134,15 +137,18 @@
 
     .show-navigation,
     .show-search
+      border-radius: 5px
       display: block
       position: absolute
+      z-index: 2
+      padding: 7px 12px
 
     .show-navigation
-      top: 22px
+      top: 16px
       left: 18px
 
     .show-search
-      top: 20px
+      top: 13px
       right: 18px
 
   [role='banner']
@@ -505,3 +511,93 @@
   body article .toda-midia figure,
   body article .toda-midia .info
     width: 100%
+
+  body
+    .mobile-navigation
+      background-color: palette(sections, atualiza-enem)
+      display: block
+      border: none
+      left: -500px
+      position: absolute
+      top: -1px
+      z-index: 5
+      margin: 0
+      padding: 0
+      +size(65% 100%)
+
+      > ul
+        +outer-container
+        margin: 0
+
+        &.user-actions
+          height: auto
+          text-align: center
+          margin-top: 20px
+
+          > li > ul
+            background-color: #0D6394
+            display: block
+            +size(90% auto)
+            margin: 20px auto 0
+            padding-bottom: 20px
+            left: auto
+            overflow: hidden
+
+
+            > li
+              padding: 0
+
+              a
+                padding-bottom: 0
+
+          .login
+            +default-button(black)
+            display: block
+            margin: 0 auto
+            text-align: center
+            width: 90%
+
+          .register
+            color: white
+            text-align: center
+
+          .fa-caret-down
+            +hide-on-mobile
+
+          .fa
+            position: relative
+            top: 0
+            left: 0
+
+        > li
+          display: block
+          border-left: 0
+          float: none
+
+          > a
+            display: block
+            padding: rem(12) rem(16)
+            +size(100% auto)
+
+          > ul
+            display: block
+            position: relative
+            visibility: visible
+            opacity: 1
+            top: 0
+
+            &:before
+              +hide-on-mobile
+
+            li a
+              padding: rem(12) rem(16)
+              font-size: rem(18)
+
+        @each $section in $sections
+          .#{$section}
+            color: white
+            background-color: palette(sections, $section)
+
+        .atualiza-enem,
+        .mais-conteudos
+          background: none
