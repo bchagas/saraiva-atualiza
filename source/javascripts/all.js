@@ -61,6 +61,10 @@ SaraivaAtualiza = {
 
 
     $(".show-navigation").click(function(){
+      if($(".search").is(":visible")){
+        $(".search").hide();
+      }
+
       if ($(".mobile-navigation").offset().left === 0) {
         page.animate({
           left: 0
@@ -86,6 +90,32 @@ SaraivaAtualiza = {
 
         menu.animate({
           left: -menu.width() + menu.width()
+        });
+      }
+    });
+
+    $(".show-search").click(function(){
+      search = $(".search");
+
+      if(search.is(":visible")) {
+        $(this).removeAttr("style");
+        search.animate({
+          opacity: 0
+        }, 500, function(){
+          $(this).hide();
+        });
+
+      } else {
+        search.show();
+
+        $(this).css({
+          "background-color": "#1075AE",
+          color: "white",
+          "padding-bottom": "20px"
+        });
+
+        search.animate({
+          opacity: 1
         });
       }
     });
