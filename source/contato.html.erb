@@ -1,0 +1,113 @@
+---
+title: Contato
+---
+
+
+<section class="post <%= page_classes("users") %> contact">
+  <header>
+    <div class="content">
+      <h3><%= current_page.data.title %></h3>
+    </div>
+  </header>
+
+  <div class="content">
+    <form>
+      <fieldset class="inputs">
+        <ol>
+          <li>
+            <label for="name">Seu perfil</label>
+            <select>
+              <option>Selecione uma opção</option>
+              <option>Selecione uma opção</option>
+              <option>Selecione uma opção</option>
+              <option>Selecione uma opção</option>
+              <option>Selecione uma opção</option>
+              <option>Selecione uma opção</option>
+              <option>Selecione uma opção</option>
+              <option>Selecione uma opção</option>
+            </select>
+          </li>
+
+          <li>
+            <label for="name">Para</label>
+            <select>
+              <option>Selecione uma opção</option>
+              <option>Selecione uma opção</option>
+              <option>Selecione uma opção</option>
+              <option>Selecione uma opção</option>
+              <option>Selecione uma opção</option>
+              <option>Selecione uma opção</option>
+              <option>Selecione uma opção</option>
+            </select>
+          </li>
+
+          <li>
+            <label for="name">Nome</label>
+            <input type="text" id="name" />
+          </li>
+
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+          </li>
+
+          <li>
+            <label for="password">Nome do colégio</label>
+            <input type="text" id="colege" />
+          </li>
+
+          <li class="address">
+            <div class="state">
+              <label>Estado</label>
+              <select>
+                <option>Selecione</option>
+                <option>Selecione</option>
+                <option>Selecione</option>
+                <option>Selecione</option>
+                <option>Selecione</option>
+              </select>
+            </div>
+
+            <div class="city">
+              <label>Cidade</label>
+              <input type="text" />
+            </div>
+          </li>
+          <li>
+            <label for="name">Para</label>
+            <select>
+              <option>Selecione uma opção</option>
+              <option>Selecione uma opção</option>
+              <option>Selecione uma opção</option>
+              <option>Selecione uma opção</option>
+              <option>Selecione uma opção</option>
+              <option>Selecione uma opção</option>
+              <option>Selecione uma opção</option>
+            </select>
+          </li>
+        </ol>
+      </fieldset>
+
+      <fieldset class="actions">
+        <ol>
+          <li><button type="submit">Enviar</button></li>
+        </ol>
+      </fieldset>
+    </form>
+
+    <div class="help">
+      <span class="sac">SAC</span>
+      <p class="phone">0800 - 0117875</p>
+      <div class="additional-info">
+        <%= fa_icon_text("calendar", "De segunda-feira a sexta-feira") %>
+        <%= fa_icon_text("clock-o", "Das 8h30 às 19h30") %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<% content_for :users_footer do %>
+  <div class="footer">
+    <p>Já é cadastrado? <%= link_to "Acesse sua conta", "login" %></p>
+  </div>
+<% end %>

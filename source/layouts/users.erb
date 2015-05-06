@@ -2,12 +2,16 @@
 <html>
   <%= partial "/partials/head" %>
   <body>
-    <div class="mobile-buttons">
-      <button class="show-navigation"><%= fa_icon("bars") %></button>
-      <button class="show-search"><%= fa_icon("search") %></button>
-    </div>
+    <nav class="mobile-navigation">
+      <%= partial "/partials/user-actions" %>
+      <%= partial "/partials/navigation" %>
+    </nav>
 
     <div class="page">
+      <div class="mobile-buttons">
+        <button class="show-navigation"><%= fa_icon("bars") %></button>
+        <button class="show-search"><%= fa_icon("search") %></button>
+      </div>
       <%= partial "/partials/header" %>
 
       <section class="post <%= page_classes("users") %>">
@@ -34,6 +38,13 @@
         </div>
       </section>
       <%= partial "/partials/footer" %>
+
+      <script>
+        jQuery(window).load(function () {
+          SaraivaAtualiza.mobileNavigation(".mobile-navigation");
+        });
+      </script>
+      <%= yield_content :javascripts %>
     </div>
   </body>
 </html>

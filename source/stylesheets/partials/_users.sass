@@ -4,6 +4,48 @@ section.users
   p
     @extend %paragraph-block
 
+  &.contact
+    form,
+    .help
+      +span-columns(6)
+      padding: 20px
+
+    .address
+      overflow: hidden
+
+      .state
+        +span-columns(2 of 6)
+
+      .city
+        +span-columns(4 of 6)
+
+    .help
+      padding: 20px
+
+      .sac
+        color: #A8A8A8
+        font:
+          size: rem(18)
+          weight: bold
+
+      .phone
+        font:
+          size: rem(32)
+          weight: bold
+        margin: 0
+
+      .additional-info
+        border:
+          top: 1px solid palette(grey, light)
+          bottom: 1px solid palette(grey, light)
+        clear: both
+        float: left
+        font:
+          size: rem(18)
+          weight: bold
+        margin-top: 10px
+        padding-right: 10px
+
   &.logged > .content
     margin-top: 40px
     padding: 20px
