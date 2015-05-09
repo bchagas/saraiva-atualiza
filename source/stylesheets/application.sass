@@ -534,14 +534,30 @@ article.infograficos
   ul
     +remove-list-style
     text-align: left
-    overflow: hidden
+    clear: both
 
     li
       display: block
       float: left
+      margin-left: -1px
 
-      &.active > a
-        color: $_color-base-grey
+      &:first-child
+        margin-left: 0
+
+      &.active
+        > a
+          color: $_color-base-grey
+          position: relative
+
+          &:after
+            background: white
+            bottom: -1px
+            content: " "
+            display: block
+            left: 0
+            height: 1px
+            position: absolute
+            width: 100%
 
       > a
         background: white
@@ -560,7 +576,7 @@ article.infograficos
 #tab-container > div
   border: 1px solid palette(grey, light)
   background: white
-  margin-top: -1px
+  clear: both
   padding: 20px
   font-size: rem(16)
 
