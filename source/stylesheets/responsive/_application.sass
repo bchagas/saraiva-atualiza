@@ -281,6 +281,21 @@
     li
       @extend %block-list-item
 
+    &.arts
+      @extend %block-margin-bottom
+      margin-bottom: 20px
+      @extend %block-padding
+
+      img
+        margin-left: 0
+        width: 100%
+
+      h3
+        font-size: rem(27)
+
+      li
+        @extend %block-list-item
+
   .top-by-category
     +hide-on-mobile
 
@@ -672,7 +687,11 @@
         &:last-child
           border-radius: 0 0 5px 5px
 
-        h3
+        .mobile-title,
+        .mobile-map
+          display: block
+
+        .mobile-title
           font:
             size: rem(16)
             weight: bold
@@ -682,7 +701,7 @@
         strong
           font-weight: normal
 
-        a
+        .mobile-map
           clear: both
           display: block
           +default-button
