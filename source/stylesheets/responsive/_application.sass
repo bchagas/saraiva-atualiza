@@ -654,6 +654,42 @@
           z-index: 1
 
     .tabs
-      +hide-on-mobile
+      margin:
+        left: 3%
+        right: 3%
 
+      > h3
+        font-size: rem(27)
 
+      .etabs
+        +hide-on-mobile
+
+    #tab-container
+      > div
+        display: block !important
+        margin-bottom: -1px
+
+        &:last-child
+          border-radius: 0 0 5px 5px
+
+        h3
+          font:
+            size: rem(16)
+            weight: bold
+          margin-top: 0
+          margin-bottom: 10px
+
+        strong
+          font-weight: normal
+
+        a
+          clear: both
+          display: block
+          +default-button
+          padding-left: 0
+
+      #etico-sistema
+        border-radius: 5px 5px 0 0
+
+      iframe
+        +hide-on-mobile
