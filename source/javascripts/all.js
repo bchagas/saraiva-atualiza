@@ -7,6 +7,10 @@ SaraivaAtualiza = {
     });
   },
 
+  tabs: function() {
+    $('#tab-container').easytabs();
+  },
+
   setContentHeight: function(items) {
     var elements = $(items),
         sizes = [];
@@ -40,6 +44,85 @@ SaraivaAtualiza = {
 
         content.slideToggle();
       });
+    });
+  },
+
+  mobileNavigation: function(menu) {
+    pageHeight = $("body").height();
+    menu = $(menu);
+    page = $(".page");
+
+    menu.css({ height: pageHeight, left: -menu.width() });
+
+    window.addEventListener('resize', function() {
+      if ($(".mobile-navigation").offset().left === 0) {
+        menu.css({ height: pageHeight });
+        page.css({ left: menu.width() - 22 });
+      } else {
+        menu.css({ height: pageHeight, left: -menu.width() });
+      }
+    }, true);
+
+
+    $(".show-navigation").click(function(){
+      if($(".search").is(":visible")){
+        $(".search").hide();
+        $(".show-search").removeAttr("style");
+      }
+
+      if ($(".mobile-navigation").offset().left === 0) {
+        page.animate({
+          left: 0
+        }, 500, function(){
+          $(this).removeAttr("style");
+        }.bind(this));
+
+        menu.animate({
+          left: -menu.width()
+        });
+
+      } else {
+        $("html, body").css({"overflow-x": "hidden"});
+
+        page.animate({
+          left: menu.width() - 22
+        }, 500, function(){
+          $(this).css({
+            "background-color": "#1075AE",
+            color: "white"
+          });
+        }.bind(this));
+
+        menu.animate({
+          left: -menu.width() + menu.width()
+        });
+      }
+    });
+
+    $(".show-search").click(function(){
+      search = $(".search");
+
+      if(search.is(":visible")) {
+        $(this).removeAttr("style");
+        search.animate({
+          opacity: 0
+        }, 500, function(){
+          $(this).hide();
+        });
+
+      } else {
+        search.show();
+
+        $(this).animate({
+          backgroundColor: "#1075AE",
+          color: "white",
+          "padding-bottom": "20px"
+        }, 500);
+
+        search.animate({
+          opacity: 1
+        });
+      }
     });
   }
 };

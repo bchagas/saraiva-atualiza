@@ -1,0 +1,20 @@
+<section class="top-news arts">
+  <div class="content">
+    <header>
+      <h3>Mais <%= klass %></h3>
+    </header>
+
+    <ul>
+      <% 8.times do |i| %>
+        <% i = i + 1 %>
+        <li class="<%= "#{klass.parameterize} #{'last' if i % 4 === 0}" %>">
+          <%= image_tag lorem.image("223x130") %>
+          <span class="tag">Dialogo com a arte</span>
+          <%= link_to "", "", class: "tag" %>
+          <h4><a href="">La Mitrailleuse', Christopher Richard Wynne Nevinson</a></h4>
+          <span><strong>Atualiza #23</strong></span>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</section>

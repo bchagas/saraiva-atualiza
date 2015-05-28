@@ -10,7 +10,7 @@ div.aligncenter
   margin: 5px auto 5px auto
 
 .alignright
-  float: right
+  float: right !important
   margin: 5px 0 20px 20px
 
 .alignleft
@@ -98,3 +98,11 @@ blockquote
     width: auto
     z-index: 100000
     /* Above WP toolbar.
+
++media($small)
+  .wp-caption
+    max-width: 100%
+
+    &.alignright,
+    &.alignleft
+      margin: 0 0 20px

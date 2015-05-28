@@ -1,0 +1,29 @@
+---
+title: Aplicativos - entre a promessa e as ameaças
+category: backup
+page_name: Backup
+tag: destaque
+---
+
+<section class="post">
+  <%= partial "/partials/page_header" %>
+
+  <article>
+    <%= partial "/post/header" %>
+
+    <ul class="timeline">
+      <% 10.times do |i| %>
+        <% i = i + 1 %>
+        <li class="<%= "last" if i % 10 === 0 %>">
+          <h4>1215 <span>(Há 800 anos)</span></h4>
+          <h5>Magna Carta</h5>
+          <p>
+            O envolvimento da monarquia inglesa em conflitos militares,a elevação excessiva de impostos e as controvérsias entre oreieopapado desgastaram a autoridade da Coroa perante a nobreza e o clero. Para não ser deposto, o rei João Sem Terra (1199- -1216) teve de assinar a chamada Magna Carta, um documento que impunha restrições ao rei. A Magna Carta dispunha que o rei não poderia mais criar impostos sem consultar o Grande Conselho, composto de aristocratas e representantes do clero, e determinava também que nenhum súdito da Inglaterra poderia ser condenado sem processo judicial. Em longo prazo, a Magna Carta evitou o absolutismo na Inglaterra e permitiu ao Parlamento desencadear a revolução contra a Coroa em 1648.
+          </p>
+        </li>
+      <% end %>
+    </ul>
+  </article>
+</section>
+
+<%= partial "/partials/sem_limites", locals: { klass: "Backup" } %>

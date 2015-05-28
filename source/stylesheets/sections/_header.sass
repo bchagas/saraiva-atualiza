@@ -1,4 +1,4 @@
-body
+.page
   > header
     background-color: palette(white)
     margin-top: 0
@@ -12,7 +12,7 @@ body
       +span-columns(3)
       +remove-list-style
       height: 50px
-      float: right
+      float: left
       text-align: right
 
       li
@@ -20,6 +20,7 @@ body
         margin-top: 3px
         padding-bottom: 34px
         position: relative
+        float: right
 
         a
           display: block
@@ -30,7 +31,8 @@ body
 
         &:hover
           > ul
-            display: block
+            visibility: visible
+            opacity: 1
 
         > ul
           +dropdown

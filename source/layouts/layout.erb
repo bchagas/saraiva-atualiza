@@ -2,14 +2,26 @@
 <html>
   <%= partial "/partials/head" %>
   <body>
-    <%= partial "/partials/header" %>
-    <%= yield %>
-    <%= partial "/partials/footer" %>
+    <nav class="mobile-navigation">
+      <%= partial "/partials/user-actions" %>
+      <%= partial "/partials/navigation" %>
+    </nav>
 
-    <%= javascript_include_tag "jquery.tooltipster.min.js" %>
+    <div class="page">
+      <div class="mobile-buttons">
+        <button class="show-navigation"><%= fa_icon("bars") %></button>
+        <button class="show-search"><%= fa_icon("search") %></button>
+      </div>
+      <%= partial "/partials/header" %>
+        <%= yield %>
+      <%= partial "/partials/footer" %>
+    </div>
+
+    <%= javascript_include_tag "jquery.tooltipster.min.js", "jquery.color.js" %>
     <script>
-      $(function() {
+      jQuery(window).load(function () {
         SaraivaAtualiza.tooltip();
+        SaraivaAtualiza.mobileNavigation(".mobile-navigation");
       });
     </script>
     <%= yield_content :javascripts %>

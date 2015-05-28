@@ -6,9 +6,8 @@
   <h1><%= current_page.data.title %></h1>
 
   <p class="post-meta">
-    Por: <span class="author">Por por Osmar Freitas Jr.</span>
-    de <span class="location">Nova York</span>
-    -
+    <span class="author">Por: por Osmar Freitas Jr.</span>
+    <span class="location">de Nova York - </span>
     <time datetime="2015-03-27T20:47:52+00:00">Março, 2015</time>
     <span class="number">/ <a href="">Atualiza #25</a></span>
   </p>
@@ -20,9 +19,9 @@
         <span>/</span>
       <a href="" class="zoom-out"><span class="minus">-<%= fa_icon "font" %></a>
       </li>
-      <li><a href="" class="print"><%= fa_icon "print" %> Imprimir</a></li>
-      <li><a href="" class="send-email"><%= fa_icon "envelope-square" %> Enviar por email</a></li>
-      <li><a href="" class="read-latter"><%= fa_icon "clock-o" %> Ver mais tarde</a></li>
+      <li class="print"><a href=""><%= fa_icon "print" %> <span>Imprimir</span></a></li>
+      <li class="send-email"><a href=""><%= fa_icon "envelope-square" %> <span>Enviar por email</span></a></li>
+      <li class="read-latter"><a href=""><%= fa_icon "clock-o" %> <span>Ver mais tarde</span></a></li>
     </ul>
   </div>
 </header>
