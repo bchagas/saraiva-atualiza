@@ -87,10 +87,10 @@ SaraivaAtualiza = {
         page.animate({
           left: menu.width() - 22
         }, 500, function(){
-          $(this).css({
-            "background-color": "#1075AE",
+          $(this).animate({
+            backgroundColor: "#1075AE",
             color: "white"
-          });
+          }, 500);
         }.bind(this));
 
         menu.animate({
