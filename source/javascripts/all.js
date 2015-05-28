@@ -113,11 +113,11 @@ SaraivaAtualiza = {
       } else {
         search.show();
 
-        $(this).css({
-          "background-color": "#1075AE",
+        $(this).animate({
+          backgroundColor: "#1075AE",
           color: "white",
           "padding-bottom": "20px"
-        });
+        }, 500);
 
         search.animate({
           opacity: 1
